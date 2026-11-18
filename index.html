@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Sheepi · ropa de segunda mano en Panamá. Una pieza de cada una. Elige tus favoritas y coordina tu compra por WhatsApp."><meta name="theme-color" content="#ffffff"><title>Sheepi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="estilos.css"><script defer src="config.js"></script><script defer src="logica.js"></script><script defer src="app.js"></script></head>
+<body><a class="saltar" href="#catalogo">Ir al catálogo</a>
+<header id="cabecera" class="cabecera"><button id="abrir-menu" class="hamburguesa" aria-haspopup="dialog" aria-label="Abrir menú"><span></span><span></span></button><a class="marca" id="marca" href="#">Sheepi</a><button id="abrir-bolsa" class="mini" aria-haspopup="dialog">Bolsa <span class="corchete">[<span id="contador">0</span>]</span></button></header>
+<main>
+<section class="portada" aria-label="Sheepi"><p class="logotipo" id="marca-portada" aria-hidden="true">Sheepi</p><p class="mini">Segunda mano · Una pieza de cada una</p><p id="promocion" class="mini secundario"></p></section>
+<p id="aviso" role="status" aria-live="polite">Cargando catálogo…</p>
+<div class="tienda">
+<nav class="grupos" aria-label="Categorías"><ol id="categorias"></ol></nav>
+<div class="contenido">
+<div id="tallas" class="tallas" role="group" aria-label="Filtrar por talla"></div>
+<div class="herramientas"><p id="cantidad" class="mini secundario" aria-live="polite"></p><div id="vista" class="vista" role="group" aria-label="Prendas por fila"></div></div>
+<section id="catalogo" class="cuadricula" aria-label="Prendas disponibles" tabindex="-1"></section>
+</div></div>
+</main>
+<footer class="pie"><div><h2 class="mini">Cómo comprar</h2><ol><li>Agrega tus prendas a la bolsa.</li><li>Envía tu selección por WhatsApp.</li><li>Paga para apartarla.</li></ol></div><div><h2 class="mini">Pago</h2><p>Yappy o transferencia BAC.</p></div><div><h2 class="mini">Entrega</h2><p id="retiro">Retiro coordinado por WhatsApp</p><p>Delivery con costo según la zona.</p></div><div><h2 class="mini">Contacto</h2><div id="redes" class="redes"></div></div><p class="firma mini">© Sheepi · Panamá</p></footer>
+<dialog id="menu" class="menu" aria-label="Menú"><button class="cerrar-x" data-cerrar="menu" aria-label="Cerrar menú"></button><p class="logotipo menu-marca" aria-hidden="true">Sheepi</p><ol id="menu-grupos"></ol></dialog>
+<dialog id="detalle" aria-labelledby="detalle-titulo"><button class="cerrar-x" data-cerrar="detalle" aria-label="Cerrar detalle"></button><div id="detalle-contenido"></div></dialog>
+<dialog id="bolsa" aria-labelledby="bolsa-titulo"><div class="cabecera-bolsa"><h2 id="bolsa-titulo" class="mini">Tu bolsa</h2><button class="cerrar-x" data-cerrar="bolsa" aria-label="Cerrar bolsa"></button></div><div id="lista-bolsa"></div><dl class="totales"><div><dt>Subtotal</dt><dd id="subtotal"></dd></div><div><dt>Ahorro por combo</dt><dd id="ahorro"></dd></div><div class="total"><dt>Total</dt><dd id="total"></dd></div></dl><label for="entrega" class="mini">Entrega</label><select id="entrega"><option>Retiro</option><option>Delivery</option></select><p class="nota secundario">Se aparta solo con el pago. El envío se cotiza según la zona.</p><p id="aviso-bolsa" role="status" aria-live="polite"></p><button id="pedir" class="principal">Pedir por WhatsApp</button><a id="continuar" class="principal enlace-boton" target="_blank" rel="noopener noreferrer" hidden>Continuar en WhatsApp</a></dialog>
+<noscript><p>Activa JavaScript para ver las prendas y armar tu bolsa.</p></noscript></body></html>
