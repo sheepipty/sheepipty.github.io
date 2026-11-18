@@ -1,7 +1,7 @@
 {
   "ok": true,
   "marca": "Sheepi",
-  "actualizado": "2026-11-18T17:50:01.179Z",
+  "actualizado": "2026-11-18T20:51:41.041Z",
   "combos": {
     "3": 12,
     "5": 18
@@ -124,19 +124,6 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/10ptBHQTJ8r7YyleKcddKcAtWheUJic74=w900",
-      "fecha_ingreso": "2026-10-24"
-    },
-    {
-      "codigo": "NC-010",
-      "categoria": "Tops / Blusas",
-      "descripcion": "Top gris de tejido acanalado, manga larga, escote tipo barco y bajo asimétrico terminado en punta",
-      "marca": "",
-      "talla": "S",
-      "estado": "Bueno",
-      "observacion": "",
-      "precio": 3,
-      "combo": false,
-      "foto": "https://lh3.googleusercontent.com/d/10j9XM3zmfh3FS20mm6xQCNxcS4w_O6hV=w900",
       "fecha_ingreso": "2026-10-24"
     },
     {
@@ -414,15 +401,15 @@
     },
     {
       "codigo": "NC-032",
-      "categoria": "Pantalones",
-      "descripcion": "Pantalón largo gris de tejido acanalado vertical, cintura elástica y pierna ancha tipo wide leg",
+      "categoria": "Conjuntos / Trajes",
+      "descripcion": "Conjunto gris de tejido acanalado: top de manga larga con escote barco y bajo en punta, y pantalón wide leg con cintura elástica",
       "marca": "",
       "talla": "S",
       "estado": "Bueno",
       "observacion": "",
-      "precio": 6,
+      "precio": 9,
       "combo": false,
-      "foto": "https://lh3.googleusercontent.com/d/18vkTusgAU2HHioPsDS7GmAzqAZaecZiW=w900",
+      "foto": "https://lh3.googleusercontent.com/d/1dOlDCB1fHQNmSTLThKQUnSWdi2aZcK0Y=w900",
       "fecha_ingreso": "2026-10-31"
     },
     {
