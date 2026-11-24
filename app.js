@@ -171,12 +171,13 @@ function marcoSVG(tipo,color){
   }else{
     const pts=[];for(let i=0;i<=120;i++){const a=2*Math.PI*i/120,r=410*(1+.035*Math.sin(5*a)+.02*Math.cos(3*a));pts.push(f(540+r*Math.cos(a))+','+f(650+r*1.02*Math.sin(a)));}d='M'+pts.join(' L')+' Z M540,231.8 c-40,-60 -110,-40 -90,0 c15,30 70,10 90,0 c40,-60 110,-40 90,0 c-15,30 -70,10 -90,0 M540,231.8 l-45,95 M540,231.8 l40,90';
   }
-  const plantilla=document.createElement('template');plantilla.innerHTML='<svg class="marco-svg" xmlns="http://www.w3.org/2000/svg" viewBox="60 100 960 1040" preserveAspectRatio="none" aria-hidden="true" focusable="false">'+(circulos?'<g fill="'+color+'">'+circulos+'</g>':'<path d="'+d+'" fill="none" stroke="'+color+'" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/>')+'</svg>';
+  const fondo=tipo==='ondas'||tipo==='festones'?d:tipo==='redondo'?d.slice(0,d.indexOf(' Z')+2):'M130,200 L950,200 L950,1060 L130,1060 Z';
+  const plantilla=document.createElement('template');plantilla.innerHTML='<svg class="marco-svg" xmlns="http://www.w3.org/2000/svg" viewBox="60 100 960 1040" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="fondo-marco" d="'+fondo+'" fill="#fff"/>'+(circulos?'<g fill="'+color+'">'+circulos+'</g>':'<path d="'+d+'" fill="none" stroke="'+color+'" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/>')+'</svg>';
   const svg=plantilla.content.firstElementChild;cacheMarcos.set(clave,svg);return svg.cloneNode(true);
 }
 function enmarcar(img,codigo,combo=false){
   const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo);
-  cont.append(img,marcoSVG(tipo,color));if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
+  cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
 }
 function elegida(variantes){return variantes.find(a=>a.codigo===seleccionadas.get(claveGrupo(variantes[0])))||variantes[0];}
 function precios(a){
