@@ -1,7 +1,7 @@
 {
   "ok": true,
   "marca": "Sheepi",
-  "actualizado": "2026-11-24T18:48:19.773Z",
+  "actualizado": "2026-11-24T20:17:34.881Z",
   "combos": {
     "3": 12,
     "5": 18
@@ -577,7 +577,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 64,
+      "precio": 63.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ADQzKQqDjq6xhNCuMmO--A5Rfn1bGcri=w900",
       "fecha_ingreso": "2026-11-24",
@@ -586,6 +586,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 80,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -596,7 +597,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1cQNsLy12RmOBiMWPmmRSVQeP-tlavSw9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -605,6 +606,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 65,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -615,7 +617,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 20,
+      "precio": 19.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1-WfJzw_1c0Wt8p6u7S73gUpLyaRGrMzP=w900",
       "fecha_ingreso": "2026-11-24",
@@ -624,6 +626,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 25,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -634,7 +637,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 25.6,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XEwG4LXeZyRoPlqB2WrzynS1TaCcy8JH=w900",
       "fecha_ingreso": "2026-11-24",
@@ -643,6 +646,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 32,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -653,7 +657,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 27.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1PtFlEX0JnT4hLw20EgfVpaWt2SpUrQJx=w900",
       "fecha_ingreso": "2026-11-24",
@@ -662,6 +666,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 35,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -672,7 +677,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1VWTVR9oDSESf7uj0TWea6eP0S-gbfnWq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -681,6 +686,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 50,
+      "descuento": 20,
       "grupo": "G-1000704",
       "variante": "Mango",
       "color": "#E3B048",
@@ -694,7 +700,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BJUFp0QZbLzGhSmPdvFiuRCMH15d-8Fp=w900",
       "fecha_ingreso": "2026-11-24",
@@ -703,6 +709,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 50,
+      "descuento": 20,
       "grupo": "G-1000704",
       "variante": "Mandarin",
       "color": "#E06046",
@@ -716,7 +723,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 64,
+      "precio": 63.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1-Df6ggdCeJ9u28CSPJnMWUm2MgouXXU7=w900",
       "fecha_ingreso": "2026-11-24",
@@ -725,6 +732,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 80,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -735,7 +743,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 68,
+      "precio": 67.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rFPTBYHxbLCcHUl64SzmGL5CnxO4fxmC=w900",
       "fecha_ingreso": "2026-11-24",
@@ -744,6 +752,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 85,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -754,7 +763,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 20,
+      "precio": 19.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17zLNrHngJc0vWrz_68qiERO1rFBNjB4i=w900",
       "fecha_ingreso": "2026-11-24",
@@ -762,7 +771,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 25
+      "precio_publico": 25,
+      "descuento": 20
     },
     {
       "codigo": "SB-011",
@@ -772,7 +782,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1UH_s45g7obU0KXc9GJ2XBKOyNaFCLdVP=w900",
       "fecha_ingreso": "2026-11-24",
@@ -781,6 +791,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 65,
+      "descuento": 20,
       "grupo": "G-1002968",
       "variante": "Crisp Watermelon",
       "color": "#9E392C",
@@ -794,7 +805,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rzRa0G1DjsppPJd2nZ-XbykdF1wvcVrb=w900",
       "fecha_ingreso": "2026-11-24",
@@ -803,6 +814,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 65,
+      "descuento": 20,
       "grupo": "G-1002968",
       "variante": "Cool Lime",
       "color": "#848F59",
@@ -816,7 +828,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 27.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1_-iWj8lLGm2fbvEE_1f8nvntWQ1aeOcR=w900",
       "fecha_ingreso": "2026-11-24",
@@ -825,6 +837,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 35,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -835,7 +848,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10NELXTkxgljs51px16Yh4DEztcE-DMlp=w900",
       "fecha_ingreso": "2026-11-24",
@@ -843,7 +856,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 30
+      "precio_publico": 30,
+      "descuento": 20
     },
     {
       "codigo": "SB-015",
@@ -853,7 +867,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.6,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1N3o6YNAl2QwM2GK5yZ41v6l_HO0thRqH=w900",
       "fecha_ingreso": "2026-11-24",
@@ -861,7 +875,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 22
+      "precio_publico": 22,
+      "descuento": 20
     },
     {
       "codigo": "SB-016",
@@ -871,7 +886,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1suGxzNd9_b_ECQZ-BQAwyjbJw-3y3-tk=w900",
       "fecha_ingreso": "2026-11-24",
@@ -879,7 +894,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-017",
@@ -889,7 +905,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1V-3K63cneylnairzg2xwybwk-RWT6J9G=w900",
       "fecha_ingreso": "2026-11-24",
@@ -897,7 +913,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-018",
@@ -907,7 +924,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1xWZk-dA9YxSsrExpWLcA9eYqsJo8lzMd=w900",
       "fecha_ingreso": "2026-11-24",
@@ -915,7 +932,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-019",
@@ -925,7 +943,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1t-wF25dKidk0pdVhX7kdklLHhprw4mNT=w900",
       "fecha_ingreso": "2026-11-24",
@@ -933,7 +951,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 30
+      "precio_publico": 30,
+      "descuento": 20
     },
     {
       "codigo": "SB-020",
@@ -943,7 +962,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 35.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RrYl_yOkJ-j0Eing_zdFED2Jg8YIJFMb=w900",
       "fecha_ingreso": "2026-11-24",
@@ -951,7 +970,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 20
     },
     {
       "codigo": "SB-021",
@@ -961,7 +981,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Xe7A6QOzI98E5YzfoNcYf4dluN05bMdK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -970,6 +990,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 50,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -980,7 +1001,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1N9Vjm8eX2W6hk49Z1HQ0i-UdIKWMfOTe=w900",
       "fecha_ingreso": "2026-11-24",
@@ -989,6 +1010,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 50,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -999,7 +1021,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 48,
+      "precio": 47.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rLaQLx-Zh_D9DDmxtDqX_rl58Dglri8Q=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1008,6 +1030,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 60,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -1018,7 +1041,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 10,
+      "precio": 9.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1TFLFxZ3xxvvL6wW8skoRu4yV6bDZuDLQ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1027,6 +1050,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 12.5,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -1037,7 +1061,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 58.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1220Twb9oFSqQR1zq61s815yKPwDw0S0E=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1046,6 +1070,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 90,
+      "descuento": 35,
       "grupo": "G-1002565",
       "variante": "Cookie Crunch",
       "color": "#A55832",
@@ -1059,7 +1084,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 58.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/158S4YXGGCikM3SmUSTB6kXkvWGKId8JJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1068,6 +1093,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 90,
+      "descuento": 35,
       "grupo": "G-1002565",
       "variante": "Cream Caramel",
       "color": "#CB8A55",
@@ -1081,7 +1107,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 58.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1m5H2CJavF7PsXH9QWDuzLzic_KskPFHy=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1090,6 +1116,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 90,
+      "descuento": 35,
       "grupo": "G-1002565",
       "variante": "Strawberry Supreme",
       "color": "#EFA4B2",
@@ -1103,7 +1130,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 58.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1O2RfwzPpq5IZ-Tq4XGQnIPe4tVoRY1oU=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1112,6 +1139,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 90,
+      "descuento": 35,
       "grupo": "G-1002565",
       "variante": "Velvet Chocolate",
       "color": "#9C6756",
@@ -1125,7 +1153,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gbm5jzA-QLXfxqZclkFV1y5_ReosgRvb=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1133,7 +1161,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-030",
@@ -1143,7 +1172,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10Ov3mzu3d4ExVL6hKVzhrS9lxKxpsOHB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1151,7 +1180,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-031",
@@ -1161,7 +1191,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 44,
+      "precio": 43.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Ci0SlUW6zRvZ-Gzah211iWiCBiNrZE1w=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1169,7 +1199,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 55
+      "precio_publico": 55,
+      "descuento": 20
     },
     {
       "codigo": "SB-032",
@@ -1179,7 +1210,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 41.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1MXWIpE5gbdd6uuEy_WmxGkTPFVWgaZJW=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1188,6 +1219,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 65,
+      "descuento": 35,
       "recargo_traida": 3
     },
     {
@@ -1198,7 +1230,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 56,
+      "precio": 45.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1H_LgFfufOYB1y069jInW6i7KnpCkPIsB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1207,6 +1239,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 70,
+      "descuento": 35,
       "recargo_traida": 3
     },
     {
@@ -1217,7 +1250,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1hG_ZC1kPTtI1ASFOhz3oCV2WQqToli1u=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1226,6 +1259,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 65,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -1236,7 +1270,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1W7EAPbachCdtaTu_DL3rfKcTuzi4Trms=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1244,7 +1278,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 30
+      "precio_publico": 30,
+      "descuento": 20
     },
     {
       "codigo": "SB-036",
@@ -1254,7 +1289,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/15lciCRK_H3nVO1yTABNwNxcrvQYoTjks=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1263,6 +1298,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1000707",
       "variante": "Peach Tea",
       "color": "#F9C1AF"
@@ -1275,7 +1311,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1N0dglMqoebOkX5f2vA2_GyrJOJkp3ArX=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1284,6 +1320,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1000707",
       "variante": "Lemon Tea",
       "color": "#EDE7B1"
@@ -1296,7 +1333,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1lu-z8kFgUmR2Ea0SmodDCqeJWbqNkzjD=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1305,6 +1342,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1000707",
       "variante": "Raspberry Tea",
       "color": "#F8ABC9"
@@ -1317,7 +1355,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1y7wvhn-z8Yhhbnnar4pbl5cc_WDr2bke=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1326,6 +1364,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1000707",
       "variante": "Earl Grey Tea",
       "color": "#C6B4C2"
@@ -1338,7 +1377,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 35.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1swP1BYpZQgkdS1hzAXISbO_uM00NPRpp=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1346,7 +1385,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 20
     },
     {
       "codigo": "SB-041",
@@ -1356,7 +1396,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 27.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Z1x-aa6EL-pBcgDo4p1B1XlL-W_JExF6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1364,7 +1404,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 35
+      "precio_publico": 35,
+      "descuento": 20
     },
     {
       "codigo": "SB-042",
@@ -1374,7 +1415,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1961yXrevPoZZVI2nZ63B2r4JjsYV9Gpe=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1382,7 +1423,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 30
+      "precio_publico": 30,
+      "descuento": 20
     },
     {
       "codigo": "SB-043",
@@ -1392,7 +1434,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1SlhG2q3JxXPYmHp8u7TIs9vJWPa3kYk0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1400,7 +1442,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 35
+      "precio_publico": 35,
+      "descuento": 35
     },
     {
       "codigo": "SB-046",
@@ -1410,7 +1453,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 27.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BmUUE-twcqAT5aMF_Vuzbg9ByiXv6fnm=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1419,6 +1462,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 35,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -1429,7 +1473,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 44,
+      "precio": 43.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1plIYn5J2J5GagJvqdnLk-jZisu4RsWeR=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1438,6 +1482,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 55,
+      "descuento": 20,
       "recargo_traida": 3
     },
     {
@@ -1448,7 +1493,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36.8,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Npv2cf-vhComUARyA-gFKqAnUZWEtGXz=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1457,6 +1502,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 46,
+      "descuento": 35,
       "grupo": "G-1002614",
       "variante": "Caramel",
       "color": "#724635"
@@ -1469,7 +1515,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36.8,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1OshzpEYooxin6CIDYM6K_qbMJFsXlhFw=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1478,6 +1524,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 46,
+      "descuento": 35,
       "grupo": "G-1002614",
       "variante": "Deep Cocoa",
       "color": "#603E33"
@@ -1490,7 +1537,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36.8,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1OyNMzcUB7sBuIdwHuSod3DjjmKvnUEpX=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1499,6 +1546,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 46,
+      "descuento": 35,
       "grupo": "G-1002614",
       "variante": "Coral Pop",
       "color": "#AE4743"
@@ -1511,7 +1559,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36.8,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1tDCuXLp4hpof9ZsNXKjV0DTgPBtIYCOB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1520,6 +1568,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 46,
+      "descuento": 35,
       "grupo": "G-1002614",
       "variante": "Plump Passion",
       "color": "#894C40"
@@ -1532,7 +1581,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36.8,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1m_T-GL-lwD3bOLby_4SAG5WemHXXKDic=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1541,6 +1590,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 46,
+      "descuento": 35,
       "grupo": "G-1002614",
       "variante": "Pink Bloom",
       "color": "#C74865"
@@ -1553,7 +1603,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 33.2,
+      "precio": 32.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1KT_TgjOq_Sjiu2NqtL-_FoLS3TeAB_KK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1562,6 +1612,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 41.5,
+      "descuento": 20,
       "grupo": "G-1001476",
       "variante": "Foundation N15",
       "color": "#B17A5B"
@@ -1574,7 +1625,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 33.2,
+      "precio": 32.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XUuch92JGN2fdSdZm7Y_e9hm-EITw1Vg=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1583,6 +1634,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 41.5,
+      "descuento": 20,
       "grupo": "G-1001476",
       "variante": "Foundation W18",
       "color": "#946247"
@@ -1595,7 +1647,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1_lDIBbDjUo7aXFhJHRRe76MFqolygG8X=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1604,6 +1656,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002157",
       "variante": "Fair to Medium"
     },
@@ -1615,7 +1668,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1TG-C1S92U_o9YgNUIOttYK2pfjl6ZiNc=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1624,6 +1677,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002157",
       "variante": "Medium to Deep"
     },
@@ -1635,7 +1689,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/171ev_yPZ5l84q5WS1Uf9vpHVhFUwMo8V=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1644,6 +1698,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Neutral Nude 01",
       "color": "#F89880"
@@ -1656,7 +1711,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YSTbEcz6siVB0mYbHFO3-NNBYcVRyUg_=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1665,6 +1720,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Soft Pink 02"
     },
@@ -1676,7 +1732,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/12Cm3IMCVB4z_W4j99oZAKKMboEzPyEu0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1685,6 +1741,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Black Cherry 03",
       "color": "#841700"
@@ -1697,7 +1754,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1CnYa1lK31taDBrw85GKIA2GR1wHsIcyK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1706,6 +1763,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Deep Beige 04",
       "color": "#F07965"
@@ -1718,7 +1776,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1aeu2ZLmWEK2jzCJJwkO7ObMt18_EY7E3=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1727,6 +1785,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Pink Beige 05",
       "color": "#FFA396"
@@ -1739,7 +1798,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RN1t9tUczxpEL-l8uIfEXKXt3j30e3f9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1748,6 +1807,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.9,
+      "descuento": 35,
       "grupo": "G-1001423",
       "variante": "Cool Pink 06",
       "color": "#FF8182"
@@ -1760,7 +1820,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 26.32,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ZQ3YGlt7MtWKToDe-rEof20SbTFuKkTq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1769,6 +1829,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 32.9,
+      "descuento": 20,
       "grupo": "G-1001346",
       "variante": "01 Cool Light",
       "color": "#E5C5AE"
@@ -1781,7 +1842,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 26.32,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Y_sPgK4BFeDq5N39tZLbUlKjfPI-n0ty=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1790,6 +1851,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 32.9,
+      "descuento": 20,
       "grupo": "G-1001346",
       "variante": "02 Warm Light",
       "color": "#F1C2A6"
@@ -1802,7 +1864,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 26.32,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1b3NN2QF03hag6vOaQbpl6lPbF48Q4KNB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1811,6 +1873,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 32.9,
+      "descuento": 20,
       "grupo": "G-1001346",
       "variante": "03 Neutral Medium",
       "color": "#DCB093"
@@ -1823,7 +1886,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 26.32,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1OK4hlh7LSd_dqGRkv8LTBvbgO2l9SeW5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1832,6 +1895,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 32.9,
+      "descuento": 20,
       "grupo": "G-1001346",
       "variante": "04 Warm Medium",
       "color": "#C79570"
@@ -1844,7 +1908,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14PzD1cfADm4C7IDetNLGvzHKj1Ks7Zr-=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1853,6 +1917,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Fair",
       "color": "#FFE3CD"
@@ -1865,7 +1930,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1wtr1D-QV_fEwC2Mnv8d9YV6IDoieRang=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1874,6 +1939,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Light",
       "color": "#F2CDB2"
@@ -1886,7 +1952,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gWU99_x9_v5Dveehi9rFqcCeKSmFsBM4=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1895,6 +1961,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Light to Medium",
       "color": "#EEC1AF"
@@ -1907,7 +1974,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YtQjPn2QPEDe6vJcdor0HJGU7flx2Dm0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1916,6 +1983,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Medium",
       "color": "#E2AF89"
@@ -1928,7 +1996,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1IziETwgPGM01Stk45iOPKsj-yUULtT66=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1937,6 +2005,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Medium to Tan",
       "color": "#BD8965"
@@ -1949,7 +2018,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17bCksnuFyDsD5rd6fg6gF6a3VZXAhxKi=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1958,6 +2027,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Tan",
       "color": "#A35E43"
@@ -1970,7 +2040,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ZIhJovVFKdW2wGarRyVbSBZ2u2CdDlzq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1979,6 +2049,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 6.25,
+      "descuento": 20,
       "grupo": "G-1002059",
       "variante": "Deep",
       "color": "#391F13"
@@ -1991,7 +2062,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5.52,
+      "precio": 5.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1EQR1Eh7e-sO5ZNZi9MJMGD4crZkwBZDd=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1999,7 +2070,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 6.9
+      "precio_publico": 6.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-080",
@@ -2009,7 +2081,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.52,
+      "precio": 9.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1t0mmqYaHkZSbD4G4BU0a1nSeKcw876s0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2017,7 +2089,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 11.9
+      "precio_publico": 11.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-081",
@@ -2027,7 +2100,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1mEF0BITFy2lCJZDeDO58RP8sDeZ6x_Ck=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2035,7 +2108,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 23.9
+      "precio_publico": 23.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-082",
@@ -2045,7 +2119,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1j3Nh8cdMaNwyz2V3CfgjWBSf4AsTmTdS=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2054,6 +2128,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "00 Fair",
       "color": "#FFE3CD"
@@ -2066,7 +2141,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1CoZhtsbNl4V1W0zZV-_ltOJ4JQUHlSqj=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2075,6 +2150,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Light",
       "color": "#F2CDB2"
@@ -2087,7 +2163,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1KjcEFsubPLBbcpmbxJpFE4b0m6qQkVhO=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2096,6 +2172,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Light to Medium",
       "color": "#EEC1AF"
@@ -2108,7 +2185,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BIJG9ebQ8sbBIV9oWQb6ppRBxVUVpcv4=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2117,6 +2194,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Medium",
       "color": "#E2AF89"
@@ -2129,7 +2207,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1D8fC_bq957G_x4PLCRIUAhRem1T_PyCi=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2138,6 +2216,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Medium to Tan",
       "color": "#BD8965"
@@ -2150,7 +2229,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RnahmOpPYyQhh1xYzxRhiuFX9V-MiiWz=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2159,6 +2238,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Tan",
       "color": "#A35E43"
@@ -2171,7 +2251,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1CHnsyvDHd9hCT0sG_5BdFNeULihesM1e=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2180,6 +2260,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1002069",
       "variante": "Deep",
       "color": "#391F13"
@@ -2192,7 +2273,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 6.32,
+      "precio": 6.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1HA4DodreXqkDU-ESeXWeSmFOxtrISp6H=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2200,7 +2281,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 7.9
+      "precio_publico": 7.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-090",
@@ -2210,7 +2292,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1qUOvi5Ula1l375tPzjKA6EBov8D_Q1p5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2219,6 +2301,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "01 Country Rose",
       "color": "#FF698A"
@@ -2231,7 +2314,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1fVdPjbFOLOWbIuXub-zTm435eTdWpwfN=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2240,6 +2323,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "04-Plush Blush",
       "color": "#E77079"
@@ -2252,7 +2336,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1MAVYG4riD0E39oB9JpxTrS4loMGI3B6l=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2261,6 +2345,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "05-Rosewood",
       "color": "#BB3D3E"
@@ -2273,7 +2358,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1cMkD7UCNwsZE39iVwIBp9-6Nz-kSKRCZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2282,6 +2367,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "06-Hot Cherry",
       "color": "#8B0307"
@@ -2294,7 +2380,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/19aEdnx5wzuCTkyCL-fyjrvqkd-N6TYax=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2303,6 +2389,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "07-Nude Pink",
       "color": "#EE7878"
@@ -2315,7 +2402,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DiqDHr8fUiAR9bFx5HQkIygY7qygFjI8=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2324,6 +2411,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "08-Spice",
       "color": "#E05B43"
@@ -2336,7 +2424,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1TXLV2xOxc1emokBV1sOZdDSRcnytPI0H=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2345,6 +2433,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "11-Birthday Chic",
       "color": "#FF5D5D"
@@ -2357,7 +2446,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XOkLimhiNMAGCVp2uAtGLkBo-F4YmOVg=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2366,6 +2455,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "12-Paradise Pink",
       "color": "#FC526A"
@@ -2378,7 +2468,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/193BT7WVrFxHd06BSbk4hGbPr9aPXyU-R=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2387,6 +2477,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "13-Ruby",
       "color": "#D90000"
@@ -2399,7 +2490,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1kELRWH1DdySEm3XmtvtQ_jyt6aFkRFcS=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2408,6 +2499,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "15-Hot Tahiti",
       "color": "#FF6653"
@@ -2420,7 +2512,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.6,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1dYmBBrDr6BarOvb0n-UXzZgsfu65sAdG=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2429,6 +2521,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 19.5,
+      "descuento": 35,
       "grupo": "G-1001387",
       "variante": "16 Barely Nude",
       "color": "#FF9576"
@@ -2441,7 +2534,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.32,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1w91wXyfE3RAJeU4Yvs2AhBtowEgXfI-F=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2450,6 +2543,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.9,
+      "descuento": 20,
       "grupo": "G-1001705",
       "variante": "Joy"
     },
@@ -2461,7 +2555,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.32,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1xaBE6ubO2QsEuxRtkWWXnA6TvBNRsAwK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2470,6 +2564,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.9,
+      "descuento": 20,
       "grupo": "G-1001705",
       "variante": "Play"
     },
@@ -2481,7 +2576,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.32,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YlSICBebIABUhKesnHo6KSKy5UnnTwQI=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2490,6 +2585,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.9,
+      "descuento": 20,
       "grupo": "G-1001705",
       "variante": "Flirt"
     },
@@ -2501,7 +2597,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.32,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DKZAzlBEk369MRciQ50IFmAFfIaN-Ajq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2510,6 +2606,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.9,
+      "descuento": 20,
       "grupo": "G-1001705",
       "variante": "Fresh",
       "color": "#B6636B"
@@ -2522,7 +2619,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 11.96,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1JwvqAbpqmJXkVA66QgL6hBH1Sv-2KAax=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2531,6 +2628,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 14.95,
+      "descuento": 20,
       "grupo": "G-1001709",
       "variante": "Wink",
       "color": "#9E7F70"
@@ -2543,7 +2641,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 11.96,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1iOfTVRMVU12FL-vb6V2i5uq7ez_PcqWL=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2552,6 +2650,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 14.95,
+      "descuento": 20,
       "grupo": "G-1001709",
       "variante": "Smize",
       "color": "#896350"
@@ -2564,7 +2663,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 2.76,
+      "precio": 2.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1NOrPJnLhs3PV30fi-MdZd9O0P5Y5FKzO=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2572,7 +2671,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 3.45
+      "precio_publico": 3.45,
+      "descuento": 20
     },
     {
       "codigo": "SB-113",
@@ -2582,7 +2682,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 21.52,
+      "precio": 21.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1vCAJ9rs2mngzgsNtDvCQ-jLoH3nPq3Kj=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2590,7 +2690,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 26.9
+      "precio_publico": 26.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-114",
@@ -2600,7 +2701,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 38,
+      "precio": 37.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/18d7eJObIsTO0q6eNw1Sf0VommXIMQd_C=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2608,7 +2709,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 47.5
+      "precio_publico": 47.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-115",
@@ -2618,7 +2720,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.92,
+      "precio": 15.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1JAvGUnQPaH6rrr6Lf_MnCX1cw0hfqmMa=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2626,7 +2728,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19.9
+      "precio_publico": 19.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-116",
@@ -2636,7 +2739,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1fLosCxLt-tHWIjuvdfQwXm2ygG714PUl=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2644,7 +2747,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 37.5
+      "precio_publico": 37.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-117",
@@ -2654,7 +2758,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YhFxkdTJXV0audkDXtw5Ab6q3lOuMLaT=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2663,6 +2767,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "01 Black",
       "color": "#020001"
@@ -2675,7 +2780,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1uEobZAgc7t7Fy03f-r7-ptXQzH9ZVVHi=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2684,6 +2789,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "02 Deep Brown",
       "color": "#5F4F4D"
@@ -2696,7 +2802,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1xVadTyPeujjnXDZhGxuZ6FT36WKaj9jg=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2705,6 +2811,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "03 Bronze",
       "color": "#724D36"
@@ -2717,7 +2824,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/15DDuwWAWvIA9AzFCRm8n2mQTLIFyy2Qb=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2726,6 +2833,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "05 Nude",
       "color": "#DEC4B7"
@@ -2738,7 +2846,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ndFwot9auoKjvlOpCumVqlyNomoQeiCx=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2747,6 +2855,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "06 Purple",
       "color": "#3A283F"
@@ -2759,7 +2868,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/15wMVlJn9RJFseLu3f6iMHjevlPdj4k0Z=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2768,6 +2877,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 17.5,
+      "descuento": 20,
       "grupo": "G-1001451",
       "variante": "10 Glitz Grey",
       "color": "#485161"
@@ -2780,7 +2890,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 13.2,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1p1Gp6eIT12gBhpGmAzaIjoILur0-5CdX=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2788,7 +2898,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 16.5
+      "precio_publico": 16.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-124",
@@ -2798,7 +2909,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 13.16,
+      "precio": 12.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10MiML9uwX_tqjHM-TlBllqy1SOUCtzn5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2806,7 +2917,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 16.45
+      "precio_publico": 16.45,
+      "descuento": 20
     },
     {
       "codigo": "SB-125",
@@ -2816,7 +2928,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5.52,
+      "precio": 5.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DUkLhcrqPSywLwVC2eu2ltzobQmK9I3i=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2824,7 +2936,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 6.9
+      "precio_publico": 6.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-126",
@@ -2834,7 +2947,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5.52,
+      "precio": 5.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10K8qhcSTDCC1V_hJQPkUkJbXq_i9sied=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2842,7 +2955,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 6.9
+      "precio_publico": 6.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-127",
@@ -2852,7 +2966,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.52,
+      "precio": 9.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1kiqYyNq46xVBdSocGOCjmmwCsBTR_ZkC=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2860,7 +2974,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 11.9
+      "precio_publico": 11.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-128",
@@ -2870,7 +2985,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 26,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1iDvjSNfeRkuPwyGJFG2SFxyZJGsFBKDG=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2878,7 +2993,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 32.5
+      "precio_publico": 32.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-129",
@@ -2888,7 +3004,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1aOuixnH2O4GMxWMWEf8XBSJVBgD38h5D=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2896,7 +3012,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 37.5
+      "precio_publico": 37.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-130",
@@ -2906,7 +3023,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18.32,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1hiiU0BkMBZekJJMovWSa-0Tz6I3c6dej=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2915,6 +3032,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.9,
+      "descuento": 20,
       "grupo": "G-1002603",
       "variante": "Glazed Mocha",
       "color": "#6E3E3C"
@@ -2927,7 +3045,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18.32,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gs4RO2Jz16WkLFWOBRQmXYLV0JCcfEbU=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2936,6 +3054,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.9,
+      "descuento": 20,
       "grupo": "G-1002603",
       "variante": "Frosted Pink",
       "color": "#E17E7C"
@@ -2948,7 +3067,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18.32,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14n8tBsjfcEoDGbZQoRzoLbdLFrGlle1m=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2957,6 +3076,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.9,
+      "descuento": 20,
       "grupo": "G-1002603",
       "variante": "Toasted Cinnamon",
       "color": "#B95040"
@@ -2969,7 +3089,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18.32,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1cEXM_xC1BcB3dZiR2sFUy483T-EgKMNB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2978,6 +3098,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.9,
+      "descuento": 20,
       "grupo": "G-1002603",
       "variante": "Vanilla",
       "color": "#EEDEE1"
@@ -2990,7 +3111,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.52,
+      "precio": 9.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1p5g195l7BU5zLswxLiOZVygJwjpdITev=w900",
       "fecha_ingreso": "2026-11-24",
@@ -2998,7 +3119,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 11.9
+      "precio_publico": 11.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-135",
@@ -3008,7 +3130,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8,
+      "precio": 7.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1AL_FUQSJ4ZIa1FhinlfqV_VAs4Qvy-ZJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3016,7 +3138,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 10
+      "precio_publico": 10,
+      "descuento": 20
     },
     {
       "codigo": "SB-136",
@@ -3026,7 +3149,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1L9p_A5uron-sdSvvgQCOM3Y-ljQYMI2f=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3034,7 +3157,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 29.9
+      "precio_publico": 29.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-138",
@@ -3044,7 +3168,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/189zap6Loru0uE68c2DHH6pHdX9Oqk2K7=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3052,7 +3176,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 23.9
+      "precio_publico": 23.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-139",
@@ -3062,7 +3187,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.84,
+      "precio": 15.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rhmEeOOVj-jW9XHe2-BKCDxsuX4x-bxm=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3070,7 +3195,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19.8
+      "precio_publico": 19.8,
+      "descuento": 20
     },
     {
       "codigo": "SB-141",
@@ -3080,7 +3206,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1KUU50FEFgS7JhcmsdZDhKoftLemDtta2=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3089,6 +3215,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "01 CONFIDENTE",
       "color": "#F73C41"
@@ -3101,7 +3228,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1mrSinjt8rsWSHaOFEpgY01V2f5c4n4wz=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3110,6 +3237,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "02 APASIONADA",
       "color": "#FF4CA5"
@@ -3122,7 +3250,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10LMt2v83g647jDsflLiAKtFl_v6qa2rS=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3131,6 +3259,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "06 ATREVIDA",
       "color": "#622163"
@@ -3143,7 +3272,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1mzBAhsuyYZkFO5OTHzYnWnQ5KsqsUpam=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3152,6 +3281,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "07 EXPRESIVA",
       "color": "#BB7C85"
@@ -3164,7 +3294,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RLVD2zrZluebdqouS6rJ6wlRV4o3S44j=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3173,6 +3303,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "08 CURIOSA",
       "color": "#976262"
@@ -3185,7 +3316,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Who4aQe-pmRArRo-tNJC-by1vtDHxV4j=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3194,6 +3325,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "09 INSPIRADORA",
       "color": "#875261"
@@ -3206,7 +3338,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 18,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/16t-ZdqGpWZ9NC-n9r_FIAfOLQ8Gw7g7M=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3215,6 +3347,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 22.5,
+      "descuento": 20,
       "grupo": "G-1001963",
       "variante": "10 VALIENTE",
       "color": "#966357"
@@ -3227,7 +3360,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.32,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/13TptDpJEePknez1z0IolCywUFUQiyM3W=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3235,7 +3368,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 17.9
+      "precio_publico": 17.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-151",
@@ -3245,7 +3379,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.72,
+      "precio": 8.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1l3AZiTNzHjWhTmF-NYllKcu6as0sxuUd=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3254,6 +3388,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.9,
+      "descuento": 20,
       "grupo": "G-1001462",
       "variante": "02-Deep Red",
       "color": "#AB283C"
@@ -3266,7 +3401,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.72,
+      "precio": 8.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1bTsjCJ3jxC9aM4MRjv1lso2cgJ0co7EP=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3275,6 +3410,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.9,
+      "descuento": 20,
       "grupo": "G-1001462",
       "variante": "04 Nude Pink",
       "color": "#A3696C"
@@ -3287,7 +3423,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.72,
+      "precio": 8.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14QhUQlp76faFanWCP6ctTqqK8ayiXlod=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3296,6 +3432,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.9,
+      "descuento": 20,
       "grupo": "G-1001462",
       "variante": "05 Ash Brown",
       "color": "#5E4844"
@@ -3308,7 +3445,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 20.72,
+      "precio": 20.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14vPK9b_07yc1vBbqlanr0fQswwX8cAdL=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3317,6 +3454,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 25.9,
+      "descuento": 20,
       "grupo": "G-1002515",
       "variante": "Transparent",
       "color": "#FBFAFA"
@@ -3329,7 +3467,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 20.72,
+      "precio": 20.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17uF4hz3e6qSwNxilGm2gVRRQBW3iKAMM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3338,6 +3476,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 25.9,
+      "descuento": 20,
       "grupo": "G-1002515",
       "variante": "Pink",
       "color": "#EF85B6"
@@ -3350,7 +3489,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 20.72,
+      "precio": 20.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YMtM7P2eKyH9yyghCezRJXaT1xnifAaG=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3359,6 +3498,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 25.9,
+      "descuento": 20,
       "grupo": "G-1002515",
       "variante": "Cherry",
       "color": "#7B151B"
@@ -3371,7 +3511,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1quFcjZmFwpAG_1sm4QMGhW76ST-rBKwr=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3380,6 +3520,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Reddish Brown",
       "color": "#5F2A2C"
@@ -3392,7 +3533,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1HiwAkftfTu7vhmcJcms6orax5Pq9FFvq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3401,6 +3542,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Beige Rose",
       "color": "#A64A4A"
@@ -3413,7 +3555,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/15oIiPYotkcmAzGkUarxesFnFrTrrq_Ny=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3422,6 +3564,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Nude Pink",
       "color": "#C46577"
@@ -3434,7 +3577,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1TW77zDyHlI6g43BC-VY4Ss8iStYwaxVL=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3443,6 +3586,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Dusty Rose",
       "color": "#A44E57"
@@ -3455,7 +3599,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1I-G8exNIxZDnIaoRs2mDmCZbQlKY-gKN=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3464,6 +3608,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Cool Brown",
       "color": "#783A35"
@@ -3476,7 +3621,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1dRzcffzJFpzHfn6RjBl7xRW2CtPPzS-9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3485,6 +3630,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Brilliant Red",
       "color": "#7F1826"
@@ -3497,7 +3643,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Z3UXJBtsIc_1h9jRrSrCGTrcVijuRJYi=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3506,6 +3652,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Hot Pink",
       "color": "#C8455D"
@@ -3518,7 +3665,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1FWeVx3ZbU8Clc--JVvi4os_RtTMOvkTk=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3527,6 +3674,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Wild Cherry",
       "color": "#7F172E"
@@ -3539,7 +3687,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/19sqUUnc9q7wWq_O46g_uTeaT4bhJb7c0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3548,6 +3696,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Rose Shadow",
       "color": "#9C1F29"
@@ -3560,7 +3709,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1yMJWsHjg1qbl36tOoHR8qtTxQlpsy_tJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3569,6 +3718,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 35,
       "grupo": "G-1002551",
       "variante": "Spiced Rouge",
       "color": "#BF232A"
@@ -3581,7 +3731,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1NrOjeHCstkNPddmbvDfuunpYoK4h3JWA=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3589,7 +3739,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 29.9
+      "precio_publico": 29.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-168",
@@ -3599,7 +3750,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 7.6,
+      "precio": 7.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/15uKOqqV8D3IhEhb6P71KmwXW02X2f5W5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3607,7 +3758,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 9.5
+      "precio_publico": 9.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-169",
@@ -3617,7 +3769,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1J9040yRHFSFHkL32FjRlAyEertuliKhD=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3626,6 +3778,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "01 Perfect Rose",
       "color": "#8C4B51"
@@ -3638,7 +3791,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1MnUzSO0lE34cukWpfP5q9Pcq6F6xVHhf=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3647,6 +3800,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "02 Au Natural",
       "color": "#BD7D7D"
@@ -3659,7 +3813,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1PWZhWtgXc6QMqCCTMtTXTHDAq-9yNk6a=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3668,6 +3822,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "03 Sunset Breeze",
       "color": "#A65C51"
@@ -3680,7 +3835,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/19DJRNiWBvB2-cGckFvALL2aYwqrmKfHL=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3689,6 +3844,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "04 Retro Rose",
       "color": "#A16C74"
@@ -3701,7 +3857,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/11oFzu2HAU1OUQDP4owAh_jM8FoRFFtqT=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3710,6 +3866,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "05 Super Star",
       "color": "#710304"
@@ -3722,7 +3879,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1GNPeJqzagDRd0FLYE-eEHzSd5ZCU9xkc=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3731,6 +3888,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "06 Red Love",
       "color": "#C41617"
@@ -3743,7 +3901,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14ieGR9isl721CX0AnEzcB3XPN5OlR7Ii=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3752,6 +3910,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "07 Money Maker",
       "color": "#CA8776"
@@ -3764,7 +3923,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1kq25uPTGQ41fZHUvIXxjb7EfIGKmBYJQ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3773,6 +3932,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "08 Rose Dream",
       "color": "#C1585F"
@@ -3785,7 +3945,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/191D4gkg3eplvsJofn8OXE8GsosLtvBUX=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3794,6 +3954,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "09 Wild Rose",
       "color": "#AA4146"
@@ -3806,7 +3967,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17tT4bg-EKw5n-kC-Z8EDz_jzkSlcw-uD=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3815,6 +3976,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "10 Nude Essence",
       "color": "#A3645D"
@@ -3827,7 +3989,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1u3b7uSVqq1nFgdFDNYYF5zSqENvkozQ6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3836,6 +3998,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "11 Mauve Pink",
       "color": "#C16C71"
@@ -3848,7 +4011,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1B2LgSScbuGsLcxpnvDWnsopkCzWFqv_l=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3857,6 +4020,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "12 Cool Beige",
       "color": "#CE8477"
@@ -3869,7 +4033,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1IO51DJB8s0ev3I5NZUYSF55MU-qdU8SR=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3878,6 +4042,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "13 Cool Girl",
       "color": "#9E6261"
@@ -3890,7 +4055,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1syzrBjPD9B2V6to6kM7dr9g-iQ6JP4VA=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3899,6 +4064,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "14 Brave",
       "color": "#B1797A"
@@ -3911,7 +4077,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RiUt9kY5ICf7MgsbF3vWfGeoXWapsNbT=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3920,6 +4086,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "15 Baby Doll",
       "color": "#D27A96"
@@ -3932,7 +4099,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1c8nkr-ywx-QcISnk4jMYR6paQcC9-4p6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3941,6 +4108,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "19 Tongue Tied",
       "color": "#7E4D58"
@@ -3953,7 +4121,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/119YomQhN0eL-uRqmVM4K8WivbNc7NppM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3962,6 +4130,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "17 First Kiss",
       "color": "#9F5E7D"
@@ -3974,7 +4143,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1tcPql5J2KPBAYwS-B-ArtQ5Z_b41NN5d=w900",
       "fecha_ingreso": "2026-11-24",
@@ -3983,6 +4152,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "18 Burn Me Once",
       "color": "#8B4B49"
@@ -3995,7 +4165,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XOx2QjKnmuUlHnwIwfKTBnbZ7X_FvqeE=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4004,6 +4174,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001409",
       "variante": "20 Deep Love",
       "color": "#734A3A"
@@ -4016,7 +4187,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1X-iP7qFXWY5ORfbrieOQZfbnPQLRkS8j=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4025,6 +4196,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001801",
       "variante": "Chocolate",
       "color": "#6D3B39"
@@ -4037,7 +4209,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1M2CKoHYkutRUncs2NH3EX8V0J6YRRGlk=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4046,6 +4218,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001801",
       "variante": "Warm Brick",
       "color": "#B2311A"
@@ -4058,7 +4231,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gEok8rMLCm1ESOWyF8jIOpPFd2yheXT9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4067,6 +4240,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001801",
       "variante": "Autumn Vibes",
       "color": "#904F42"
@@ -4079,7 +4253,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1n1_3ywxpvDbuK-VJ6FH1-8ZlzEYgRgWW=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4088,6 +4262,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 21.9,
+      "descuento": 20,
       "grupo": "G-1001801",
       "variante": "Ruby",
       "color": "#C02A2B"
@@ -4100,7 +4275,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 17.52,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BwTKjpo-Bb3Nm92tNjGbf-YcsWQxHvVe=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4108,7 +4283,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 21.9
+      "precio_publico": 21.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-197",
@@ -4118,7 +4294,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.76,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1g8z867jG2KcQrUaYKB7PwAdNw0_6j8RM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4127,6 +4303,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.95,
+      "descuento": 20,
       "grupo": "G-1001922",
       "variante": "Determined",
       "color": "#925B58"
@@ -4139,7 +4316,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.76,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ZLC2eZp2-QsyxnfDaygzQYULbZ453WeE=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4148,6 +4325,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.95,
+      "descuento": 20,
       "grupo": "G-1001922",
       "variante": "Venus",
       "color": "#A1756E"
@@ -4160,7 +4338,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.76,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ErLIN0-tZ8stIV8sFVZjP8pQviuggD2b=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4169,6 +4347,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.95,
+      "descuento": 20,
       "grupo": "G-1001922",
       "variante": "Nova",
       "color": "#8F6053"
@@ -4181,7 +4360,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 8.76,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1wiXyDDW1AgYbw7eE_HReT1TNkCTpMjop=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4190,6 +4369,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 10.95,
+      "descuento": 20,
       "grupo": "G-1001922",
       "variante": "Terra",
       "color": "#A1756E"
@@ -4202,7 +4382,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1AFTmUlspoiLyBuEMzI7Y0YEBdN885MEe=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4211,6 +4391,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 29.9,
+      "descuento": 35,
       "grupo": "G-1001536",
       "variante": "Pinky Cloud",
       "color": "#D66F70"
@@ -4223,7 +4404,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1aXLEdTRxnza89_yBrwFhkJUXBuYtruZo=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4232,6 +4413,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 29.9,
+      "descuento": 35,
       "grupo": "G-1001536",
       "variante": "Fame",
       "color": "#B35263"
@@ -4244,7 +4426,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1EdefEjOQ6ITPI_u5wvl5cRcg95Yv95kM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4253,6 +4435,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 29.9,
+      "descuento": 35,
       "grupo": "G-1001536",
       "variante": "Praise",
       "color": "#FF7578"
@@ -4265,7 +4448,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.92,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1xEKFggGjdl_0o-nJrZ0ijPucYxBqQzZZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4273,7 +4456,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 29.9
+      "precio_publico": 29.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-212",
@@ -4283,7 +4467,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 71.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1jZIe3oagqgqu3ylna2q29U3u2I31NCS_=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4291,7 +4475,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 90
+      "precio_publico": 90,
+      "descuento": 20
     },
     {
       "codigo": "SB-213",
@@ -4301,7 +4486,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1i-IMOso38PARIeHSb8DmR_VsA9gImSom=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4310,6 +4495,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Lost Lagoon"
     },
@@ -4321,7 +4507,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1PhY3gPtujNEyQxabvHk8XdNUzqDX5oO1=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4330,6 +4516,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Violet Skies"
     },
@@ -4341,7 +4528,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XnhX9m1Dcre1knSw55CEWFu44hH7bm-G=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4350,6 +4537,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Velvet Dusk"
     },
@@ -4361,7 +4549,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/110XMuNnrLA6zcxaJUXpqORnqplxIVN7u=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4370,6 +4558,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Mirage"
     },
@@ -4381,7 +4570,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1_FqQ-0TKXwGvMNkUKJquOENumD9Neb0P=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4390,6 +4579,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Desert Sands"
     },
@@ -4401,7 +4591,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1UMquPjj49oeq62SxZnkXaFXsdLcijdCZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4410,6 +4600,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 37.5,
+      "descuento": 20,
       "grupo": "G-1002352",
       "variante": "Rose Dune"
     },
@@ -4421,7 +4612,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1mAtBcUeA9-BHj3JgMcv-A3784Vpmuowd=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4429,7 +4620,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 37.5
+      "precio_publico": 37.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-220",
@@ -4439,7 +4631,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1K2_anjU30n5a9y7PNnAhgbV7jqTlJBiI=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4448,6 +4640,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "01 Like Candy",
       "color": "#EA819C"
@@ -4460,7 +4653,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1NeN9uJh-8Ck1qnKSAnJvKtaiSiXtF8Rt=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4469,6 +4662,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "02 Goddess Glow",
       "color": "#ED9C9E"
@@ -4481,7 +4675,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/188UT-VkxBTDr-KfwsGx8hcpeMB8vT5bI=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4490,6 +4684,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "03 Cool Queen",
       "color": "#C0766F"
@@ -4502,7 +4697,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1OV-oiu17WNVZ29b-jmx5Ozt7JLxuMCG0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4511,6 +4706,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "04 Pink Lily",
       "color": "#C08A92"
@@ -4523,7 +4719,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/16Pc4wwD2uPYvl9ssxpi4tzVm8mzGlSAQ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4532,6 +4728,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "06 Bellini",
       "color": "#D36D54"
@@ -4544,7 +4741,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 22,
+      "precio": 17.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1a67njcDl0KTvzZIqNeKY8MIYujLqMNzj=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4553,6 +4750,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 27.5,
+      "descuento": 35,
       "grupo": "G-1001433",
       "variante": "07 Peach Perfect",
       "color": "#DD8E65"
@@ -4565,7 +4763,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 4.52,
+      "precio": 4.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17Z5G54h8zr7iyWMkT80bIfyvOpW24N5X=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4574,6 +4772,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 5.65,
+      "descuento": 20,
       "grupo": "G-1002598",
       "variante": "Soft Brown",
       "color": "#755E4D"
@@ -4586,7 +4785,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 4.52,
+      "precio": 4.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1r2qS6uXW8BioMr0HKCfD0tBMeRY5zvdy=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4595,6 +4794,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 5.65,
+      "descuento": 20,
       "grupo": "G-1002598",
       "variante": "Medium Brown",
       "color": "#5E4A43"
@@ -4607,7 +4807,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 4.52,
+      "precio": 4.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1OaGrVvQLihMtfg8K4t80rFRcmwn33Ojg=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4616,6 +4816,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 5.65,
+      "descuento": 20,
       "grupo": "G-1002598",
       "variante": "Deep Brown",
       "color": "#43312D"
@@ -4628,7 +4829,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1w8yq2Jo1ebnzDkViYkfp6YkmY7VNgZMB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4637,6 +4838,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Red Flag",
       "color": "#8C0B31"
@@ -4649,7 +4851,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RlqE-EcyZqBgfbc_tiTvak_2Ax8G0rSo=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4658,6 +4860,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Pixel Pink",
       "color": "#8D214E"
@@ -4670,7 +4873,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ySLy3rJce8u9gYAP0X9oh3XRGYcYh7l6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4679,6 +4882,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Hey You",
       "color": "#E089B9"
@@ -4691,7 +4895,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1MNoQXn631vJqM3Jr0vcHihDQennhITr9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4700,6 +4904,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Next Level",
       "color": "#974E42"
@@ -4712,7 +4917,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1t_bJfyu3AEteUgF__oJUeIS1aT1fOp4B=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4721,6 +4926,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Lowkey",
       "color": "#751A1D"
@@ -4733,7 +4939,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14.8,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/18Oce6OpsYwa_NZ1faxAirEgjMuAlOfN1=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4742,6 +4948,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 18.5,
+      "descuento": 20,
       "grupo": "G-1002590",
       "variante": "Viral Rush",
       "color": "#962835"
@@ -4754,7 +4961,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1lvZZBmqZDkriCoRGk-jnT9sh9pVTi43K=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4762,7 +4969,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 37.5
+      "precio_publico": 37.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-236",
@@ -4772,7 +4980,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1CIPYawfLwmr3FPwUU5R0Y1K5PnXIzVko=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4781,6 +4989,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1002548",
       "variante": "Cranberry Pie",
       "color": "#722D49"
@@ -4793,7 +5002,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1jY8ioo_35OjDssgzLa7xrY5fWsGXJ36u=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4802,6 +5011,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1002548",
       "variante": "Cherry After Dark",
       "color": "#90363C"
@@ -4814,7 +5024,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24.4,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1cp7-r08jDG6G8T-kBS8cddJQ7vjysKg6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4822,7 +5032,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 30.5
+      "precio_publico": 30.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-239",
@@ -4832,7 +5043,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5.52,
+      "precio": 5.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1PtQYaR3u5n-XdAEM4evyM2QSWK7AbItM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4840,7 +5051,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 6.9
+      "precio_publico": 6.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-240",
@@ -4850,7 +5062,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 27.92,
+      "precio": 27.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1mOn_BhF0jdAdafTgsBoDdksXiKpyf2D9=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4858,7 +5070,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 34.9
+      "precio_publico": 34.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-241",
@@ -4868,7 +5081,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Jg1Mg-UfzaWSihuPd0_CQ1hPr2jfsxcO=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4877,6 +5090,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "01 Fiery",
       "color": "#E71827"
@@ -4889,7 +5103,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1oZfOsBKaQNz5c7-qxCvkg0yuYwNFHTq3=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4898,6 +5112,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "02 Flirt",
       "color": "#A64D70"
@@ -4910,7 +5125,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1oLtLXDdCgTnB7s2DSkxqfb6ge5_64zaW=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4919,6 +5134,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "03 Lover",
       "color": "#F2665B"
@@ -4931,7 +5147,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1B-xdV-odIVgg2IQyam_zeQJgCKMdcnKj=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4940,6 +5156,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "05 Merry Berry",
       "color": "#A60625"
@@ -4952,7 +5169,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10CoFLRcbHZJwfvGJgBetjkPX9vkB_Trl=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4961,6 +5178,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "00 Glass",
       "color": "#E5E5E5"
@@ -4973,7 +5191,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1evtMCSVDgm_-Odj1avyHRuM8NPz4XEzp=w900",
       "fecha_ingreso": "2026-11-24",
@@ -4982,6 +5200,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "06 Brown Sugar",
       "color": "#915A59"
@@ -4994,7 +5213,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.12,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XBKRirbAwXsFpuXbqgRaWcb79i7mxmb0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5003,6 +5222,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 28.9,
+      "descuento": 20,
       "grupo": "G-1001497",
       "variante": "07 Divine Rose",
       "color": "#8E3B59"
@@ -5015,7 +5235,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DoMvxRG6jdUv9FRAJxrymg3fgltn3mH2=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5024,6 +5244,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Crystal Sparkle",
       "color": "#CFC7C3"
@@ -5036,7 +5257,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ooqCN_sg4S9QNaB3yDAD8OJTNAUQjOsJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5045,6 +5266,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Pink Tourmaline",
       "color": "#CC6260"
@@ -5057,7 +5279,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gr2R9y8ELXY5SRaF6BMLpJhSuzptXGW1=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5066,6 +5288,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Lithium Quartz",
       "color": "#9B4D3A"
@@ -5078,7 +5301,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rVatMlZvG51Kn9NNzS5b28WhzInJ4avV=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5087,6 +5310,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Satin Pink",
       "color": "#B4555C"
@@ -5099,7 +5323,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1HE6R-YTQAxafVwZr4upPFOKwuxS0N35j=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5108,6 +5332,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Glazed 07",
       "color": "#FFADA4"
@@ -5120,7 +5345,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.12,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1fWoKozdXVWvLjEtEC4j2_L_0V936cI8w=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5129,6 +5354,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 23.9,
+      "descuento": 20,
       "grupo": "G-1001405",
       "variante": "Rouge Allure 08",
       "color": "#E0252E"
@@ -5141,7 +5367,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.92,
+      "precio": 19.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1phdgV-EaPMgmKpq7_eIwkW_-Z3uR-24u=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5149,7 +5375,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24.9
+      "precio_publico": 24.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-256",
@@ -5159,7 +5386,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1kMFPVCwnq9isjA0eFmtJ3IV1qlnqA6H5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5168,6 +5395,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "00 Alabaster",
       "color": "#FFF1E4"
@@ -5180,7 +5408,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1TjeEBvBOwC_qhxZ7kmAKP37nO9j1M8fc=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5189,6 +5417,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "01 Cool Ivory",
       "color": "#F9D4CB"
@@ -5201,7 +5430,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1N9CG9hrkag7vakvVnnnVBYILUh64p93m=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5210,6 +5439,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "02 Ivory",
       "color": "#F4CFC2"
@@ -5222,7 +5452,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1LAvbv092xCg6QrXe7CNMCO0L21RVu0F6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5231,6 +5461,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "03 Medium Ivory",
       "color": "#EDC2B1"
@@ -5243,7 +5474,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/13oLgymN_1Xr_9wPocVGmeBcvsWPZRM7I=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5252,6 +5483,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "04 Ecru",
       "color": "#FFDED3"
@@ -5264,7 +5496,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1J7EXwOiAODeQUzOHFNfVQixxc2GGPKe6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5273,6 +5505,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "05 Porcelain",
       "color": "#DEB9A6"
@@ -5285,7 +5518,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1jdFzRols3ccoPxQDeIK6wSG1MjqML4XJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5294,6 +5527,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "06 Cashmere",
       "color": "#D0A899"
@@ -5306,7 +5540,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1MSTiP2V6Ep290NfEWKNXVuDQ988NAudU=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5315,6 +5549,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "07 Sand",
       "color": "#EBCDB4"
@@ -5327,7 +5562,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1YgNT1544E6JvEUk1-KWkQQiTjlnrfPWh=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5336,6 +5571,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "08 Warm Linen",
       "color": "#E6B18F"
@@ -5348,7 +5584,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1S0hxfcrvsCYq9El9xTe93uFKlO0HYNg8=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5357,6 +5593,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "10 Buff",
       "color": "#CC9E82"
@@ -5369,7 +5606,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1yHd1C2KrJazCBrz2nFzFK6Qo7hEBfsnl=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5378,6 +5615,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "11 Cashew",
       "color": "#E3BDA4"
@@ -5390,7 +5628,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1M8dKWtM7VDcFXhyuh8nT0j9ado3cFe6r=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5399,6 +5637,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "12 Natural Beige",
       "color": "#C59379"
@@ -5411,7 +5650,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1jiEBYkjntPHcAJnefPrrYP032DQsIp6W=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5420,6 +5659,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "13 Cappuccino",
       "color": "#D38D63"
@@ -5432,7 +5672,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1HC_IZuoj51kG6if8QhdmyBEmZZm8QZS3=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5441,6 +5681,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "14 Wheat",
       "color": "#CA966B"
@@ -5453,7 +5694,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1srwCgJD2LTv-1zOuqsjU2GELD5hTV9Ug=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5462,6 +5703,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "15 Medium Beige",
       "color": "#C09275"
@@ -5474,7 +5716,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1wj_tzFc6xhdtC9cSkMLb-pwsCvngIe_k=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5483,6 +5725,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "16 Tawny",
       "color": "#DFB098"
@@ -5495,7 +5738,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Oki30R3kJzTUebVrKi3CJWXh_hMNqRzZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5504,6 +5747,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "18 Toffee",
       "color": "#B67F5C"
@@ -5516,7 +5760,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DiumjLsGTanNZtGt_lztO67ugQMz_1B3=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5525,6 +5769,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "19 Mocha",
       "color": "#A07155"
@@ -5537,7 +5782,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Y6EYE496-CBCxwS8V7vkHQWo_QOPnuRh=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5546,6 +5791,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "20 Latte",
       "color": "#A07155"
@@ -5558,7 +5804,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1iokvgNfPmDYBcPlSSmVxiChAqRGzr0KA=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5567,6 +5813,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "21 Chestnut",
       "color": "#9F7155"
@@ -5579,7 +5826,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1qEStsTQmky4VwPhxa7LywqEPKTOsWnMZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5588,6 +5835,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "22 Truffle",
       "color": "#724B3E"
@@ -5600,7 +5848,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 31.92,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1T99Wj8IbFHxKVuH502sRgYvkFTRTM81y=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5609,6 +5857,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 39.9,
+      "descuento": 20,
       "grupo": "G-1002023",
       "variante": "23 Java",
       "color": "#583225"
@@ -5621,7 +5870,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.92,
+      "precio": 19.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1kFPJULpPIinry0pR2UbZTRMUgUrKm0--=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5629,7 +5878,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24.9
+      "precio_publico": 24.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-281",
@@ -5639,7 +5889,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 5,
+      "precio": 4.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1SzMhx6RjvbsXimXtBAMMPy2szQhyL1jK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5647,7 +5897,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 6.25
+      "precio_publico": 6.25,
+      "descuento": 20
     },
     {
       "codigo": "SB-282",
@@ -5657,7 +5908,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.16,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/16S-ilqto82M9plXw028w0CeoADUP4LsG=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5666,6 +5917,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 11.45,
+      "descuento": 20,
       "grupo": "G-1001375",
       "variante": "Concealer N01",
       "color": "#F2CEB0"
@@ -5678,7 +5930,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.16,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RO6In0S-uTkf7Ex-agC9s47LUcYDVJDK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5687,6 +5939,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 11.45,
+      "descuento": 20,
       "grupo": "G-1001375",
       "variante": "Concealer 12",
       "color": "#F8B999"
@@ -5699,7 +5952,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 9.16,
+      "precio": 8.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1n-MEerjo-27_5y8cHgonddUPzb1EuSLk=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5708,6 +5961,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 11.45,
+      "descuento": 20,
       "grupo": "G-1001375",
       "variante": "Concealer 15",
       "color": "#492C18"
@@ -5720,7 +5974,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 1.59,
+      "precio": 1.49,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1txBq3CxvujIyzc7QdRndrZXEfsgfHo2-=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5728,7 +5982,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 1.99
+      "precio_publico": 1.99,
+      "descuento": 20
     },
     {
       "codigo": "SB-287",
@@ -5738,7 +5993,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 11.12,
+      "precio": 10.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ya8A5-wpOz1l4gxF-uulpGVwF-DptZw2=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5746,7 +6001,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 13.9
+      "precio_publico": 13.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-288",
@@ -5756,7 +6012,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 43.2,
+      "precio": 42.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1raG8CZ7Tna6Q2-n2lX5SHZg-gIVSPemv=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5764,7 +6020,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 54
+      "precio_publico": 54,
+      "descuento": 20
     },
     {
       "codigo": "SB-289",
@@ -5774,7 +6031,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1C4Bb-xllPTfnvmX_AOxRxDI5AkAPvktg=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5782,7 +6039,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 65
+      "precio_publico": 65,
+      "descuento": 20
     },
     {
       "codigo": "SB-290",
@@ -5792,7 +6050,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 35.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1VZEEN8hwCjb37JDShqllxdH3tsTKzU0E=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5800,7 +6058,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 20
     },
     {
       "codigo": "SB-291",
@@ -5810,7 +6069,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 35.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1ZvnMc1TM8Rms_cfsXymKHBQRUqBLQWAX=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5818,7 +6077,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 20
     },
     {
       "codigo": "SB-292",
@@ -5828,7 +6088,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 30,
+      "precio": 29.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1t2UDrmn-JgLvVRISZarlvnfgcY5eW2u7=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5836,7 +6096,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 37.5
+      "precio_publico": 37.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-293",
@@ -5846,7 +6107,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/173h1AqbXSThHDR0GVrKmvBQWvG1DL0tV=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5854,7 +6115,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 65
+      "precio_publico": 65,
+      "descuento": 20
     },
     {
       "codigo": "SB-294",
@@ -5864,7 +6126,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 28.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/14CbY3DDV8NumvRvYgXJEv3CJx-Dh3kF6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5872,7 +6134,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 35
     },
     {
       "codigo": "SB-295",
@@ -5882,7 +6145,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 1.8,
+      "precio": 1.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XzXoSklRKN02LVcLUORxkIJ4O8WNFHdq=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5890,7 +6153,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 2.25
+      "precio_publico": 2.25,
+      "descuento": 20
     },
     {
       "codigo": "SB-296",
@@ -5900,7 +6164,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 56,
+      "precio": 55.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1GwFe63GOlzGzbF9qFdMU0ZaZpbbI_H2e=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5908,7 +6172,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 70
+      "precio_publico": 70,
+      "descuento": 20
     },
     {
       "codigo": "SB-297",
@@ -5918,7 +6183,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 25.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1xkf784kL7H0r7vGphfE_o2dmu-LpSwI5=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5926,7 +6191,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 35
     },
     {
       "codigo": "SB-298",
@@ -5936,7 +6202,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 28,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1rHXeXSJTp07JGpsy_S4lLWh3yAVQrl7R=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5944,7 +6210,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 35
+      "precio_publico": 35,
+      "descuento": 35
     },
     {
       "codigo": "SB-299",
@@ -5954,7 +6221,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 13.92,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1H2ZIZXcuBNQzb0200cWTQmUZMw9dlSwA=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5962,7 +6229,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 17.4
+      "precio_publico": 17.4,
+      "descuento": 20
     },
     {
       "codigo": "SB-300",
@@ -5972,7 +6240,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 13.92,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1VhU7eLJbo5BN1IfA3kft_YBA1OVfaGpc=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5980,7 +6248,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 17.4
+      "precio_publico": 17.4,
+      "descuento": 20
     },
     {
       "codigo": "SB-302",
@@ -5990,7 +6259,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1UTx4bcEukgl-yMZb3NwdmLS0re2h3LTK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -5999,6 +6268,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1002877",
       "variante": "Light",
       "color": "#B18063"
@@ -6011,7 +6281,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 24,
+      "precio": 23.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1aJSWdLP5EbQSQKjkRLkho0YP_jMYtrc6=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6020,6 +6290,7 @@
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
       "precio_publico": 30,
+      "descuento": 20,
       "grupo": "G-1002877",
       "variante": "Dark",
       "color": "#97644A"
@@ -6032,7 +6303,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.2,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1cgyCqmM6E_YJBAdj2oOGkXN_J4mkKqXY=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6040,7 +6311,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 29
+      "precio_publico": 29,
+      "descuento": 20
     },
     {
       "codigo": "SB-305",
@@ -6050,7 +6322,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 11.6,
+      "precio": 11.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/10A-xrbb4CaJnSgLLD7dHCDqZOubX8BzM=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6058,7 +6330,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 14.5
+      "precio_publico": 14.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-306",
@@ -6068,7 +6341,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.2,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1lCde_eBQoDNxlqS1EWiYyiTZnV2Jrqox=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6076,7 +6349,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19
+      "precio_publico": 19,
+      "descuento": 20
     },
     {
       "codigo": "SB-307",
@@ -6086,7 +6360,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.2,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1eDERtbXqPy7WpNUMZt0BbKgMnOplxpMe=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6094,7 +6368,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19
+      "precio_publico": 19,
+      "descuento": 20
     },
     {
       "codigo": "SB-308",
@@ -6104,7 +6379,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 32,
+      "precio": 31.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1jTiK1PzeHlq2ZGSvvrKnL-8dnGCxlo-_=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6112,7 +6387,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 40
+      "precio_publico": 40,
+      "descuento": 20
     },
     {
       "codigo": "SB-309",
@@ -6122,7 +6398,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 34.32,
+      "precio": 33.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1NNqEwFNtLZHKMevDvfqPUx73vYrc_IL3=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6130,7 +6406,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 42.9
+      "precio_publico": 42.9,
+      "descuento": 20
     },
     {
       "codigo": "SB-310",
@@ -6140,7 +6417,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.2,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/13zXZ70cvW4hKtMAsbs6zQrFrtSasJcNc=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6148,7 +6425,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24
+      "precio_publico": 24,
+      "descuento": 20
     },
     {
       "codigo": "SB-311",
@@ -6158,7 +6436,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.2,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BrQEtFOPilcb-VPgT1_xTkn3d_bOhpOt=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6166,7 +6444,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24
+      "precio_publico": 24,
+      "descuento": 20
     },
     {
       "codigo": "SB-312",
@@ -6176,7 +6455,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 36,
+      "precio": 28.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1DqZAZ_hQ0-apY8jonXdz6pUHecG2ynFj=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6184,7 +6463,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 45
+      "precio_publico": 45,
+      "descuento": 35
     },
     {
       "codigo": "SB-313",
@@ -6194,7 +6474,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.2,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1M7j1Xn3KnzsnJp87s05P43U8eKrnwVJ0=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6202,7 +6482,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24
+      "precio_publico": 24,
+      "descuento": 20
     },
     {
       "codigo": "SB-315",
@@ -6212,7 +6493,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 64,
+      "precio": 63.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1aCYasyX85mHnXLbyVWRu9RLVeMxgRpxJ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6220,7 +6501,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 80
+      "precio_publico": 80,
+      "descuento": 20
     },
     {
       "codigo": "SB-316",
@@ -6230,7 +6512,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1bBCHA987kqfzdSF-I-2VExbob380JhfK=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6238,7 +6520,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 50
+      "precio_publico": 50,
+      "descuento": 20
     },
     {
       "codigo": "SB-317",
@@ -6248,7 +6531,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 64,
+      "precio": 63.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1thCFQyHRPIk4qgkyTNdraFWRj9Edm2Cf=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6256,7 +6539,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 80
+      "precio_publico": 80,
+      "descuento": 20
     },
     {
       "codigo": "SB-318",
@@ -6266,7 +6550,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 44,
+      "precio": 43.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/134h7ZrxaQTROqNx2uqhC246MzHUtelHA=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6274,7 +6558,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 55
+      "precio_publico": 55,
+      "descuento": 20
     },
     {
       "codigo": "SB-319",
@@ -6284,7 +6569,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 64,
+      "precio": 63.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1RC7idATmMkhgokg4r9EY944An-igp_jr=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6292,7 +6577,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 80
+      "precio_publico": 80,
+      "descuento": 20
     },
     {
       "codigo": "SB-320",
@@ -6302,7 +6588,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 40,
+      "precio": 39.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1pkgWOLfXiyjs8qyNPwDJedV2QWT69p8M=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6310,7 +6596,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 50
+      "precio_publico": 50,
+      "descuento": 20
     },
     {
       "codigo": "SB-321",
@@ -6320,7 +6607,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 72,
+      "precio": 71.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1Eg4cZMZLljx1UnkdgnXt7qhUmJRrkJpZ=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6328,7 +6615,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 90
+      "precio_publico": 90,
+      "descuento": 20
     },
     {
       "codigo": "SB-323",
@@ -6338,7 +6626,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.2,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/17O7Lf3av8BtyyzIjCTWcbrWJ9HNfbu0D=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6346,7 +6634,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24
+      "precio_publico": 24,
+      "descuento": 20
     },
     {
       "codigo": "SB-324",
@@ -6356,7 +6645,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 23.2,
+      "precio": 22.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1UTQtiWRWyJ7F5yDz9qKlx76ObBql5tXi=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6364,7 +6653,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 29
+      "precio_publico": 29,
+      "descuento": 20
     },
     {
       "codigo": "SB-325",
@@ -6374,7 +6664,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 14,
+      "precio": 13.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1bHm4yXihxnE13uqA10G2XtmJTWq_aRwu=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6382,7 +6672,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 17.5
+      "precio_publico": 17.5,
+      "descuento": 20
     },
     {
       "codigo": "SB-326",
@@ -6392,7 +6683,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.2,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1fV8DzaW4zSrD51_bxfjgHeBIBiXvCvzF=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6400,7 +6691,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19
+      "precio_publico": 19,
+      "descuento": 20
     },
     {
       "codigo": "SB-327",
@@ -6410,7 +6702,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 15.2,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1IQL_6p2OS3CMeMJwUWXub5EDAFLMxMZE=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6418,7 +6710,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 19
+      "precio_publico": 19,
+      "descuento": 20
     },
     {
       "codigo": "SB-329",
@@ -6428,7 +6721,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 19.2,
+      "precio": 18.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1XfJj8HqgJyhb0T946mvuwNWViLH3jkMD=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6436,7 +6729,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 24
+      "precio_publico": 24,
+      "descuento": 20
     },
     {
       "codigo": "SB-330",
@@ -6446,7 +6740,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 1.8,
+      "precio": 1.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1EGtEM1yey7j_gozoz3pmlVCVd_yBReCB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6454,7 +6748,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 2.25
+      "precio_publico": 2.25,
+      "descuento": 20
     },
     {
       "codigo": "SB-331",
@@ -6464,7 +6759,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 52,
+      "precio": 51.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/13gUOnM6hAj2klVN6uqUIF2bH7p2FeY53=w900",
       "fecha_ingreso": "2026-11-24",
@@ -6472,7 +6767,8 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 65
+      "precio_publico": 65,
+      "descuento": 20
     }
   ],
   "farmasi": {

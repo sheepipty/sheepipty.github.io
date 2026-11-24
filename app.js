@@ -33,7 +33,7 @@ function guardarEntrega(){try{localStorage.setItem(CLAVE_ENTREGA,JSON.stringify(
 function normalizar(d){
   if(!d||d.ok!==true||!Array.isArray(d.articulos)||!d.combos)throw Error('El catálogo no está disponible.');
   for(const k of [3,5])if(!Number.isFinite(Number(d.combos[k]))||Number(d.combos[k])<0)throw Error('Los combos no son válidos.');
-  const campos=['codigo','nombre','categoria','descripcion','marca','talla','estado','observacion','precio','combo','foto','fecha_ingreso','linea','modalidad','existencia','tiempo_entrega','maximo'];
+  const campos=['codigo','nombre','descuento','categoria','descripcion','marca','talla','estado','observacion','precio','combo','foto','fecha_ingreso','linea','modalidad','existencia','tiempo_entrega','maximo'];
   const vistos=new Set(), articulos=[];
   for(const a of d.articulos){
     if(!a||!logica.esCodigo(a.codigo)||vistos.has(a.codigo)||!Number.isFinite(a.precio)||a.precio<0||Object.hasOwn(a,'existencia')&&(!Number.isInteger(a.existencia)||a.existencia<2)||logica.esEncargo(a)&&(!Number.isInteger(a.maximo)||a.maximo<1||a.maximo>30))continue;
@@ -184,7 +184,8 @@ function elegida(variantes){return variantes.find(a=>a.codigo===seleccionadas.ge
 function precios(a){
   const p=nodo('p','precio');
   if(esSalud(a)&&Number.isFinite(a.precio_publico)&&a.precio_publico>a.precio){
-    const pct=datos.farmasi?.DESCUENTO_SHEEPI??Math.round((1-a.precio/a.precio_publico)*100);
+    /* D060: la etiqueta sale del descuento del producto; sin él, del de Config. */
+    const pct=Number.isFinite(a.descuento)?a.descuento:datos.farmasi?.DESCUENTO_SHEEPI??Math.round((1-a.precio/a.precio_publico)*100);
     const antes=nodo('del','precio-publico',dinero(a.precio_publico));antes.setAttribute('aria-label','Precio público '+dinero(a.precio_publico));
     p.append(antes,nodo('span','descuento','-'+pct+' %'),nodo('strong','',dinero(a.precio)));
   }else p.append(nodo('strong','',dinero(a.precio)));

@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:a9d2b7faa0870351435375639117eb30d2a4b5a60f1bf87b0698f17691fb5781
+// GENERADO desde compartido/logica.js — no editar — sha256:6e406a68d7e9ef39ffac01eccdb339f572fb3b6b35442d85a07d19da9edf9a7d
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -350,6 +350,27 @@
     exigir(c>0&&Number.isFinite(p)&&p>=0&&p<100,'El precio público y el descuento no son válidos.');
     return Math.round((c*(100-p)+Number.EPSILON*c)/100)/100;
   }
+  /* D061 (2026-11-24): precio de venta terminado en .99; bajo $10, en .49 o .99. Nunca bajo el costo ni sobre
+   * el precio público; si ningún final cabe entre ambos, se deja el precio acotado sin redondear. */
+  function redondeoVenta(precio,{costo=0,publico=Infinity}={}) {
+    const c=centavos(precio),min=centavos(costo),max=publico===Infinity?Infinity:centavos(publico);
+    exigir(c>0&&min<=max,'El precio, el costo o el precio público no son válidos.');
+    const paso=c<1000?50:100,cand=k=>k*paso-1;
+    let k=Math.round((c+1)/paso),r=cand(k);
+    while(r<min&&cand(k+1)<=max){k++;r=cand(k);}
+    while(r>max&&cand(k-1)>=min){k--;r=cand(k);}
+    if(r<min||r>max||r<=0) r=Math.min(Math.max(c,min),max);
+    return r/100;
+  }
+  /* D060: descuento por producto ("20 %", "35", 35) entre 0 y 50; vacío → porDefecto. */
+  function porcentajeFarmasi(valor,porDefecto=20) {
+    const t=String(valor??'').replace('%','').trim();
+    return descuentoFarmasi(t===''?undefined:t,porDefecto);
+  }
+  /* Precio Sheepi de venta (D056/D060/D061): público menos el descuento, redondeado; el costo es el 50 % del público. */
+  function precioVentaFarmasi(publico,pct) {
+    return redondeoVenta(precioSheepi(publico,pct),{costo:precioSheepi(publico,50),publico:centavos(publico)/100});
+  }
   function anticipoFarmasi(total,solicitado) {
     const t=centavos(total),a=solicitado===undefined?t:centavos(solicitado);
     exigir(t>0&&a===t,'El anticipo Farmasi debe ser el total del encargo.');return a/100;
@@ -362,7 +383,9 @@
     exigir(['Sí','Agotado'].includes(f.disponible),'Disponible debe ser Sí o Agotado.');
     exigir(!f.color||/^#[0-9a-fA-F]{6}$/.test(f.color),'Color debe ser #RRGGBB o vacío.');
     exigir(!f.foto||/^fotos\/[^/\\]+$/.test(f.foto),'Foto debe ser fotos/<archivo>.');
-    return {...f,color:f.color||'',precio:precioSheepi(f.precio_publico,pct)};
+    const descuento=porcentajeFarmasi(f.descuento,pct),precio=precioVentaFarmasi(f.precio_publico,descuento);
+    if(f.precio_sheepi!==undefined&&String(f.precio_sheepi).trim()!=='') exigir(centavos(f.precio_sheepi)===centavos(precio),'El precio_sheepi del CSV ('+f.precio_sheepi+') no coincide con D060/D061 ('+precio.toFixed(2)+').');
+    return {...f,color:f.color||'',descuento,precio};
   }
   function esFarmasi(x) {
     return x.recargo_traida!==undefined&&x.recargo_traida!==null&&x.recargo_traida!=='' ||
@@ -392,7 +415,7 @@
     exigir(productos+traida+entrega+gestion<=10000000,'El total Farmasi supera $100000.');
     return {productos:productos/100,traida:traida/100,entrega:entrega/100,gestion:gestion/100,total:(productos+traida+entrega+gestion)/100,disponible,aviso:disponible?'':'No disponible por ahora. Escríbenos para coordinar.'};
   }
-  raiz.logica={nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
+  raiz.logica={redondeoVenta,porcentajeFarmasi,precioVentaFarmasi,nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
   raiz.logica.descuentoFarmasi=descuentoFarmasi;
   if(typeof module!=='undefined') module.exports=raiz.logica;
 })(globalThis);
