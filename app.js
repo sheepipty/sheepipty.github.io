@@ -84,7 +84,7 @@ async function cargarDatos(){
 }
 function avisar(avisos){if(!avisos.length)return;avisosBolsa=avisos.join(' ');$('#aviso-bolsa').textContent=avisosBolsa;$('#aviso').textContent=[$('#aviso').textContent,avisosBolsa].filter(Boolean).join(' ');}
 function marca(){
-  const nombre=datos.marca||CONFIG.MARCA;$('#marca').setAttribute('aria-label',nombre+', inicio');document.title=nombre+' · Ropa con historia';
+  const nombre=datos.marca||CONFIG.MARCA;$('#marca').setAttribute('aria-label',nombre+', inicio');document.title=nombre+' · Haz espacio para lo inesperado';
   $('#retiro').textContent=datos.retiro||'Retiro coordinado por WhatsApp';
   $('#promocion').textContent='Promoción vigente · combo de 3 prendas distintas por '+dinero(datos.combos[3])+' o 5 por '+dinero(datos.combos[5]);
   const redes=$('#redes');redes.replaceChildren();
@@ -114,7 +114,10 @@ function listaGrupos(l=linea){
 function desdeUrl(){let h='';try{h=decodeURIComponent(location.hash.slice(1));}catch(e){}const g=listaGrupos().find(([v])=>slug(v)===h);categoria=g?g[0]:'Todas';}
 function elegirGrupo(valor){categoria=valor;talla='Todas';const url=valor==='Todas'?location.pathname+location.search:'#'+slug(valor);history.pushState(null,'',url);pintarFiltros();pintarCuadricula();}
 function cambiarLinea(valor){linea=valor;categoria='Todas';talla='Todas';history.replaceState(null,'',location.pathname+location.search);pintarFiltros();pintarCuadricula();}
+/* Lema de marca (D048): «Haz espacio para lo inesperado»; cada sección lleva su sublema. */
+const SUBLEMAS={Ropa:'Ropa con historia, lista para empezar otra.','Salud y belleza':'Tus favoritos, por pedido.'};
 function pintarFiltros(){
+  $('#sublema').textContent=SUBLEMAS[linea]||'';
   ajustarLinea();const lineas=[...new Set(datos.articulos.map(a=>a.linea))], nav=$('#lineas');nav.hidden=lineas.length<=1;nav.replaceChildren();
   for(const l of lineas){const b=boton(nombreSeccion(l));b.dataset.linea=l;b.setAttribute('aria-pressed',String(l===linea));nav.append(b);}
   const grupos=listaGrupos();if(!grupos.some(([g])=>g===categoria))categoria='Todas';

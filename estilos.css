@@ -76,3 +76,7 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 @media(max-width:760px){#recientes .sec-cab{flex-wrap:nowrap;align-items:center}#recientes .sec-cab h2 small{display:inline;font-size:16px;margin-left:6px}#recientes .flecha{display:none}#recientes .controles{gap:10px}}
 .pista>.prod h3{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:760px){#recientes .sec-cab h2{white-space:nowrap;font-size:20px}#recientes .sec-cab h2 small{font-size:15px}#recientes .controles{max-width:none;flex-wrap:nowrap}}
+
+/* Sublema por sección bajo el título del catálogo (2026-11-24). */
+.titulo-catalogo{flex-wrap:wrap;align-items:baseline;justify-content:flex-start;gap:4px 18px}.sublema{font-family:var(--cursiva);font-size:18px;margin:0}.sublema:empty{display:none}
+@media(max-width:760px){.sublema{font-size:15px;flex-basis:100%}}
