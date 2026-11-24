@@ -11,7 +11,10 @@ function nodo(tag,clase,texto){const n=document.createElement(tag);if(clase)n.cl
 function boton(texto,clase){const b=nodo('button',clase,texto);b.type='button';return b;}
 function parrafo(texto,clase){return nodo('p',clase,texto);}
 function foto(url){try{const u=new URL(url);return u.protocol==='https:'&&['lh3.googleusercontent.com','drive.google.com'].includes(u.hostname)?u.href:'';}catch(e){return '';}}
-function imagen(a){const img=nodo('img');const src=foto(a.foto);if(src)img.src=src;img.alt=a.descripcion||'Producto';img.width=720;img.height=900;img.loading='lazy';img.decoding='async';return img;}
+const RECORTES=new Set(['NC-001','NC-002','NC-003','NC-004','NC-005','NC-006','NC-007','NC-008','NC-009','NC-011','NC-012','NC-013','NC-014','NC-015','NC-016','NC-017','NC-018','NC-019','NC-020','NC-021','NC-022','NC-023','NC-024','NC-025','NC-026','NC-027','NC-028','NC-029','NC-030','NC-031','NC-032','NC-033','NC-034','NC-035','NC-036']);
+function fuenteFoto(a){return a&&RECORTES.has(a.codigo)?'recortes/'+a.codigo+'.webp':foto(a&&a.foto);}
+function ponerFoto(img,a){const src=fuenteFoto(a);if(src)img.src=src;else img.removeAttribute('src');img.classList.toggle('recorte',!!a&&RECORTES.has(a.codigo));}
+function imagen(a){const img=nodo('img');ponerFoto(img,a);img.alt=a.descripcion||'Producto';img.width=720;img.height=900;img.loading='lazy';img.decoding='async';return img;}
 const esSalud=a=>a.linea===SB;
 const requiereFarmasi=a=>logica.esEncargo(a)||esSalud(a);
 const unidades=()=>bolsa.reduce((s,a)=>s+(a.cantidad??1),0);
@@ -204,7 +207,7 @@ function tarjeta(variantes,reciente=false){
   const art=nodo('article',reciente?'tarjeta prod':'tarjeta'), abrir=boton('','foto-boton'), pie=nodo('div','pie-tarjeta'), titulo=nodo('h3'), precioCont=nodo('div'), meta=parrafo('','talla'), selector=nodo('div'), variante=parrafo('','variante-elegida'), agregarBoton=boton('','agregar'), info=parrafo('','aviso-encargo');
   art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo));pie.append(titulo,meta,precioCont,selector,variante,info,agregarBoton);art.append(abrir,pie);
   function actualizar(a){
-    seleccionadas.set(claveGrupo(a),a.codigo);const img=abrir.querySelector('img'),src=foto(a.foto);if(src)img.src=src;else img.removeAttribute('src');img.alt=a.descripcion||'Producto';
+    seleccionadas.set(claveGrupo(a),a.codigo);const img=abrir.querySelector('img');ponerFoto(img,a);img.alt=a.descripcion||'Producto';
     abrir.dataset.detalle=a.codigo;abrir.setAttribute('aria-label','Ver '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
     titulo.textContent=nombreVitrina(a);precioCont.replaceChildren(precios(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
     variante.textContent=a.variante||'';variante.hidden=!a.variante;
@@ -231,7 +234,7 @@ function abrirDetalle(codigo){
   const variantes=variantesDe(inicial), cont=$('#detalle-contenido'), img=imagen(inicial), ficha=nodo('div','ficha'), titulo=nodo('h2'), selector=nodo('div'), contenido=nodo('div');titulo.id='detalle-titulo';
   cont.replaceChildren(enmarcar(img,variantes[0].codigo,inicial.combo),ficha);ficha.append(titulo,selector,contenido);
   function actualizar(a){
-    seleccionadas.set(claveGrupo(a),a.codigo);const src=foto(a.foto);if(src)img.src=src;else img.removeAttribute('src');img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
+    seleccionadas.set(claveGrupo(a),a.codigo);ponerFoto(img,a);img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
     if(esSalud(a)&&variantes.length>1)selector.replaceChildren(paleta(variantes,a,x=>{actualizar(x);selector.querySelector('[aria-pressed="true"]')?.focus();}));else selector.replaceChildren();
     if(a.variante)contenido.append(parrafo(a.variante,'variante-elegida'));
     if(a.talla)contenido.append(parrafo('Talla: '+a.talla));if(a.estado)contenido.append(parrafo('Estado: '+a.estado));if(a.combo)contenido.append(parrafo('Participa en combo'));
