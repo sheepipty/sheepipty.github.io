@@ -1,7 +1,7 @@
 {
   "ok": true,
   "marca": "Sheepi",
-  "actualizado": "2026-11-19T17:20:25.906Z",
+  "actualizado": "2026-11-24T14:58:50.552Z",
   "combos": {
     "3": 12,
     "5": 18
@@ -20,7 +20,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/16FrpO-ANdOscHfSqu-rwaBgzxfJa08gt=w900",
-      "fecha_ingreso": "2026-10-11"
+      "fecha_ingreso": "2026-10-11",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-002",
@@ -33,7 +35,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1GzYk5VFMISdrbPEJtUKr2b2i0XG5d9bM=w900",
-      "fecha_ingreso": "2026-10-11"
+      "fecha_ingreso": "2026-10-11",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-003",
@@ -46,7 +50,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1MnrE8q6T3uTmWuiUoLE7PpL0zvzhXdWD=w900",
-      "fecha_ingreso": "2026-10-11"
+      "fecha_ingreso": "2026-10-11",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-004",
@@ -59,7 +65,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1fqAFepSnngu78KSPeVfUV8I-WjCNZTBp=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-005",
@@ -72,7 +80,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1fobd9VYY1a-IDzdiAqdcpD0z5nEXDX29=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-006",
@@ -85,7 +95,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1LHthj878n4MXnrGCa1Xv17-aH-_4pgCt=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-007",
@@ -98,7 +110,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1Qtep4kfN76AvbQdS296gIijVc2-ZzeLK=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-008",
@@ -111,7 +125,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1PoxuULOg5k2xhkHvHq1tF0kcQA_4Q6XH=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-009",
@@ -124,7 +140,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/10ptBHQTJ8r7YyleKcddKcAtWheUJic74=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-011",
@@ -137,7 +155,9 @@
       "precio": 7,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1adXLvrlIo6ddr7xFCO5-PNOYgX7pB-IG=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-012",
@@ -150,7 +170,9 @@
       "precio": 7,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1tnKAudhiOpXHXO15uR-IjSo4VgjLxL69=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-013",
@@ -163,7 +185,9 @@
       "precio": 10,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1oUMZ0fNZ00r-X98xIUEcU3au7BZl51kn=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-014",
@@ -176,7 +200,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1FAxeNdm-vlprGMfxm9VIR13uQVs6S1VJ=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-015",
@@ -189,7 +215,9 @@
       "precio": 3,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1CZkrkqm41xui0-hs9NMXsUrmKE63ZA0j=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-016",
@@ -202,7 +230,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1C5OvMZgeqieKIlwgtQWJnNJWK4rPRsBq=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-017",
@@ -215,7 +245,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/17otS7YppX1deeVYfTDVC9wn8-ZBthVtC=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-018",
@@ -228,7 +260,9 @@
       "precio": 4,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1sFebmynnGrKWdgwjv2yKxrkBw7Dk49h0=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-019",
@@ -241,7 +275,9 @@
       "precio": 6,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1yUY7fAsT5yoq_iEOuXWhVilh_wBZKxKv=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-020",
@@ -254,7 +290,9 @@
       "precio": 6,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/16ruvcuDG8XkmCrnWr4EyVpmHIRx3lppz=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-021",
@@ -267,7 +305,9 @@
       "precio": 6,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1uUQZwYFx9xJiN_A5IGw7M7X-CgJvPrO4=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-022",
@@ -280,7 +320,9 @@
       "precio": 8,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1lvarTU2PvGtmoQb9vygVlZRlcE9XMFd2=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-023",
@@ -293,7 +335,9 @@
       "precio": 3,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1iGALKN8e5fZoK5XEjayXOEz3lOtCNlDD=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-024",
@@ -306,7 +350,9 @@
       "precio": 3,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1uVaeKtPtK2ny3z2xnkKhBzpft7A7YW17=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-025",
@@ -319,7 +365,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/15pEKsqw_gfZshSKTFl-bSbdw5-BrY58i=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-026",
@@ -332,7 +380,9 @@
       "precio": 4,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1gg-jfSbacXtqI-LlwdNMxTSJW9EtB2hC=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-027",
@@ -345,7 +395,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1Qo5_XeoLYaxRLUE3zFNB7uzhK0rrAOVn=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-028",
@@ -358,7 +410,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1dUwmIb04yvlAxXwJKkr4xjgAXFzLB0PS=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-029",
@@ -371,7 +425,9 @@
       "precio": 8,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1fCafPk_AazUor3j4eXO1SgPmf9bBdXDH=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-030",
@@ -384,7 +440,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1IgBCEafZ_oa4EpkVfCCzDrULYeP_d4EL=w900",
-      "fecha_ingreso": "2026-10-24"
+      "fecha_ingreso": "2026-10-24",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-031",
@@ -397,7 +455,9 @@
       "precio": 5,
       "combo": true,
       "foto": "https://lh3.googleusercontent.com/d/1kw-xK3ZE8kGh5QurxCTEGMAvxs9ASfSj=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-032",
@@ -410,7 +470,9 @@
       "precio": 9,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1dOlDCB1fHQNmSTLThKQUnSWdi2aZcK0Y=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-033",
@@ -423,7 +485,9 @@
       "precio": 8,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1wwm2f-pXbFuohMapAx_DUqRBKTG9Tfsi=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-034",
@@ -436,7 +500,9 @@
       "precio": 10,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1b2T5zymOt4lkTe5GSI6H14nOgbBJEG5b=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-035",
@@ -449,7 +515,9 @@
       "precio": 3,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1_co7n0J12thu0__ySePyZvvAOOqHkmOJ=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     },
     {
       "codigo": "NC-036",
@@ -462,7 +530,35 @@
       "precio": 8,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1BqFTrMGmUuqj_SQQK0RaqnqV1mg-MknT=w900",
-      "fecha_ingreso": "2026-10-31"
+      "fecha_ingreso": "2026-10-31",
+      "linea": "Ropa",
+      "modalidad": "propia"
     }
-  ]
+  ],
+  "farmasi": {
+    "DESCUENTO_SHEEPI": 20,
+    "TRAIDA_FIJA": 5,
+    "TRAIDA_PESADO": 3,
+    "TRAIDA_GRATIS_DESDE": 75,
+    "CARGO_GESTION": 0,
+    "zonas": [
+      {
+        "nombre": "Retiro en casa",
+        "monto": 0
+      },
+      {
+        "nombre": "Ciudad de Panamá",
+        "monto": 5
+      },
+      {
+        "nombre": "Afueras",
+        "monto": null
+      },
+      {
+        "nombre": "Interior",
+        "monto": null
+      }
+    ],
+    "FARMASI_TIEMPO": "1 a 3 semanas (compramos los días 5 y 20)"
+  }
 }

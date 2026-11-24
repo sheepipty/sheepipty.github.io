@@ -1,0 +1,50 @@
+/* Logo de Sheepi animado por capas (cara, ojos, letras, flor).
+   Uso: <div class="logo-anim" data-ojos="guino"></div> + logo-animado.js
+   Clases de entrada sobre .logo-anim: entra-der, entra-izq, sale-izq, sale-der, ola, aparece.
+   data-ojos: parpadeo | guino | (vacío).  data-flor="gira" hace girar la flor de la i. */
+.logo-anim{position:relative;aspect-ratio:655/539;--dist:120vw}
+.logo-anim img{position:absolute;display:block;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.logo-anim .ojo{transform-origin:50% 55%}
+.logo-anim .flor{transform-origin:50% 50%}
+
+/* Ojos */
+.logo-anim[data-ojos="parpadeo"] .ojo{animation:sheepi-parpadeo 4.2s infinite}
+.logo-anim[data-ojos="guino"] .ojo-der{animation:sheepi-guino 3.8s infinite}
+.logo-anim[data-ojos="guino-lento"] .ojo-der{animation:sheepi-guino-lento 8s infinite}
+/* Elegido (2026-11-23): parpadeo que empieza DESPUÉS de que terminan de aparecer las letras.
+   "aparece" termina a los 1.2 s (0.6 s + 5 x 0.12 s); el primer parpadeo es a 1.5-1.8 s y luego cada 4.2 s. */
+.logo-anim[data-ojos="parpadeo-tras"] .ojo{animation:sheepi-parpadeo-uno .3s ease-in-out 1.5s,sheepi-parpadeo 4.2s 1.8s infinite}
+.logo-anim[data-ojos="parpadeo-lento"] .ojo{animation:sheepi-parpadeo 7s 2s infinite}
+@keyframes sheepi-parpadeo-uno{0%,100%{transform:scaleY(1)}40%,60%{transform:scaleY(.1)}}
+@keyframes sheepi-parpadeo{0%,90%,100%{transform:scaleY(1)}93%,95%{transform:scaleY(.1)}}
+@keyframes sheepi-guino{0%,68%,100%{transform:scaleY(1)}72%,84%{transform:scaleY(.1)}}
+@keyframes sheepi-guino-lento{0%,86%,100%{transform:scaleY(1)}88%,93%{transform:scaleY(.1)}}
+
+/* Flor */
+.logo-anim[data-flor="gira"] .flor{animation:sheepi-gira 2.6s cubic-bezier(.6,0,.3,1) infinite}
+@keyframes sheepi-gira{to{transform:rotate(360deg)}}
+
+/* Letras que se persiguen: entran por la derecha (la s va primero) */
+.logo-anim.entra-der .letra{animation:sheepi-entra-der .95s cubic-bezier(.2,1.25,.45,1) both;animation-delay:calc(var(--i)*85ms)}
+@keyframes sheepi-entra-der{from{transform:translateX(var(--dist));opacity:0}35%{opacity:1}to{transform:none}}
+/* ...y salen por la izquierda, siguiéndose */
+.logo-anim.sale-izq .letra{animation:sheepi-sale-izq .8s cubic-bezier(.55,0,.8,.2) both;animation-delay:calc(var(--i)*85ms)}
+@keyframes sheepi-sale-izq{to{transform:translateX(calc(-1*var(--dist)));opacity:0}}
+
+/* Entran por la izquierda (la i va primero) y salen por la derecha */
+.logo-anim.entra-izq .letra{animation:sheepi-entra-izq .95s cubic-bezier(.2,1.25,.45,1) both;animation-delay:calc((5 - var(--i))*85ms)}
+@keyframes sheepi-entra-izq{from{transform:translateX(calc(-1*var(--dist)));opacity:0}35%{opacity:1}to{transform:none}}
+.logo-anim.sale-der .letra{animation:sheepi-sale-der .8s cubic-bezier(.55,0,.8,.2) both;animation-delay:calc((5 - var(--i))*85ms)}
+@keyframes sheepi-sale-der{to{transform:translateX(var(--dist));opacity:0}}
+
+/* Ola: las letras saltan una tras otra */
+.logo-anim.ola .letra{animation:sheepi-ola 1.5s ease-in-out infinite;animation-delay:calc(var(--i)*90ms)}
+@keyframes sheepi-ola{0%,55%,100%{transform:none}25%{transform:translateY(-22%) rotate(-5deg)}}
+
+/* Aparecen de a una, con rebote */
+.logo-anim.aparece .letra{animation:sheepi-aparece .6s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i)*120ms)}
+@keyframes sheepi-aparece{from{transform:scale(0) translateY(30%);opacity:0}to{transform:none;opacity:1}}
+
+@media (prefers-reduced-motion: reduce){
+  .logo-anim .letra,.logo-anim .ojo,.logo-anim .flor{animation:none!important}
+}

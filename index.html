@@ -1,22 +1,65 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Sheepi · ropa de segunda mano en Panamá. Elige tus favoritas y coordina tu compra por WhatsApp."><meta name="theme-color" content="#ffffff"><meta property="og:title" content="Sheepi"><meta property="og:description" content="Sheepi · ropa de segunda mano en Panamá. Elige tus favoritas y coordina tu compra por WhatsApp."><meta property="og:url" content="https://sheepipty.github.io/"><meta property="og:type" content="website"><meta property="og:image" content="https://sheepipty.github.io/vista-previa.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><title>Sheepi</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="estilos.css"><script defer src="config.js"></script><script defer src="logica.js"></script><script defer src="app.js"></script></head>
-<body><a class="saltar" href="#catalogo">Ir al catálogo</a>
-<header id="cabecera" class="cabecera"><button id="abrir-menu" class="hamburguesa" aria-haspopup="dialog" aria-label="Abrir menú"><span></span><span></span></button><a class="marca" id="marca" href="#">Sheepi</a><button id="abrir-bolsa" class="mini" aria-haspopup="dialog">Bolsa <span class="corchete">[<span id="contador">0</span>]</span></button></header>
-<main>
-<section class="portada" aria-label="Sheepi"><p class="logotipo" id="marca-portada" aria-hidden="true">Sheepi</p><p id="promocion" class="mini secundario"></p></section>
-<p id="aviso" role="status" aria-live="polite">Cargando catálogo…</p>
-<div class="tienda">
-<nav class="grupos" aria-label="Categorías"><ol id="categorias"></ol></nav>
-<div class="contenido">
-<div id="tallas" class="tallas" role="group" aria-label="Filtrar por talla"></div>
-<div class="herramientas"><p id="cantidad" class="mini secundario" aria-live="polite"></p><div id="vista" class="vista" role="group" aria-label="Prendas por fila"></div></div>
-<section id="catalogo" class="cuadricula" aria-label="Prendas disponibles" tabindex="-1"></section>
-</div></div>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sheepi · ropa con historia en Panamá y Salud y belleza por pedido. Elige tus favoritas y coordina por WhatsApp.">
+<meta name="theme-color" content="#F9EFE6"><meta property="og:title" content="Sheepi"><meta property="og:description" content="Ropa con historia, lista para empezar otra."><meta property="og:url" content="https://sheepipty.github.io/"><meta property="og:type" content="website"><meta property="og:image" content="https://sheepipty.github.io/vista-previa.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<title>Sheepi</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@600;700&family=Playwrite+ES:wght@300;400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<link rel="stylesheet" href="marca/logo-animado.css"><link rel="stylesheet" href="estilos.css">
+<script defer src="config.js"></script><script defer src="logica.js"></script><script defer src="marca/logo-animado.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="saltar" href="#catalogo">Ir al catálogo</a>
+<div id="carga" aria-hidden="true"><div id="logo-carga" class="logo-anim" data-base="marca/logo-capas/" data-ojos="parpadeo-tras"></div><span class="carga-texto">cargando prendas…</span></div>
+<header id="cabecera" class="cabecera">
+  <p id="promocion" class="aviso-promocion">Promoción vigente · una pieza de cada una</p>
+  <div class="cabecera-fila"><div class="cabecera-enlaces"><button id="abrir-menu" aria-haspopup="dialog" aria-controls="menu">Menú</button><a href="#catalogo">Prendas</a><a href="#como-comprar">Cómo comprar</a></div>
+  <a class="marca" id="marca" href="#inicio" aria-label="Sheepi, inicio"><div class="logo-anim" data-base="marca/logo-capas/" data-ojos="parpadeo-lento"></div></a>
+  <button id="abrir-bolsa" aria-haspopup="dialog" aria-controls="bolsa">Bolsa <span class="corchete">[<span id="contador">0</span>]</span></button></div>
+</header>
+<main id="inicio">
+<section class="portada" aria-label="Sheepi">
+  <div class="portada-fotos" aria-hidden="true"><img class="recorte recorte-uno" src="marca/recortes/nc-005.webp" alt=""><img class="recorte recorte-dos" src="marca/recortes/nc-003.webp" alt=""><img class="recorte recorte-tres" src="marca/recortes/nc-021.webp" alt=""></div>
+  <div class="portada-texto"><p class="ojo">Ropa de segunda mano · Panamá</p><h1>Ropa con historia,<span>lista para empezar otra.</span></h1><a class="enlace" href="#catalogo">Ver prendas <span aria-hidden="true">→</span></a><img class="carita" src="marca/carita-vino.webp" alt=""></div>
+</section>
+<nav class="mosaico" aria-label="Explora las prendas">
+  <a class="tile tile-tops" href="#tops" data-mosaico="Tops"><img class="recorte" src="marca/recortes/nc-020.webp" alt="" loading="lazy" decoding="async"><span>Tops</span></a>
+  <a class="tile tile-vestidos" href="#vestidos-y-enterizos" data-mosaico="Vestidos y enterizos"><img class="recorte" src="marca/recortes/nc-011.webp" alt="" loading="lazy" decoding="async"><span>Vestidos</span></a>
+  <a class="tile tile-pantalones" href="#pantalones-y-shorts" data-mosaico="Pantalones y shorts"><img class="recorte" src="marca/recortes/nc-004.webp" alt="" loading="lazy" decoding="async"><span>Pantalones</span></a>
+  <a class="tile tile-chaquetas" href="#chaquetas" data-mosaico="Chaquetas"><img class="recorte" src="marca/recortes/nc-013.webp" alt="" loading="lazy" decoding="async"><span>Chaquetas</span></a>
+</nav>
+<section id="recientes" class="sec" aria-labelledby="recientes-titulo" hidden>
+  <div class="sec-cab"><h2 id="recientes-titulo">Recién llegadas <small>para ti</small></h2><div class="controles"><button id="ant" class="flecha" aria-label="Prenda anterior">←</button><button id="sig" class="flecha" aria-label="Prenda siguiente">→</button><button id="pausar-carrusel" aria-pressed="false">Pausar</button><a href="#catalogo">Ver todo</a></div></div>
+  <div id="carrusel" class="carrusel" aria-roledescription="carrusel" aria-label="Recién llegadas"><div id="pista" class="pista"></div></div><div id="puntos" class="puntos" role="group" aria-label="Elegir posición del carrusel"></div>
+</section>
+<section id="seccion-catalogo" aria-label="Catálogo">
+  <div class="sec-cab titulo-catalogo"><h2>Encuentra tu favorita</h2></div>
+  <p id="aviso" role="status" aria-live="polite">Cargando catálogo…</p>
+  <nav id="lineas" class="lineas" aria-label="Líneas de productos" hidden></nav>
+  <div class="tienda"><nav class="grupos" aria-label="Categorías"><ol id="categorias"></ol></nav><div class="contenido">
+    <div id="tallas" class="tallas" role="group" aria-label="Filtrar por talla"></div><div class="herramientas"><p id="cantidad" class="mini secundario" aria-live="polite"></p><div id="vista" class="vista" role="group" aria-label="Productos por fila"></div></div>
+    <section id="catalogo" class="cuadricula" aria-label="Productos disponibles" tabindex="-1"></section>
+    <p id="otro-farmasi" class="otro-farmasi" hidden><a id="consultar-farmasi" target="_blank" rel="noopener noreferrer">¿Buscas otro producto Farmasi? Mándanos el código por WhatsApp</a></p>
+  </div></div>
+</section>
+<section id="como-comprar" class="banda"><h2>Cómo comprar</h2><ol class="pasos"><li><span>1</span><p>Elige tus favoritas y agrégalas a la bolsa.</p></li><li><span>2</span><p>Envía tu selección por WhatsApp. Para Salud y belleza, elige cómo recibir tu pedido.</p></li><li><span>3</span><p>Coordinamos el pago y la entrega. Se aparta solo con el pago.</p></li></ol></section>
 </main>
-<footer class="pie"><div><h2 class="mini">Cómo comprar</h2><ol><li>Agrega tus prendas a la bolsa.</li><li>Envía tu selección por WhatsApp.</li><li>Paga para apartarla.</li></ol></div><div><h2 class="mini">Pago</h2><p>Yappy o transferencia BAC.</p></div><div><h2 class="mini">Entrega</h2><p id="retiro">Retiro coordinado por WhatsApp</p><p>Delivery con costo según la zona.</p></div><div><h2 class="mini">Contacto</h2><div id="redes" class="redes"></div></div><p class="firma mini">© Sheepi · Panamá</p></footer>
-<dialog id="menu" class="menu" aria-label="Menú"><button class="cerrar-x" data-cerrar="menu" aria-label="Cerrar menú"></button><p class="logotipo menu-marca" aria-hidden="true">Sheepi</p><ol id="menu-grupos"></ol></dialog>
+<footer class="pie"><img src="marca/carita-vino.webp" width="60" height="60" alt="Sheepi"><div><h2>Pago</h2><p>Yappy o transferencia BAC.</p></div><div><h2>Entrega</h2><p id="retiro">Retiro coordinado por WhatsApp</p><p>Delivery con costo según la zona.</p></div><div><h2>Contacto</h2><div id="redes" class="redes"></div></div><p class="firma">Sheepi · Ropa de segunda mano en Panamá · @sheepi.pty</p></footer>
+<dialog id="menu" class="menu" aria-label="Menú"><button class="cerrar-x" data-cerrar="menu" aria-label="Cerrar menú"></button><img class="menu-marca" src="marca/logo-sheepi-vino.webp" alt="Sheepi"><ol id="menu-grupos"></ol></dialog>
 <dialog id="detalle" aria-labelledby="detalle-titulo"><button class="cerrar-x" data-cerrar="detalle" aria-label="Cerrar detalle"></button><div id="detalle-contenido"></div></dialog>
-<dialog id="bolsa" aria-labelledby="bolsa-titulo"><div class="cabecera-bolsa"><h2 id="bolsa-titulo" class="mini">Tu bolsa</h2><button class="cerrar-x" data-cerrar="bolsa" aria-label="Cerrar bolsa"></button></div><div id="lista-bolsa"></div><dl class="totales"><div><dt>Subtotal</dt><dd id="subtotal"></dd></div><div><dt>Ahorro por combo</dt><dd id="ahorro"></dd></div><div class="total"><dt>Total</dt><dd id="total"></dd></div></dl><label for="entrega" class="mini">Entrega</label><select id="entrega"><option>Retiro</option><option>Delivery</option></select><p class="nota secundario">Se aparta solo con el pago. El envío se cotiza según la zona.</p><p id="aviso-bolsa" role="status" aria-live="polite"></p><button id="pedir" class="principal">Pedir por WhatsApp</button><a id="continuar" class="principal enlace-boton" target="_blank" rel="noopener noreferrer" hidden>Continuar en WhatsApp</a></dialog>
-<noscript><p>Activa JavaScript para ver las prendas y armar tu bolsa.</p></noscript></body></html>
+<dialog id="bolsa" aria-labelledby="bolsa-titulo">
+  <div class="cabecera-bolsa"><h2 id="bolsa-titulo">Tu bolsa</h2><button class="cerrar-x" data-cerrar="bolsa" aria-label="Cerrar bolsa"></button></div><div id="lista-bolsa"></div>
+  <div id="entrega-ropa"><label for="entrega">Entrega de ropa y otros productos</label><select id="entrega"><option>Retiro</option><option>Delivery</option></select><p class="nota">Se aparta solo con el pago. El envío se cotiza según la zona.</p></div>
+  <fieldset id="entrega-farmasi" hidden><legend>¿Cómo prefieres recibir tu pedido?</legend><label class="opcion-entrega"><input type="radio" name="opcion-farmasi" value="Mi casillero"> Envío a mi casillero.</label><label class="opcion-entrega"><input type="radio" name="opcion-farmasi" value="Entrega Sheepi"> Entrega Sheepi en Panamá.</label>
+    <div id="campos-casillero" hidden><label for="direccion-casillero">Dirección de tu casillero en EE. UU.</label><textarea id="direccion-casillero" rows="4" autocomplete="off" spellcheck="false" aria-describedby="nota-casillero"></textarea><p id="nota-casillero" class="nota">El envío de Farmasi y el flete a Panamá se confirman al cotizar.</p></div>
+    <div id="campos-zona" hidden><label for="zona-farmasi">Zona de entrega</label><select id="zona-farmasi"></select></div>
+  </fieldset>
+  <p id="aviso-entrega" role="status" aria-live="polite"></p><p id="venta-final-bolsa" class="venta-final nota" hidden>Venta final: por higiene, no se aceptan devoluciones.</p>
+  <dl class="totales"><div><dt>Subtotal</dt><dd id="subtotal"></dd></div><div><dt>Ahorro por combo</dt><dd id="ahorro"></dd></div><div id="fila-traida" hidden><dt>Traída</dt><dd id="traida"></dd></div><div id="fila-entrega-farmasi" hidden><dt>Entrega Farmasi</dt><dd id="costo-entrega-farmasi"></dd></div><div id="fila-gestion" hidden><dt>Gestión</dt><dd id="gestion"></dd></div><div class="total"><dt>Total</dt><dd id="total"></dd></div></dl>
+  <p id="traida-gratis" class="nota" hidden></p><p id="nota-total" class="nota" hidden></p><p id="aviso-bolsa" role="status" aria-live="polite"></p>
+  <button id="pedir" class="principal">Pedir por WhatsApp</button><a id="continuar" class="principal enlace-boton" target="_blank" rel="noopener noreferrer" hidden>Continuar en WhatsApp</a>
+</dialog>
+<noscript><style>#carga{display:none}</style><p>Activa JavaScript para ver los productos y armar tu bolsa.</p></noscript>
+</body></html>
