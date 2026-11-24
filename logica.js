@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:6e406a68d7e9ef39ffac01eccdb339f572fb3b6b35442d85a07d19da9edf9a7d
+// GENERADO desde compartido/logica.js — no editar — sha256:d89e26eeb1f6618f11726897368adb299e5321e6bfefa650fb3d8eade6b3de17
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -371,6 +371,54 @@
   function precioVentaFarmasi(publico,pct) {
     return redondeoVenta(precioSheepi(publico,pct),{costo:precioSheepi(publico,50),publico:centavos(publico)/100});
   }
+  /* D057: reparte un total (centavos) entre líneas en proporción a su costo (centavos); el residuo
+   * va a la línea de mayor costo (empate: id menor). Sin base, reparte por partes iguales. */
+  function repartirPorValor(lineas,totalCentavos) {
+    exigir(Array.isArray(lineas)&&lineas.length>0,'El lote no tiene líneas para repartir.');
+    exigir(Number.isInteger(totalCentavos),'El total a repartir no es válido.');
+    const base=lineas.reduce((s,x)=>s+x.costo,0),reparto={};
+    lineas.forEach(x=>{reparto[x.id]=base?Math.floor(totalCentavos*x.costo/base):Math.floor(totalCentavos/lineas.length);});
+    const mayor=lineas.reduce((a,b)=>b.costo>a.costo||b.costo===a.costo&&String(b.id)<String(a.id)?b:a);
+    reparto[mayor.id]+=totalCentavos-Object.values(reparto).reduce((s,x)=>s+x,0);
+    return reparto;
+  }
+  /* Costos vigentes: sin las filas de anulación ni las filas anuladas. */
+  function costosVigentes(costos) {
+    const anulados=new Set(costos.filter(c=>c.anulaA).map(c=>c.anulaA));
+    return costos.filter(c=>!c.anulaA&&!anulados.has(c.id));
+  }
+  /* D057 §10.4: conciliación por encargo, lote y mes, todo en centavos. */
+  function conciliacionFarmasi({encargos=[],lineas=[],costos=[]}) {
+    const vigentes=costosVigentes(costos),activos=encargos.filter(e=>e.estado!=='Cancelado');
+    const costoLinea=l=>l.cantidad*(l.costoRealCentavos??l.costoEstimadoCentavos);
+    const porEncargo=activos.map(e=>{
+      const propias=lineas.filter(l=>l.idEncargo===e.id);
+      return {id:e.id,lote:e.lote||'',mes:String(e.fecha||'').slice(0,7),estado:e.estado,cobrado:e.totalCentavos,cargosCobrados:e.envioCentavos,
+        costoEstimado:propias.reduce((s,l)=>s+l.cantidad*l.costoEstimadoCentavos,0),costoProductos:propias.reduce((s,l)=>s+costoLinea(l),0),parteLote:0,
+        individuales:vigentes.filter(c=>c.idEncargo===e.id).reduce((s,c)=>s+c.montoCentavos,0)};
+    });
+    const lotes=[...new Set(porEncargo.map(e=>e.lote).concat(vigentes.map(c=>c.lote)).filter(Boolean))].sort();
+    const porLote=lotes.map(id=>{
+      const suyos=porEncargo.filter(e=>e.lote===id),total=vigentes.filter(c=>c.lote===id&&!c.idEncargo).reduce((s,c)=>s+c.montoCentavos,0);
+      if(total&&suyos.length){
+        const reparto=repartirPorValor(suyos.map(e=>({id:e.id,costo:e.costoProductos})),total);
+        suyos.forEach(e=>{e.parteLote=reparto[e.id];});
+      }
+      const individuales=suyos.reduce((s,e)=>s+e.individuales,0),cargos=suyos.reduce((s,e)=>s+e.cargosCobrados,0);
+      return {id,encargos:suyos.map(e=>e.id),cargosCobrados:cargos,costosLote:total,individuales,diferencia:cargos-total-individuales};
+    });
+    porEncargo.forEach(e=>{
+      e.gananciaEstimada=e.cobrado-e.costoEstimado;
+      e.gananciaReal=e.cobrado-e.costoProductos-e.parteLote-e.individuales;
+      e.diferencia=e.gananciaReal-e.gananciaEstimada;
+    });
+    const meses=[...new Set(porEncargo.map(e=>e.mes))].sort();
+    const porMes=meses.map(mes=>{
+      const suyos=porEncargo.filter(e=>e.mes===mes),suma=k=>suyos.reduce((s,e)=>s+e[k],0);
+      return {mes,encargos:suyos.length,cobrado:suma('cobrado'),costoProductos:suma('costoProductos'),costosEnvio:suma('parteLote')+suma('individuales'),gananciaReal:suma('gananciaReal'),gananciaEstimada:suma('gananciaEstimada')};
+    });
+    return {porEncargo,porLote,porMes};
+  }
   function anticipoFarmasi(total,solicitado) {
     const t=centavos(total),a=solicitado===undefined?t:centavos(solicitado);
     exigir(t>0&&a===t,'El anticipo Farmasi debe ser el total del encargo.');return a/100;
@@ -415,7 +463,7 @@
     exigir(productos+traida+entrega+gestion<=10000000,'El total Farmasi supera $100000.');
     return {productos:productos/100,traida:traida/100,entrega:entrega/100,gestion:gestion/100,total:(productos+traida+entrega+gestion)/100,disponible,aviso:disponible?'':'No disponible por ahora. Escríbenos para coordinar.'};
   }
-  raiz.logica={redondeoVenta,porcentajeFarmasi,precioVentaFarmasi,nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
+  raiz.logica={repartirPorValor,costosVigentes,conciliacionFarmasi,redondeoVenta,porcentajeFarmasi,precioVentaFarmasi,nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
   raiz.logica.descuentoFarmasi=descuentoFarmasi;
   if(typeof module!=='undefined') module.exports=raiz.logica;
 })(globalThis);

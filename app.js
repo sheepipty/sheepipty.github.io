@@ -180,6 +180,8 @@ function enmarcar(img,codigo,combo=false){
   const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo);
   cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
 }
+/* Variantes con precios distintos (p. ej. tonos rebajados por Farmasi): se avisa el mínimo; el precio mostrado y el de la bolsa son los del tono elegido. */
+function avisoDesde(variantes){const p=variantes.map(a=>a.precio);return Math.min(...p)<Math.max(...p)?'Desde '+dinero(Math.min(...p))+' · el precio cambia según el tono':'';}
 function elegida(variantes){return variantes.find(a=>a.codigo===seleccionadas.get(claveGrupo(variantes[0])))||variantes[0];}
 function precios(a){
   const p=nodo('p','precio');
@@ -203,13 +205,14 @@ function configurarAgregar(b,a){
   b.setAttribute('aria-label',b.textContent+': '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
 }
 function tarjeta(variantes,reciente=false){
-  const art=nodo('article',reciente?'tarjeta prod':'tarjeta'), abrir=boton('','foto-boton'), pie=nodo('div','pie-tarjeta'), titulo=nodo('h3'), precioCont=nodo('div'), meta=parrafo('','talla'), selector=nodo('div'), variante=parrafo('','variante-elegida'), agregarBoton=boton('','agregar'), info=parrafo('','aviso-encargo');
-  art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo));pie.append(titulo,meta,precioCont,selector,variante,info,agregarBoton);art.append(abrir,pie);
+  const art=nodo('article',reciente?'tarjeta prod':'tarjeta'), abrir=boton('','foto-boton'), pie=nodo('div','pie-tarjeta'), titulo=nodo('h3'), precioCont=nodo('div'), meta=parrafo('','talla'), selector=nodo('div'), variante=parrafo('','variante-elegida'), desde=parrafo('','precio-desde'), agregarBoton=boton('','agregar'), info=parrafo('','aviso-encargo');
+  art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo));pie.append(titulo,meta,precioCont,desde,selector,variante,info,agregarBoton);art.append(abrir,pie);
   function actualizar(a){
     seleccionadas.set(claveGrupo(a),a.codigo);const img=abrir.querySelector('img');ponerFoto(img,a);img.alt=a.descripcion||'Producto';
     abrir.dataset.detalle=a.codigo;abrir.setAttribute('aria-label','Ver '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
     titulo.textContent=nombreVitrina(a);precioCont.replaceChildren(precios(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
     variante.textContent=a.variante||'';variante.hidden=!a.variante;
+    desde.textContent=avisoDesde(variantes);desde.hidden=!desde.textContent;
     info.textContent=esSalud(a)?'Por pedido':logica.esEncargo(a)?'Por encargo · '+(a.tiempo_entrega||'fecha por confirmar'):'';info.hidden=!info.textContent;
     configurarAgregar(agregarBoton,a);
     if(esSalud(a)&&variantes.length>1)selector.replaceChildren(paleta(variantes,a,elegir));else selector.replaceChildren();
@@ -236,6 +239,7 @@ function abrirDetalle(codigo){
     seleccionadas.set(claveGrupo(a),a.codigo);ponerFoto(img,a);img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
     if(esSalud(a)&&variantes.length>1)selector.replaceChildren(paleta(variantes,a,x=>{actualizar(x);selector.querySelector('[aria-pressed="true"]')?.focus();}));else selector.replaceChildren();
     if(a.variante)contenido.append(parrafo(a.variante,'variante-elegida'));
+    if(avisoDesde(variantes))contenido.append(parrafo(avisoDesde(variantes),'precio-desde'));
     if(a.talla)contenido.append(parrafo('Talla: '+a.talla));if(a.estado)contenido.append(parrafo('Estado: '+a.estado));if(a.combo)contenido.append(parrafo('Participa en combo'));
     if(logica.esObservacionPublica(a.observacion))contenido.append(parrafo(a.observacion));contenido.append(precios(a));
     if(esSalud(a)){contenido.append(parrafo('Por pedido: llega a tu casillero o a través del nuestro','aviso-encargo'),parrafo(a.tiempo_entrega||datos.farmasi?.FARMASI_TIEMPO||'Tiempo de entrega por confirmar.'),parrafo('Venta final: por higiene, no se aceptan devoluciones.','venta-final'));}

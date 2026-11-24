@@ -1,7 +1,7 @@
 {
   "ok": true,
   "marca": "Sheepi",
-  "actualizado": "2026-11-24T20:17:34.881Z",
+  "actualizado": "2026-11-24T21:22:32.863Z",
   "combos": {
     "3": 12,
     "5": 18
@@ -1547,7 +1547,7 @@
       "maximo": 5,
       "precio_publico": 46,
       "descuento": 35,
-      "grupo": "G-1002614",
+      "grupo": "G-1002616",
       "variante": "Coral Pop",
       "color": "#AE4743"
     },
@@ -1559,7 +1559,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 29.99,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1tDCuXLp4hpof9ZsNXKjV0DTgPBtIYCOB=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1567,9 +1567,9 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 46,
+      "precio_publico": 23,
       "descuento": 35,
-      "grupo": "G-1002614",
+      "grupo": "G-1002616",
       "variante": "Plump Passion",
       "color": "#894C40"
     },
@@ -1581,7 +1581,7 @@
       "talla": "",
       "estado": "Nuevo",
       "observacion": "",
-      "precio": 29.99,
+      "precio": 14.99,
       "combo": false,
       "foto": "https://lh3.googleusercontent.com/d/1m_T-GL-lwD3bOLby_4SAG5WemHXXKDic=w900",
       "fecha_ingreso": "2026-11-24",
@@ -1589,9 +1589,9 @@
       "modalidad": "encargo",
       "tiempo_entrega": "1 a 3 semanas (compramos los días 5 y 20)",
       "maximo": 5,
-      "precio_publico": 46,
+      "precio_publico": 23,
       "descuento": 35,
-      "grupo": "G-1002614",
+      "grupo": "G-1002616",
       "variante": "Pink Bloom",
       "color": "#C74865"
     },
@@ -4392,7 +4392,7 @@
       "maximo": 5,
       "precio_publico": 29.9,
       "descuento": 35,
-      "grupo": "G-1001536",
+      "grupo": "G-1001537",
       "variante": "Pinky Cloud",
       "color": "#D66F70"
     },
@@ -4414,7 +4414,7 @@
       "maximo": 5,
       "precio_publico": 29.9,
       "descuento": 35,
-      "grupo": "G-1001536",
+      "grupo": "G-1001537",
       "variante": "Fame",
       "color": "#B35263"
     },
@@ -4436,7 +4436,7 @@
       "maximo": 5,
       "precio_publico": 29.9,
       "descuento": 35,
-      "grupo": "G-1001536",
+      "grupo": "G-1001537",
       "variante": "Praise",
       "color": "#FF7578"
     },

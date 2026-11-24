@@ -83,3 +83,6 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 
 /* Portada: un enlace por sección (2026-11-24). */
 .enlaces-portada{display:flex;flex-wrap:wrap;gap:0 28px;align-items:flex-start}.enlaces-portada .enlace[hidden]{display:none}
+
+/* Tonos con precio distinto (2026-11-24). */
+.precio-desde{font-size:12px;margin:2px 0 0;opacity:.85}
