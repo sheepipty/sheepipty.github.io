@@ -154,7 +154,7 @@ function nombreVitrina(a){return esSalud(a)?nombreProducto(a):(typeof a.nombre==
 const seleccionadas=new Map();
 /* Geometría v3 traducida de posts-v3.py. Solo se calculan las combinaciones
    usadas; las tarjetas y la ficha clonan el SVG almacenado, sin red. */
-const MARCOS_V3=[['ondas','#FDB7B8'],['lazos','#6B2138'],['puntos','#B8D8FF'],['festones','#6B2138'],['redondo','#B8D8FF'],['lazos','#D1C362'],['ondas','#6B2138'],['festones','#FDB7B8'],['puntos','#D1C362']];
+const MARCOS_V3=[['ondas','#FDB7B8'],['lazos','#6B2138'],['puntos','#B8D8FF'],['festones','#6B2138'],['redondo','#B8D8FF'],['lazos','#C9B6E4'],['ondas','#6B2138'],['festones','#FDB7B8'],['puntos','#C9B6E4']];
 const cacheMarcos=new Map();
 function estiloMarco(codigo){let n=0;for(const c of String(codigo))n=(n*31+c.charCodeAt(0))>>>0;return MARCOS_V3[n%MARCOS_V3.length];}
 function marcoSVG(tipo,color){
@@ -178,7 +178,7 @@ function marcoSVG(tipo,color){
 }
 function enmarcar(img,codigo,combo=false){
   const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo);
-  cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
+  cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello','var(--compra)');cont.append(sello);}return cont;
 }
 /* Variantes con precios distintos (p. ej. tonos rebajados por Farmasi): se avisa el mínimo; el precio mostrado y el de la bolsa son los del tono elegido. */
 function avisoDesde(variantes){const p=variantes.map(a=>a.precio);return Math.min(...p)<Math.max(...p)?'Desde '+dinero(Math.min(...p))+' · el precio cambia según el tono':'';}
@@ -363,7 +363,7 @@ $('#lineas').onclick=e=>{const b=e.target.closest('[data-linea]');if(!b)return;c
 for(const a of document.querySelectorAll('[data-seccion-portada]'))a.onclick=e=>{e.preventDefault();const l=a.dataset.seccionPortada;if(l!==linea)cambiarLinea(l);else elegirGrupo('Todas');bajarCatalogo();$('#categorias [data-seccion="'+CSS.escape(l)+'"]')?.focus({preventScroll:true});};
 function bajarCatalogo(){$('#seccion-catalogo').scrollIntoView({behavior:movimiento.matches?'auto':'smooth'});}
 for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const s=e.target.closest('[data-seccion]');if(s){if(s.dataset.seccion!==linea)cambiarLinea(s.dataset.seccion);else elegirGrupo('Todas');$(id+' [data-seccion="'+CSS.escape(linea)+'"]')?.focus();return;}const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
-$('.mosaico').onclick=e=>{const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
+$('.mosaico').onclick=e=>{const s=e.target.closest('[data-linea-mosaico]');if(s){e.preventDefault();cambiarLinea(s.dataset.lineaMosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});return;}const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
 $('#tallas').onclick=e=>{const b=e.target.closest('[data-talla]');if(!b)return;talla=b.dataset.talla;pintarFiltros();pintarCuadricula();$('#tallas [aria-pressed="true"]')?.focus();};
 $('#vista').onclick=e=>{const b=e.target.closest('[data-vista]');if(!b)return;guardarVista(Number(b.dataset.vista));pintarVista();$('#vista [aria-pressed="true"]')?.focus();};
 $('#lista-bolsa').onclick=e=>{
