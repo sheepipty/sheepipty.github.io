@@ -54,3 +54,10 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 @media(max-width:639px){.tarjeta h3{font-size:13px}.sello-combo{font-size:11px}}
 /* Claude 2026-11-23: nombres largos en cursiva se cortan a 3 líneas en la tarjeta; la ficha muestra el texto completo. */
 .tarjeta h3{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+/* Secciones desplegables (2026-11-24): en teléfono la tira muestra solo la sección abierta; las secciones se cambian en la barra de líneas o en el Menú. */
+.grupos .seccion{display:contents}.grupos .seccion-titulo{display:none}.grupos .seccion>ol{display:contents}
+.menu .seccion>ol{list-style:none;padding:0 0 12px 18px;margin:0;border-left:1px solid var(--linea)}
+.menu .seccion-titulo{font-weight:600}.menu .seccion-titulo .conteo{margin-left:auto}
+.menu .seccion>ol button{font-size:18px;min-height:42px}
+.seccion-titulo::after{content:'+';font-family:var(--texto);font-size:16px;margin-left:12px;flex-shrink:0}.seccion-titulo[aria-expanded=true]::after{content:'−'}
+@media(min-width:1024px){.lineas{display:none}.grupos .seccion{display:block;border-bottom:1px solid var(--linea);padding:4px 0}.grupos .seccion-titulo{display:flex;width:100%;font-weight:600;font-size:13px}.grupos .seccion>ol{display:flex;padding-left:8px}}

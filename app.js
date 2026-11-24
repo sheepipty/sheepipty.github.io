@@ -94,28 +94,35 @@ function marca(){
 }
 
 /* Categorías, tallas y vista. El grupo Farmasi es distinto de la categoría de navegación. */
-const articulosLinea=()=>datos.articulos.filter(a=>a.linea===linea);
+const articulosLinea=(l=linea)=>datos.articulos.filter(a=>a.linea===l);
+/* Secciones del menú (2026-11-24): cada línea se despliega en sus categorías; "Ver todo" nunca mezcla líneas. */
+const NOMBRES_SECCION={Ropa:'Prendas'};const nombreSeccion=l=>NOMBRES_SECCION[l]||l;
 const grupoCategoria=a=>a.linea==='Ropa'?(CONFIG.CATEGORIAS[a.categoria]||'Otros'):a.categoria||'Otros';
 const enGrupo=(a,g)=>g==='Todas'||(g==='Combo'?a.combo===true:grupoCategoria(a)===g);
 const slug=t=>String(t).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const ORDEN_TALLAS=['XXS','XS','S','M','L','XL','XXL','3XL'];
 const ordenTalla=t=>{const i=ORDEN_TALLAS.indexOf(t);return i>=0?i:/^\d+$/.test(t)?100+Number(t):t==='ÚNICA'?500:600;};
 function ajustarLinea(){const lineas=[...new Set(datos.articulos.map(a=>a.linea))];if(!lineas.includes(linea))linea=lineas[0]||'Ropa';}
-function listaGrupos(){
-  const arts=articulosLinea(), presentes=new Set(arts.map(grupoCategoria)), lista=[['Todas','Ver todo',arts.length]];
-  for(const g of linea==='Ropa'?CONFIG.GRUPOS:[...presentes])if(presentes.has(g))lista.push([g,g,arts.filter(a=>grupoCategoria(a)===g).length]);
-  const combos=linea==='Ropa'?arts.filter(a=>a.combo).length:0;if(combos)lista.push(['Combo','Combo',combos]);return lista;
+function listaGrupos(l=linea){
+  const arts=articulosLinea(l), presentes=new Set(arts.map(grupoCategoria)), lista=[['Todas','Ver todo',arts.length]];
+  for(const g of l==='Ropa'?CONFIG.GRUPOS:[...presentes])if(presentes.has(g))lista.push([g,g,arts.filter(a=>grupoCategoria(a)===g).length]);
+  const combos=l==='Ropa'?arts.filter(a=>a.combo).length:0;if(combos)lista.push(['Combo','Combo',combos]);return lista;
 }
 function desdeUrl(){let h='';try{h=decodeURIComponent(location.hash.slice(1));}catch(e){}const g=listaGrupos().find(([v])=>slug(v)===h);categoria=g?g[0]:'Todas';}
 function elegirGrupo(valor){categoria=valor;talla='Todas';const url=valor==='Todas'?location.pathname+location.search:'#'+slug(valor);history.pushState(null,'',url);pintarFiltros();pintarCuadricula();}
 function cambiarLinea(valor){linea=valor;categoria='Todas';talla='Todas';history.replaceState(null,'',location.pathname+location.search);pintarFiltros();pintarCuadricula();}
 function pintarFiltros(){
   ajustarLinea();const lineas=[...new Set(datos.articulos.map(a=>a.linea))], nav=$('#lineas');nav.hidden=lineas.length<=1;nav.replaceChildren();
-  for(const l of lineas){const b=boton(l);b.dataset.linea=l;b.setAttribute('aria-pressed',String(l===linea));nav.append(b);}
+  for(const l of lineas){const b=boton(nombreSeccion(l));b.dataset.linea=l;b.setAttribute('aria-pressed',String(l===linea));nav.append(b);}
   const grupos=listaGrupos();if(!grupos.some(([g])=>g===categoria))categoria='Todas';
   for(const id of ['#categorias','#menu-grupos']){
     const lista=$(id);lista.replaceChildren();
-    grupos.forEach(([valor,texto,n],i)=>{const li=nodo('li'),b=boton('');b.dataset.grupo=valor;b.setAttribute('aria-current',String(valor===categoria));b.append(nodo('span','num','['+String(i+1).padStart(2,'0')+']'),nodo('span','',texto),nodo('span','conteo','('+n+')'));li.append(b);lista.append(li);});
+    for(const l of lineas){
+      const abierta=l===linea,sec=nodo('li','seccion'),t=boton('','seccion-titulo');t.dataset.seccion=l;t.setAttribute('aria-expanded',String(abierta));
+      t.append(nodo('span','',nombreSeccion(l)),nodo('span','conteo','('+articulosLinea(l).length+')'));sec.append(t);
+      if(abierta){const ol=nodo('ol');grupos.forEach(([valor,texto,n],i)=>{const li=nodo('li'),b=boton('');b.dataset.grupo=valor;b.setAttribute('aria-current',String(valor===categoria));b.append(nodo('span','num','['+String(i+1).padStart(2,'0')+']'),nodo('span','',texto),nodo('span','conteo','('+n+')'));li.append(b);ol.append(li);});sec.append(ol);}
+      lista.append(sec);
+    }
   }
   const cont=$('#tallas');cont.replaceChildren();cont.hidden=linea===SB||!articulosLinea().some(a=>String(a.talla??'').trim());
   if(cont.hidden){talla='Todas';return;}
@@ -347,7 +354,7 @@ function accionesProducto(e){if(Date.now()<suprimirClickHasta){e.preventDefault(
 $('#catalogo').onclick=accionesProducto;$('#pista').onclick=accionesProducto;$('#detalle').addEventListener('click',accionesProducto);
 $('#lineas').onclick=e=>{const b=e.target.closest('[data-linea]');if(!b)return;cambiarLinea(b.dataset.linea);$('#lineas [aria-pressed="true"]')?.focus();};
 function bajarCatalogo(){$('#seccion-catalogo').scrollIntoView({behavior:movimiento.matches?'auto':'smooth'});}
-for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
+for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const s=e.target.closest('[data-seccion]');if(s){if(s.dataset.seccion!==linea)cambiarLinea(s.dataset.seccion);else elegirGrupo('Todas');$(id+' [data-seccion="'+CSS.escape(linea)+'"]')?.focus();return;}const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
 $('.mosaico').onclick=e=>{const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
 $('#tallas').onclick=e=>{const b=e.target.closest('[data-talla]');if(!b)return;talla=b.dataset.talla;pintarFiltros();pintarCuadricula();$('#tallas [aria-pressed="true"]')?.focus();};
 $('#vista').onclick=e=>{const b=e.target.closest('[data-vista]');if(!b)return;guardarVista(Number(b.dataset.vista));pintarVista();$('#vista [aria-pressed="true"]')?.focus();};
