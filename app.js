@@ -133,6 +133,16 @@ const claveGrupo=a=>esSalud(a)&&a.grupo?'grupo:'+a.grupo:'articulo:'+a.codigo;
 function variantesDe(a){return esSalud(a)&&a.grupo?datos.articulos.filter(x=>esSalud(x)&&x.grupo===a.grupo):[a];}
 /* El API usa identificadores G-… como grupo: esos identificadores no son nombres públicos. */
 function nombreProducto(a){return esSalud(a)&&a.grupo&&!/^G-[\w-]+$/i.test(a.grupo)?a.grupo:a.descripcion;}
+/* Nombre de vitrina (2026-11-24): la descripción completa solo va en la ficha. Primera frase, hasta 4 palabras,
+   sin cortar un complemento "de …" a la mitad ni terminar en palabra vacía. Salud y belleza conserva su nombre. */
+const VACIAS_NOMBRE=new Set(['de','del','con','y','a','en','la','el','las','los','tipo','modelo','sin','e','o']);
+function nombreCorto(texto,max=4){
+  const todas=String(texto||'').trim().split(/[,:;(]/)[0].split(/\s+(?:con|modelo|tipo)\s+/i)[0].trim().split(/\s+/);let p=todas.slice(0,max);
+  if(todas.length>max&&p.length>=4&&p[max-2].toLowerCase()==='de')p=p.slice(0,max-2);
+  while(p.length>1&&VACIAS_NOMBRE.has(p[p.length-1].toLowerCase()))p.pop();
+  return p.join(' ')||String(texto||'');
+}
+function nombreVitrina(a){return esSalud(a)?nombreProducto(a):nombreCorto(a.descripcion);}
 const seleccionadas=new Map();
 /* Geometría v3 traducida de posts-v3.py. Solo se calculan las combinaciones
    usadas; las tarjetas y la ficha clonan el SVG almacenado, sin red. */
@@ -180,15 +190,15 @@ function configurarAgregar(b,a){
   const dentro=bolsa.some(x=>x.codigo===a.codigo);b.dataset.agregar=a.codigo;b.dataset.enBolsa=String(dentro);b.disabled=!disponible(a)||validando;
   b.textContent=esSalud(a)?'Pídelo con Sheepi':dentro?'En tu bolsa':'Agregar a la bolsa';
   if(!disponible(a))b.textContent=requiereFarmasi(a)&&!datos.farmasi?'Pedidos no disponibles':'Disponible solo en línea';
-  b.setAttribute('aria-label',b.textContent+': '+nombreProducto(a)+(a.variante?' · '+a.variante:''));
+  b.setAttribute('aria-label',b.textContent+': '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
 }
 function tarjeta(variantes,reciente=false){
   const art=nodo('article',reciente?'tarjeta prod':'tarjeta'), abrir=boton('','foto-boton'), pie=nodo('div','pie-tarjeta'), titulo=nodo('h3'), precioCont=nodo('div'), meta=parrafo('','talla'), selector=nodo('div'), variante=parrafo('','variante-elegida'), agregarBoton=boton('','agregar'), info=parrafo('','aviso-encargo');
   art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo));pie.append(titulo,meta,precioCont,selector,variante,info,agregarBoton);art.append(abrir,pie);
   function actualizar(a){
     seleccionadas.set(claveGrupo(a),a.codigo);const img=abrir.querySelector('img'),src=foto(a.foto);if(src)img.src=src;else img.removeAttribute('src');img.alt=a.descripcion||'Producto';
-    abrir.dataset.detalle=a.codigo;abrir.setAttribute('aria-label','Ver '+nombreProducto(a)+(a.variante?' · '+a.variante:''));
-    titulo.textContent=nombreProducto(a);precioCont.replaceChildren(precios(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
+    abrir.dataset.detalle=a.codigo;abrir.setAttribute('aria-label','Ver '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
+    titulo.textContent=nombreVitrina(a);precioCont.replaceChildren(precios(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
     variante.textContent=a.variante||'';variante.hidden=!a.variante;
     info.textContent=esSalud(a)?'Por pedido':logica.esEncargo(a)?'Por encargo · '+(a.tiempo_entrega||'fecha por confirmar'):'';info.hidden=!info.textContent;
     configurarAgregar(agregarBoton,a);
@@ -213,7 +223,7 @@ function abrirDetalle(codigo){
   const variantes=variantesDe(inicial), cont=$('#detalle-contenido'), img=imagen(inicial), ficha=nodo('div','ficha'), titulo=nodo('h2'), selector=nodo('div'), contenido=nodo('div');titulo.id='detalle-titulo';
   cont.replaceChildren(enmarcar(img,variantes[0].codigo,inicial.combo),ficha);ficha.append(titulo,selector,contenido);
   function actualizar(a){
-    seleccionadas.set(claveGrupo(a),a.codigo);const src=foto(a.foto);if(src)img.src=src;else img.removeAttribute('src');img.alt=a.descripcion||'Producto';titulo.textContent=nombreProducto(a);contenido.replaceChildren();
+    seleccionadas.set(claveGrupo(a),a.codigo);const src=foto(a.foto);if(src)img.src=src;else img.removeAttribute('src');img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
     if(esSalud(a)&&variantes.length>1)selector.replaceChildren(paleta(variantes,a,x=>{actualizar(x);selector.querySelector('[aria-pressed="true"]')?.focus();}));else selector.replaceChildren();
     if(a.variante)contenido.append(parrafo(a.variante,'variante-elegida'));
     if(a.talla)contenido.append(parrafo('Talla: '+a.talla));if(a.estado)contenido.append(parrafo('Estado: '+a.estado));if(a.combo)contenido.append(parrafo('Participa en combo'));
@@ -275,7 +285,7 @@ function pintarBolsa(){
   if(!bolsa.length)lista.append(parrafo('Tu bolsa está vacía.'));
   for(const a of bolsa){
     const fila=nodo('div','linea-bolsa'), texto=nodo('div'), img=imagen(a);img.width=72;img.height=90;
-    texto.append(parrafo(nombreProducto(a)+(a.variante?' · '+a.variante:'')),parrafo(a.codigo+(a.talla?' · '+a.talla:''),'secundario'),parrafo(dinero(a.precio)));
+    texto.append(parrafo(nombreVitrina(a)+(a.variante?' · '+a.variante:'')),parrafo(a.codigo+(a.talla?' · '+a.talla:''),'secundario'),parrafo(dinero(a.precio)));
     const quitar=boton('Quitar');quitar.dataset.quitar=a.codigo;quitar.disabled=validando;quitar.setAttribute('aria-label','Quitar '+a.descripcion+' de la bolsa');texto.append(quitar);
     const limite=logica.limiteBolsa(a);
     if(limite>1){const c=nodo('div','cantidad-bolsa');for(const delta of [-1,1]){const b=boton(delta<0?'−':'+');b.dataset.cantidad=delta;b.dataset.codigo=a.codigo;b.setAttribute('aria-label',(delta<0?'Reducir':'Aumentar')+' cantidad de '+a.descripcion);b.disabled=validando||(delta<0?a.cantidad<=1:a.cantidad>=limite||unidades()>=30);if(delta>0)c.append(nodo('span','',a.cantidad));c.append(b);}texto.append(c);}
