@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:34d083873bdd91f6ba5f40e015169f5a468e1faa98a4839c4a0159b29a4e734c
+// GENERADO desde compartido/logica.js — no editar — sha256:a9d2b7faa0870351435375639117eb30d2a4b5a60f1bf87b0698f17691fb5781
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -151,6 +151,23 @@
   const esObservacionPublica=texto=>!!String(texto||'').trim()&&!/^Ninguno/i.test(String(texto).trim());
   const EUR_A_LETRA={32:'XXS',34:'XS',36:'S',38:'M',40:'L',42:'XL',44:'XXL',46:'3XL'};
   /* Talla corta para filtrar; el texto completo del Sheet se sigue mostrando en el detalle. */
+  /* Nombre corto de vitrina (2026-11-24): primera frase de la descripción, hasta 4 palabras,
+   * sin cortar un complemento "de …" a la mitad ni terminar en palabra vacía. Se usa cuando
+   * Inventario.Nombre está vacío y para sugerir el nombre inicial. */
+  const VACIAS_NOMBRE=['de','del','con','y','a','en','la','el','las','los','tipo','modelo','sin','e','o'];
+  const MAX_NOMBRE=40;
+  function nombreCorto(texto,max=4) {
+    const todas=String(texto||'').trim().split(/[,:;(]/)[0].split(/\s+(?:con|modelo|tipo)\s+/i)[0].trim().split(/\s+/).filter(Boolean);
+    let p=todas.slice(0,max);
+    if(todas.length>max&&p.length>=4&&p[max-2].toLowerCase()==='de') p=p.slice(0,max-2);
+    while(p.length>1&&VACIAS_NOMBRE.includes(p[p.length-1].toLowerCase())) p.pop();
+    return p.join(' ').slice(0,MAX_NOMBRE);
+  }
+  function validarNombre(texto) {
+    const n=String(texto??'').trim();
+    exigir(n.length<=MAX_NOMBRE,'El nombre corto admite hasta '+MAX_NOMBRE+' caracteres.');
+    return n;
+  }
   function tallaCorta(texto) {
     const t=String(texto||'').trim(), mayus=t.toUpperCase();
     if(/^(ONE SIZE|TALLA ÚNICA|TALLA UNICA|ÚNICA|UNICA)$/.test(mayus)) return 'ÚNICA';
@@ -375,7 +392,7 @@
     exigir(productos+traida+entrega+gestion<=10000000,'El total Farmasi supera $100000.');
     return {productos:productos/100,traida:traida/100,entrega:entrega/100,gestion:gestion/100,total:(productos+traida+entrega+gestion)/100,disponible,aviso:disponible?'':'No disponible por ahora. Escríbenos para coordinar.'};
   }
-  raiz.logica={anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
+  raiz.logica={nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
   raiz.logica.descuentoFarmasi=descuentoFarmasi;
   if(typeof module!=='undefined') module.exports=raiz.logica;
 })(globalThis);

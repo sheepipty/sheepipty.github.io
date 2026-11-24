@@ -1,7 +1,7 @@
 {
   "ok": true,
   "marca": "Sheepi",
-  "actualizado": "2026-11-24T17:46:22.745Z",
+  "actualizado": "2026-11-24T18:20:51.219Z",
   "combos": {
     "3": 12,
     "5": 18
@@ -11,6 +11,7 @@
   "articulos": [
     {
       "codigo": "NC-001",
+      "nombre": "Short de mezclilla azul",
       "categoria": "Shorts",
       "descripcion": "Short de mezclilla azul medio con ruedos doblados y cinco bolsillos",
       "marca": "Stradivarius",
@@ -26,6 +27,7 @@
     },
     {
       "codigo": "NC-002",
+      "nombre": "Enterizo corto",
       "categoria": "Enterizos cortos",
       "descripcion": "Enterizo corto de rayas verticales, escote cruzado en V, hombros descubiertos con volantes, mangas largas y cintura elástica",
       "marca": "Zara Basic - Z1975 Denim",
@@ -41,6 +43,7 @@
     },
     {
       "codigo": "NC-003",
+      "nombre": "Chaqueta corta cropped",
       "categoria": "Chaquetas / Denim",
       "descripcion": "Chaqueta corta cropped de mezclilla azul claro lavado, botones metálicos, bolsillos de pecho con solapa y bordes deshilachados decorativos",
       "marca": "HH Jeans Los Angeles",
@@ -56,6 +59,7 @@
     },
     {
       "codigo": "NC-004",
+      "nombre": "Jean blanco Lola Premium",
       "categoria": "Jeans / Pantalones",
       "descripcion": "Jean blanco Lola Premium modelo Mom Flare, cinco bolsillos, pierna acampanada, algodón 100%",
       "marca": "Lola Premium",
@@ -71,6 +75,7 @@
     },
     {
       "codigo": "NC-005",
+      "nombre": "Vestido midi lila lavanda",
       "categoria": "Vestidos",
       "descripcion": "Vestido midi lila lavanda de tirantes finos, escote recto, espalda abierta con tiras para anudar y falda ligeramente evasé",
       "marca": "H&M",
@@ -86,6 +91,7 @@
     },
     {
       "codigo": "NC-006",
+      "nombre": "Pantalón de vestir gris",
       "categoria": "Pantalones de vestir",
       "descripcion": "Pantalón de vestir gris claro, corte recto ligeramente holgado, pinzas delanteras, doble botón en cintura, bolsillos laterales y traseros de vivo",
       "marca": "Stradivarius",
@@ -101,6 +107,7 @@
     },
     {
       "codigo": "NC-007",
+      "nombre": "Vestido floral",
       "categoria": "Vestidos",
       "descripcion": "Vestido floral de fondo verde salvia, escote en V, mangas cortas con volantes, cintura definida y falda amplia",
       "marca": "SHEIN",
@@ -116,6 +123,7 @@
     },
     {
       "codigo": "NC-008",
+      "nombre": "Enterizo largo",
       "categoria": "Enterizos largos",
       "descripcion": "Enterizo largo de pierna ancha, escote cruzado, tirantes anchos y rayas verticales",
       "marca": "PeluRoz",
@@ -131,6 +139,7 @@
     },
     {
       "codigo": "NC-009",
+      "nombre": "Enterizo corto floral",
       "categoria": "Enterizos cortos",
       "descripcion": "Enterizo corto floral con mangas cortas amplias, cintura definida y cierre de botones",
       "marca": "ZARA",
@@ -146,6 +155,7 @@
     },
     {
       "codigo": "NC-011",
+      "nombre": "Vestido corto floral multicolor",
       "categoria": "Vestidos",
       "descripcion": "Vestido corto floral multicolor con mangas abullonadas, escote corazón con lazo frontal, espalda elástica tipo smock y falda evasé",
       "marca": "H&M",
@@ -161,6 +171,7 @@
     },
     {
       "codigo": "NC-012",
+      "nombre": "Vestido corto gris topo",
       "categoria": "Vestidos",
       "descripcion": "Vestido corto gris topo con escote V, mangas cortas abullonadas, cintura con encaje, espalda abierta con lazo y falda con volante",
       "marca": "HYFVE",
@@ -176,6 +187,7 @@
     },
     {
       "codigo": "NC-013",
+      "nombre": "Blazer entallado",
       "categoria": "Chaquetas / Blazers",
       "descripcion": "Blazer entallado de pana de manga larga con solapas, cierre frontal de un botón, bolsillo de pecho y forro interior",
       "marca": "MNG",
@@ -191,6 +203,7 @@
     },
     {
       "codigo": "NC-014",
+      "nombre": "Top corto floral azul",
       "categoria": "Tops / Blusas",
       "descripcion": "Top corto floral azul marino, sin mangas, escote redondeado, corte ajustado, ribetes oscuros y cierre metálico posterior",
       "marca": "ESP",
@@ -206,6 +219,7 @@
     },
     {
       "codigo": "NC-015",
+      "nombre": "Top strapless acanalado",
       "categoria": "Tops / Blusas",
       "descripcion": "Top strapless acanalado con tres botones frontales, abertura y bajo asimétrico",
       "marca": "I JOAH",
@@ -221,6 +235,7 @@
     },
     {
       "codigo": "NC-016",
+      "nombre": "Romper corto negro",
       "categoria": "Enterizos cortos",
       "descripcion": "Romper corto negro de tirantes finos ajustables, escote en V, bordado floral multicolor, cintura elástica fruncida y short amplio",
       "marca": "Forever 21",
@@ -236,6 +251,7 @@
     },
     {
       "codigo": "NC-017",
+      "nombre": "Top tejido",
       "categoria": "Tops / Blusas",
       "descripcion": "Top tejido de punto fino gris plateado, tirantes anchos, escote en V y corte recto",
       "marca": "Punto Blanco",
@@ -251,6 +267,7 @@
     },
     {
       "codigo": "NC-018",
+      "nombre": "Top strapless rosa",
       "categoria": "Tops / Blusas",
       "descripcion": "Top strapless rosa con banda superior doblada, tejido liso y corte ajustado",
       "marca": "Sin identificar",
@@ -266,6 +283,7 @@
     },
     {
       "codigo": "NC-019",
+      "nombre": "Blusa crop top floral",
       "categoria": "Tops / Blusas",
       "descripcion": "Blusa crop top floral con mangas cortas abullonadas, escote en V, lazo frontal ajustable y aro decorativo",
       "marca": "ZAWARY Clothing",
@@ -281,6 +299,7 @@
     },
     {
       "codigo": "NC-020",
+      "nombre": "Top satinado verde petróleo",
       "categoria": "Tops / Blusas",
       "descripcion": "Top satinado verde petróleo con tirantes finos, frunces ajustables y volante inferior",
       "marca": "Les Chiffons",
@@ -296,6 +315,7 @@
     },
     {
       "codigo": "NC-021",
+      "nombre": "Falda corta",
       "categoria": "Faldas",
       "descripcion": "Falda corta de pata de gallo, cintura definida, corte ajustado en cadera y bajo acampanado con paneles laterales",
       "marca": "Stradivarius",
@@ -311,6 +331,7 @@
     },
     {
       "codigo": "NC-022",
+      "nombre": "Top strapless negro entallado",
       "categoria": "Tops / Blusas",
       "descripcion": "Top strapless negro entallado con dos cremalleras metálicas verticales y bajo ligeramente acampanado",
       "marca": "Zara",
@@ -326,6 +347,7 @@
     },
     {
       "codigo": "NC-023",
+      "nombre": "Vestido corto turquesa",
       "categoria": "Vestidos",
       "descripcion": "Vestido corto turquesa de manga larga, escote en V con volantes, hombros fruncidos y estampado geométrico de cuadros",
       "marca": "Oasis",
@@ -341,6 +363,7 @@
     },
     {
       "codigo": "NC-024",
+      "nombre": "Top de tirantes finos",
       "categoria": "Tops / Blusas",
       "descripcion": "Top de tirantes finos blancos, escote recto, corte ajustado y estampado de margaritas",
       "marca": "",
@@ -356,6 +379,7 @@
     },
     {
       "codigo": "NC-025",
+      "nombre": "Top tejido de tirantes",
       "categoria": "Tops / Blusas",
       "descripcion": "Top tejido de tirantes con rayas horizontales multicolor y bordes ondulados",
       "marca": "Vero Moda",
@@ -371,6 +395,7 @@
     },
     {
       "codigo": "NC-026",
+      "nombre": "Blusa básica",
       "categoria": "Tops / Blusas",
       "descripcion": "Blusa básica de manga larga, cuello redondo, tejido acanalado y corte recto",
       "marca": "",
@@ -386,6 +411,7 @@
     },
     {
       "codigo": "NC-027",
+      "nombre": "Body strapless fruncido",
       "categoria": "Bodys / Tops",
       "descripcion": "Body strapless fruncido con escote recto, banda superior doblada y fruncidos laterales",
       "marca": "H&M",
@@ -401,6 +427,7 @@
     },
     {
       "codigo": "NC-028",
+      "nombre": "Blusa negra lisa",
       "categoria": "Tops / Blusas",
       "descripcion": "Blusa negra lisa de manga larga raglán, escote amplio tipo bote, tejido elástico y corte ajustado",
       "marca": "VENUS",
@@ -416,6 +443,7 @@
     },
     {
       "codigo": "NC-029",
+      "nombre": "Crop top negro",
       "categoria": "Tops / Blusas",
       "descripcion": "Crop top negro de tejido acanalado vertical con tirantes anchos cruzados en X y escote alto",
       "marca": "BABATON",
@@ -431,6 +459,7 @@
     },
     {
       "codigo": "NC-030",
+      "nombre": "Camisa blanca corta",
       "categoria": "Camisas / Blusas",
       "descripcion": "Camisa blanca corta de manga larga con cuello camisero, puños anchos, botonadura frontal oculta y espalda con paneles cruzados superpuestos",
       "marca": "KOAJ",
@@ -446,6 +475,7 @@
     },
     {
       "codigo": "NC-031",
+      "nombre": "Chaqueta corta negra",
       "categoria": "Chaquetas / Abrigos ligeros",
       "descripcion": "Chaqueta corta negra tipo cropped de manga larga raglán, cuello camisero pequeño, panel frontal superpuesto y cierre asimétrico con botón",
       "marca": "DAZY",
@@ -461,6 +491,7 @@
     },
     {
       "codigo": "NC-032",
+      "nombre": "Conjunto gris",
       "categoria": "Conjuntos / Trajes",
       "descripcion": "Conjunto gris de tejido acanalado: top de manga larga con escote barco y bajo en punta, y pantalón wide leg con cintura elástica",
       "marca": "",
@@ -476,6 +507,7 @@
     },
     {
       "codigo": "NC-033",
+      "nombre": "Camisa de cuadros",
       "categoria": "Camisas",
       "descripcion": "Camisa de cuadros de manga larga con capucha gris y cordones, cuello camisero, botones frontales, dos bolsillos en el pecho y puños ajustables",
       "marca": "Converse",
@@ -491,6 +523,7 @@
     },
     {
       "codigo": "NC-034",
+      "nombre": "Conjunto formal gris oscuro",
       "categoria": "Conjuntos / Trajes",
       "descripcion": "Conjunto formal gris oscuro de dos piezas: pantalón de vestir de corte slim fit y saco de solapa clásica, dos botones y bolsillos con tapa",
       "marca": "",
@@ -506,6 +539,7 @@
     },
     {
       "codigo": "NC-035",
+      "nombre": "Sudadera lisa",
       "categoria": "Suéteres / Sudaderas",
       "descripcion": "Sudadera lisa de cuello redondo, manga larga, puños y cintura acanalados e interior afelpado",
       "marca": "i-d ideology",
@@ -521,6 +555,7 @@
     },
     {
       "codigo": "NC-036",
+      "nombre": "Pantalón cargo negro",
       "categoria": "Pantalones / Cargo",
       "descripcion": "Pantalón cargo negro de pierna recta y holgada, múltiples bolsillos con solapa, cierre frontal con botón y cordones ajustables en los bajos",
       "marca": "JEANS (según etiqueta)",

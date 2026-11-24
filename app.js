@@ -33,7 +33,7 @@ function guardarEntrega(){try{localStorage.setItem(CLAVE_ENTREGA,JSON.stringify(
 function normalizar(d){
   if(!d||d.ok!==true||!Array.isArray(d.articulos)||!d.combos)throw Error('El catálogo no está disponible.');
   for(const k of [3,5])if(!Number.isFinite(Number(d.combos[k]))||Number(d.combos[k])<0)throw Error('Los combos no son válidos.');
-  const campos=['codigo','categoria','descripcion','marca','talla','estado','observacion','precio','combo','foto','fecha_ingreso','linea','modalidad','existencia','tiempo_entrega','maximo'];
+  const campos=['codigo','nombre','categoria','descripcion','marca','talla','estado','observacion','precio','combo','foto','fecha_ingreso','linea','modalidad','existencia','tiempo_entrega','maximo'];
   const vistos=new Set(), articulos=[];
   for(const a of d.articulos){
     if(!a||!logica.esCodigo(a.codigo)||vistos.has(a.codigo)||!Number.isFinite(a.precio)||a.precio<0||Object.hasOwn(a,'existencia')&&(!Number.isInteger(a.existencia)||a.existencia<2)||logica.esEncargo(a)&&(!Number.isInteger(a.maximo)||a.maximo<1||a.maximo>30))continue;
@@ -143,16 +143,9 @@ const claveGrupo=a=>esSalud(a)&&a.grupo?'grupo:'+a.grupo:'articulo:'+a.codigo;
 function variantesDe(a){return esSalud(a)&&a.grupo?datos.articulos.filter(x=>esSalud(x)&&x.grupo===a.grupo):[a];}
 /* El API usa identificadores G-… como grupo: esos identificadores no son nombres públicos. */
 function nombreProducto(a){return esSalud(a)&&a.grupo&&!/^G-[\w-]+$/i.test(a.grupo)?a.grupo:a.descripcion;}
-/* Nombre de vitrina (2026-11-24): la descripción completa solo va en la ficha. Primera frase, hasta 4 palabras,
-   sin cortar un complemento "de …" a la mitad ni terminar en palabra vacía. Salud y belleza conserva su nombre. */
-const VACIAS_NOMBRE=new Set(['de','del','con','y','a','en','la','el','las','los','tipo','modelo','sin','e','o']);
-function nombreCorto(texto,max=4){
-  const todas=String(texto||'').trim().split(/[,:;(]/)[0].split(/\s+(?:con|modelo|tipo)\s+/i)[0].trim().split(/\s+/);let p=todas.slice(0,max);
-  if(todas.length>max&&p.length>=4&&p[max-2].toLowerCase()==='de')p=p.slice(0,max-2);
-  while(p.length>1&&VACIAS_NOMBRE.has(p[p.length-1].toLowerCase()))p.pop();
-  return p.join(' ')||String(texto||'');
-}
-function nombreVitrina(a){return esSalud(a)?nombreProducto(a):nombreCorto(a.descripcion);}
+/* Nombre de vitrina (2026-11-24): Inventario.Nombre si existe; si no, la regla de logica.nombreCorto.
+   La descripción completa solo va en la ficha. Salud y belleza conserva su nombre. */
+function nombreVitrina(a){return esSalud(a)?nombreProducto(a):(typeof a.nombre==='string'&&a.nombre.trim()?a.nombre.trim():logica.nombreCorto(a.descripcion)||a.descripcion);}
 const seleccionadas=new Map();
 /* Geometría v3 traducida de posts-v3.py. Solo se calculan las combinaciones
    usadas; las tarjetas y la ficha clonan el SVG almacenado, sin red. */
