@@ -319,9 +319,9 @@ async function pedir(){
   finally{validando=false;pintarBolsa();actualizarBotones();}
 }
 
-/* Carrusel sin clones: cuatro visibles, dos en celular, vuelta al inicio. */
+/* Carrusel sin clones: seis visibles, tres en celular (inicio delgado 2026-11-24), vuelta al inicio. */
 let carruselIndice=0,carruselTimer=null,carruselPausa=false,carruselPuntero=false,carruselFoco=false,carruselTocando=false,carruselFirma='',inicioDedo=null,suprimirClickHasta=0;
-const visiblesCarrusel=()=>matchMedia('(max-width:760px)').matches?2:4;
+const visiblesCarrusel=()=>matchMedia('(max-width:760px)').matches?3:6;
 const maxCarrusel=()=>Math.max(0,$('#pista').children.length-visiblesCarrusel());
 function pararCarrusel(){clearInterval(carruselTimer);carruselTimer=null;}
 function arrancarCarrusel(){pararCarrusel();if(movimiento.matches||document.hidden||carruselPausa||carruselPuntero||carruselFoco||carruselTocando||$('#recientes').hidden)return;carruselTimer=setInterval(()=>irCarrusel(1),3000);}
