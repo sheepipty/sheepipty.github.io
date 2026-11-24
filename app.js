@@ -168,8 +168,8 @@ function marcoSVG(tipo,color){
   const svg=plantilla.content.firstElementChild;cacheMarcos.set(clave,svg);return svg.cloneNode(true);
 }
 function enmarcar(img,codigo,combo=false){
-  const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo),firma=nodo('img','firma-v3');firma.src='marca/carita-vino.webp';firma.alt='';firma.width=48;firma.height=48;firma.loading='lazy';firma.decoding='async';
-  cont.append(img,marcoSVG(tipo,color),firma);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
+  const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo);
+  cont.append(img,marcoSVG(tipo,color));if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello',color==='#6B2138'?'#FDB7B8':color);cont.append(sello);}return cont;
 }
 function elegida(variantes){return variantes.find(a=>a.codigo===seleccionadas.get(claveGrupo(variantes[0])))||variantes[0];}
 function precios(a){
