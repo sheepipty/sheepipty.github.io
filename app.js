@@ -118,6 +118,8 @@ function cambiarLinea(valor){linea=valor;categoria='Todas';talla='Todas';history
 const SUBLEMAS={Ropa:'Ropa con historia, lista para empezar otra.','Salud y belleza':'Tus favoritos, por pedido.'};
 function pintarFiltros(){
   $('#sublema').textContent=SUBLEMAS[linea]||'';
+  /* Portada: un enlace por sección con productos publicados (2026-11-24). */
+  const conProductos=new Set(datos.articulos.map(a=>a.linea));for(const a of document.querySelectorAll('[data-seccion-portada]'))a.hidden=!conProductos.has(a.dataset.seccionPortada);
   ajustarLinea();const lineas=[...new Set(datos.articulos.map(a=>a.linea))], nav=$('#lineas');nav.hidden=lineas.length<=1;nav.replaceChildren();
   for(const l of lineas){const b=boton(nombreSeccion(l));b.dataset.linea=l;b.setAttribute('aria-pressed',String(l===linea));nav.append(b);}
   const grupos=listaGrupos();if(!grupos.some(([g])=>g===categoria))categoria='Todas';
@@ -353,6 +355,7 @@ document.addEventListener('visibilitychange',arrancarCarrusel);movimiento.addEve
 function accionesProducto(e){if(Date.now()<suprimirClickHasta){e.preventDefault();return;}const b=e.target.closest('button');if(b?.dataset.detalle)abrirDetalle(b.dataset.detalle);if(b?.dataset.agregar)agregar(b.dataset.agregar);}
 $('#catalogo').onclick=accionesProducto;$('#pista').onclick=accionesProducto;$('#detalle').addEventListener('click',accionesProducto);
 $('#lineas').onclick=e=>{const b=e.target.closest('[data-linea]');if(!b)return;cambiarLinea(b.dataset.linea);$('#lineas [aria-pressed="true"]')?.focus();};
+for(const a of document.querySelectorAll('[data-seccion-portada]'))a.onclick=e=>{e.preventDefault();const l=a.dataset.seccionPortada;if(l!==linea)cambiarLinea(l);else elegirGrupo('Todas');bajarCatalogo();$('#categorias [data-seccion="'+CSS.escape(l)+'"]')?.focus({preventScroll:true});};
 function bajarCatalogo(){$('#seccion-catalogo').scrollIntoView({behavior:movimiento.matches?'auto':'smooth'});}
 for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const s=e.target.closest('[data-seccion]');if(s){if(s.dataset.seccion!==linea)cambiarLinea(s.dataset.seccion);else elegirGrupo('Todas');$(id+' [data-seccion="'+CSS.escape(linea)+'"]')?.focus();return;}const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
 $('.mosaico').onclick=e=>{const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
