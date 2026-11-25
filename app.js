@@ -99,7 +99,7 @@ function marca(){
 /* Categorías, tallas y vista. El grupo Farmasi es distinto de la categoría de navegación. */
 const articulosLinea=(l=linea)=>datos.articulos.filter(a=>a.linea===l);
 /* Secciones del menú (2026-11-24): cada línea se despliega en sus categorías; "Ver todo" nunca mezcla líneas. */
-const NOMBRES_SECCION={Ropa:'Prendas'};const nombreSeccion=l=>NOMBRES_SECCION[l]||l;
+const NOMBRES_SECCION={};const nombreSeccion=l=>NOMBRES_SECCION[l]||l;
 const grupoCategoria=a=>a.linea==='Ropa'?(CONFIG.CATEGORIAS[a.categoria]||'Otros'):a.categoria||'Otros';
 const enGrupo=(a,g)=>g==='Todas'||(g==='Combo'?a.combo===true:grupoCategoria(a)===g);
 const slug=t=>String(t).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -119,7 +119,7 @@ const SUBLEMAS={Ropa:'Ropa con historia, lista para empezar otra.','Salud y bell
 function pintarFiltros(){
   $('#sublema').textContent=SUBLEMAS[linea]||'';
   /* Portada: un enlace por sección con productos publicados (2026-11-24). */
-  const conProductos=new Set(datos.articulos.map(a=>a.linea));for(const a of document.querySelectorAll('[data-seccion-portada]'))a.hidden=!conProductos.has(a.dataset.seccionPortada);
+  const conProductos=new Set(datos.articulos.map(a=>a.linea));for(const a of document.querySelectorAll('[data-seccion-portada]'))a.hidden=!conProductos.has(a.dataset.seccionPortada);prepararMosaico(conProductos.has('Salud y belleza'));
   ajustarLinea();const lineas=[...new Set(datos.articulos.map(a=>a.linea))], nav=$('#lineas');nav.hidden=lineas.length<=1;nav.replaceChildren();
   for(const l of lineas){const b=boton(nombreSeccion(l));b.dataset.linea=l;b.setAttribute('aria-pressed',String(l===linea));nav.append(b);}
   const grupos=listaGrupos();if(!grupos.some(([g])=>g===categoria))categoria='Todas';
@@ -363,7 +363,7 @@ $('#lineas').onclick=e=>{const b=e.target.closest('[data-linea]');if(!b)return;c
 for(const a of document.querySelectorAll('[data-seccion-portada]'))a.onclick=e=>{e.preventDefault();const l=a.dataset.seccionPortada;if(l!==linea)cambiarLinea(l);else elegirGrupo('Todas');bajarCatalogo();$('#categorias [data-seccion="'+CSS.escape(l)+'"]')?.focus({preventScroll:true});};
 function bajarCatalogo(){$('#seccion-catalogo').scrollIntoView({behavior:movimiento.matches?'auto':'smooth'});}
 for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const s=e.target.closest('[data-seccion]');if(s){if(s.dataset.seccion!==linea)cambiarLinea(s.dataset.seccion);else elegirGrupo('Todas');$(id+' [data-seccion="'+CSS.escape(linea)+'"]')?.focus();return;}const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
-$('.mosaico').onclick=e=>{const s=e.target.closest('[data-linea-mosaico]');if(s){e.preventDefault();cambiarLinea(s.dataset.lineaMosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});return;}const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
+$('.mosaico').onclick=e=>{const s=e.target.closest('[data-linea-mosaico]');if(s){e.preventDefault();cambiarLinea(s.dataset.lineaMosaico);if(s.dataset.grupoMosaico)elegirGrupo(s.dataset.grupoMosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});return;}const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
 $('#tallas').onclick=e=>{const b=e.target.closest('[data-talla]');if(!b)return;talla=b.dataset.talla;pintarFiltros();pintarCuadricula();$('#tallas [aria-pressed="true"]')?.focus();};
 $('#vista').onclick=e=>{const b=e.target.closest('[data-vista]');if(!b)return;guardarVista(Number(b.dataset.vista));pintarVista();$('#vista [aria-pressed="true"]')?.focus();};
 $('#lista-bolsa').onclick=e=>{
@@ -401,3 +401,14 @@ iniciarLogos();
 async function iniciar(){consultando=true;$('#abrir-bolsa').disabled=true;pintarVista();try{await cargarDatos();}catch(e){$('#aviso').textContent=e.message||'No se pudo cargar el catálogo. Intenta de nuevo más tarde.';$('#aviso').className='error';}finally{consultando=false;$('#abrir-bolsa').disabled=!catalogoCargado;cerrarCarga();}}
 iniciar();
 setInterval(async()=>{if(validando||consultando||document.hidden||$('#bolsa').open||$('#detalle').open||$('#menu').open||!catalogoCargado)return;consultando=true;try{await cargarDatos();}catch(e){/* Se conserva el catálogo visible. */}finally{consultando=false;}},60000);
+
+/* Mosaico de portada: alterna Ropa ↔ Salud y belleza cada 6 s, recuadro por recuadro.
+ * Se pausa con el puntero o el foco encima, con la pestaña oculta y con movimiento reducido (ahí solo cambia con los botones). */
+let mosaicoTimer=null,mosaicoListo=false,mosaicoPuntero=false,mosaicoFoco=false;
+function caraMosaico(cara){const m=$('.mosaico');if(m.dataset.cara!==cara){const entran=[...m.querySelectorAll('.cara-'+cara)];for(const t of entran){t.style.transition='none';t.style.transform='translateX(100%)';}void m.offsetWidth;for(const t of entran){t.style.transition='';t.style.transform='';}}m.dataset.cara=cara;for(const t of m.querySelectorAll('.tile'))t.inert=!t.classList.contains('cara-'+cara);for(const b of document.querySelectorAll('.mosaico-control button'))b.setAttribute('aria-pressed',String(b.dataset.cara===cara));}
+function pararMosaico(){clearInterval(mosaicoTimer);mosaicoTimer=null;}
+function arrancarMosaico(){pararMosaico();if(!mosaicoListo||movimiento.matches||document.hidden||mosaicoPuntero||mosaicoFoco)return;mosaicoTimer=setInterval(()=>caraMosaico($('.mosaico').dataset.cara==='ropa'?'belleza':'ropa'),6000);}
+function prepararMosaico(hayBelleza){mosaicoListo=hayBelleza;$('.mosaico-control').hidden=!hayBelleza;if(!hayBelleza)caraMosaico('ropa');arrancarMosaico();}
+{const m=$('.mosaico');m.addEventListener('pointerenter',()=>{mosaicoPuntero=true;pararMosaico();});m.addEventListener('pointerleave',()=>{mosaicoPuntero=false;arrancarMosaico();});m.addEventListener('focusin',()=>{mosaicoFoco=true;pararMosaico();});m.addEventListener('focusout',e=>{if(!m.contains(e.relatedTarget)){mosaicoFoco=false;arrancarMosaico();}});
+ for(const b of document.querySelectorAll('.mosaico-control button'))b.onclick=()=>{caraMosaico(b.dataset.cara);arrancarMosaico();};
+ document.addEventListener('visibilitychange',arrancarMosaico);movimiento.addEventListener('change',arrancarMosaico);}
