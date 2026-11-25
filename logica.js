@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:d89e26eeb1f6618f11726897368adb299e5321e6bfefa650fb3d8eade6b3de17
+// GENERADO desde compartido/logica.js — no editar — sha256:5552b17ea34b485227d94249d981f4099f5811fbfc07a5d70e12a25d4feb1d0b
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -423,6 +423,23 @@
     const t=centavos(total),a=solicitado===undefined?t:centavos(solicitado);
     exigir(t>0&&a===t,'El anticipo Farmasi debe ser el total del encargo.');return a/100;
   }
+  /* Promoción Farmasi (D062, 2026-11-25): precio Sheepi en promoción, aparte del normal. Vacío → sin promoción.
+   * Debe ser menor que el precio normal y no bajar del piso D062: la mitad del original + $2,50. */
+  function precioPromoFarmasi(promo,{publico,precio}) {
+    const t=String(promo??'').trim();if(t==='')return null;
+    exigir(/^(?:0|[1-9]\d*)(?:\.\d{1,2})?$/.test(t),'Precio de promoción inválido.');
+    const c=centavos(t),piso=Math.ceil(centavos(publico)/2)+250;
+    exigir(c<centavos(precio),'La promoción ($'+t+') debe ser menor que el precio normal ($'+(centavos(precio)/100).toFixed(2)+').');
+    exigir(c>=piso,'La promoción ($'+t+') baja del piso D062 ($'+(piso/100).toFixed(2)+').');
+    return c/100;
+  }
+  /* Precio que se cobra: la promoción si existe y se usa el descuento del producto; con un descuento manual (admin), el calculado. */
+  function precioFarmasiVigente({publico,promo,descuento,porDefecto}) {
+    const normal=precioVentaFarmasi(publico,descuento);
+    if(Number(descuento)!==Number(porDefecto))return normal;
+    const p=precioPromoFarmasi(promo,{publico,precio:normal});
+    return p===null?normal:p;
+  }
   function validarFilaFarmasi(f,pct=20) {
     exigir(f.codigo_farmasi&&!/^[=+@-]/.test(f.codigo_farmasi),'Código Farmasi inválido.');
     exigir(f.linea&&f.producto,'Completa linea y producto.');
@@ -433,7 +450,8 @@
     exigir(!f.foto||/^fotos\/[^/\\]+$/.test(f.foto),'Foto debe ser fotos/<archivo>.');
     const descuento=porcentajeFarmasi(f.descuento,pct),precio=precioVentaFarmasi(f.precio_publico,descuento);
     if(f.precio_sheepi!==undefined&&String(f.precio_sheepi).trim()!=='') exigir(centavos(f.precio_sheepi)===centavos(precio),'El precio_sheepi del CSV ('+f.precio_sheepi+') no coincide con D060/D061 ('+precio.toFixed(2)+').');
-    return {...f,color:f.color||'',descuento,precio};
+    const promo=precioPromoFarmasi(f.precio_sheepi_promo,{publico:f.precio_publico,precio});
+    return {...f,color:f.color||'',descuento,precio,promo};
   }
   function esFarmasi(x) {
     return x.recargo_traida!==undefined&&x.recargo_traida!==null&&x.recargo_traida!=='' ||
@@ -463,7 +481,7 @@
     exigir(productos+traida+entrega+gestion<=10000000,'El total Farmasi supera $100000.');
     return {productos:productos/100,traida:traida/100,entrega:entrega/100,gestion:gestion/100,total:(productos+traida+entrega+gestion)/100,disponible,aviso:disponible?'':'No disponible por ahora. Escríbenos para coordinar.'};
   }
-  raiz.logica={repartirPorValor,costosVigentes,conciliacionFarmasi,redondeoVenta,porcentajeFarmasi,precioVentaFarmasi,nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
+  raiz.logica={precioPromoFarmasi,precioFarmasiVigente,repartirPorValor,costosVigentes,conciliacionFarmasi,redondeoVenta,porcentajeFarmasi,precioVentaFarmasi,nombreCorto,validarNombre,anticipoFarmasi,validarFilaFarmasi,precioSheepi,esFarmasi,zonasFarmasi,cargosFarmasi,esEncargo,limiteBolsa,refrescarBolsa,tallaCorta,siguienteCodigo,totalBolsa,prorratear,validarVenta,validarPrenda,mensajeWhatsApp,mensajeCobro,esObservacionPublica,idFoto,centavos,fecha,exigir,dinero,esCodigo,lineaDeCodigo,validarMonto,validarCantidad,validarAcuerdo,parteDueno,repartirReversion,repartirReembolso,sumaPago,saldos,anticiposSinAplicar,TRANSICIONES_ENCARGO,transicionEncargo,cierreCancelacion,estadoConsignacion,consignacionesPorVencer,mensajeEstadoCuenta,mensajeVentaDueno,mensajeCotizacion};
   raiz.logica.descuentoFarmasi=descuentoFarmasi;
   if(typeof module!=='undefined') module.exports=raiz.logica;
 })(globalThis);
