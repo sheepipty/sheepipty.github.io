@@ -138,9 +138,11 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 .paginas [aria-current=page]{font-weight:600;text-decoration:underline;text-underline-offset:6px}
 .desliza{position:relative;min-width:0}
 #categorias,#tallas{scrollbar-width:none}#categorias::-webkit-scrollbar,#tallas::-webkit-scrollbar{display:none}
-.con-flechas{position:relative}
+/* .grupos ya es sticky (bloque contenedor de las flechas); no forzar position aquí. */
 .flecha-desliza{position:absolute;top:0;bottom:0;z-index:2;width:44px;display:flex;align-items:center;font-size:24px;line-height:1;color:var(--vino);border:0;cursor:pointer}
 .flecha-desliza[hidden]{display:none}
 .flecha-desliza.der{right:0;justify-content:flex-end;padding-right:2px;background:linear-gradient(to right,rgba(249,239,230,0),var(--crema) 55%)}
 .flecha-desliza.izq{left:0;justify-content:flex-start;padding-left:2px;background:linear-gradient(to left,rgba(249,239,230,0),var(--crema) 55%)}
 .flecha-desliza:focus-visible{outline:2px solid var(--vino);outline-offset:-2px}
+/* 2026-11-25: en la barra lateral, un solo número por categoría (el conteo); sin índice [01]. */
+.grupos .num{display:none!important}.grupos .conteo{margin-left:0}
