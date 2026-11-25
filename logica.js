@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:5552b17ea34b485227d94249d981f4099f5811fbfc07a5d70e12a25d4feb1d0b
+// GENERADO desde compartido/logica.js — no editar — sha256:96650838f2acfd98b0096894fcda4a72897a498d6266578d6599f07b377670c1
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -451,7 +451,10 @@
     const descuento=porcentajeFarmasi(f.descuento,pct),precio=precioVentaFarmasi(f.precio_publico,descuento);
     if(f.precio_sheepi!==undefined&&String(f.precio_sheepi).trim()!=='') exigir(centavos(f.precio_sheepi)===centavos(precio),'El precio_sheepi del CSV ('+f.precio_sheepi+') no coincide con D060/D061 ('+precio.toFixed(2)+').');
     const promo=precioPromoFarmasi(f.precio_sheepi_promo,{publico:f.precio_publico,precio});
-    return {...f,color:f.color||'',descuento,precio,promo};
+    /* D049 (Josué, 2026-11-25): el costo estimado es el 50 % del precio ORIGINAL de Farmasi, sin promociones;
+     * se recalcula en cada carga si Farmasi cambia el original. La promoción solo se revisa al comprar. */
+    const costo=precioSheepi(f.precio_publico,50);
+    return {...f,color:f.color||'',descuento,precio,promo,costo};
   }
   function esFarmasi(x) {
     return x.recargo_traida!==undefined&&x.recargo_traida!==null&&x.recargo_traida!=='' ||
