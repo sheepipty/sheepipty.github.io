@@ -1,4 +1,4 @@
-// GENERADO desde compartido/logica.js — no editar — sha256:96650838f2acfd98b0096894fcda4a72897a498d6266578d6599f07b377670c1
+// GENERADO desde compartido/logica.js — no editar — sha256:8254ee7e3e83c95e714f6741968221bafa6f5a82f0305e17f1723798e247c444
 /* Fuente única de reglas puras: Apps Script, navegador y Node. */
 (function (raiz) {
   'use strict';
@@ -313,7 +313,7 @@
       '. Entrega estimada: '+fecha(encargo.entregaEstimada)+'.'+
       (encargo.opcionEntrega?'\nOpción de entrega: '+encargo.opcionEntrega+(encargo.zona?' · Zona: '+encargo.zona:'')+'\nCargos de traída, entrega y gestión: '+dinero(enteroCentavos(encargo.envioCentavos??0)/100):'')+
       (encargo.opcionEntrega==='Mi casillero'?'\nEl envío de Farmasi y el flete a Panamá se confirman al cotizar; pagas el flete a tu courier.':'')+
-      (productos.some(p=>(p.linea??p['Línea'])==='Salud y belleza')?'\nVenta final: por higiene, no se aceptan devoluciones.':'')+
+      (productos.some(p=>(p.linea??p['Línea'])==='Salud y belleza')?'\nVenta final: llegan nuevos y sellados; por higiene, no se aceptan devoluciones.':'')+
       '\nConfírmame si deseas encargarlo.';
   }
   // Un único punto de comparación para API, panel y bolsas anteriores.

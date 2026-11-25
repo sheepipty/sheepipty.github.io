@@ -249,7 +249,7 @@ function abrirDetalle(codigo){
     if(avisoDesde(variantes))contenido.append(parrafo(avisoDesde(variantes),'precio-desde'));
     if(a.talla)contenido.append(parrafo('Talla: '+a.talla));if(a.estado)contenido.append(parrafo('Estado: '+a.estado));if(a.combo)contenido.append(parrafo('Participa en combo'));
     if(logica.esObservacionPublica(a.observacion))contenido.append(parrafo(a.observacion));contenido.append(precios(a));
-    if(esSalud(a)){contenido.append(parrafo('Por pedido: llega a tu casillero o a través del nuestro','aviso-encargo'),parrafo(a.tiempo_entrega||datos.farmasi?.FARMASI_TIEMPO||'Tiempo de entrega por confirmar.'),parrafo('Venta final: por higiene, no se aceptan devoluciones.','venta-final'));}
+    if(esSalud(a)){contenido.append(parrafo('Por pedido: llega a tu casillero o a través del nuestro','aviso-encargo'),parrafo(a.tiempo_entrega||datos.farmasi?.FARMASI_TIEMPO||'Tiempo de entrega por confirmar.'),parrafo('Venta final: llegan nuevos y sellados; por higiene, no se aceptan devoluciones.','venta-final'));}
     else if(logica.esEncargo(a))contenido.append(parrafo('Por encargo · '+(a.tiempo_entrega||'fecha por confirmar')));
     const b=boton('','principal');configurarAgregar(b,a);contenido.append(b);if(requiereFarmasi(a)&&!datos.farmasi)contenido.append(parrafo(SIN_FARMASI,'nota'));
     if(a.marca)contenido.append(parrafo('Marca: '+a.marca,'marca-producto'));contenido.append(parrafo('Código: '+a.codigo,'codigo-producto'));
