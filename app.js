@@ -61,7 +61,8 @@ function normalizar(d){
   return {ok:true,marca:d.marca,actualizado:d.actualizado,retiro:d.retiro,whatsapp:d.whatsapp,combos:{3:Number(d.combos[3]),5:Number(d.combos[5])},articulos,farmasi};
 }
 async function consultar(){
-  const ctl=new AbortController(), timer=setTimeout(()=>ctl.abort(),6000);
+  /* 2026-11-25: la API con ~330 artículos tarda 3–7 s; con 6 s caía al respaldo y sacaba Farmasi de la bolsa. */
+  const ctl=new AbortController(), timer=setTimeout(()=>ctl.abort(),12000);
   try{
     let url;
     if(CONFIG.URL_API==='local')url=new URL('datos-respaldo.json',location.href);
@@ -176,10 +177,15 @@ function marcoSVG(tipo,color){
   const plantilla=document.createElement('template');plantilla.innerHTML='<svg class="marco-svg" xmlns="http://www.w3.org/2000/svg" viewBox="60 100 960 1040" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="fondo-marco" d="'+fondo+'" fill="#fff"/>'+(circulos?'<g fill="'+color+'">'+circulos+'</g>':'<path d="'+d+'" fill="none" stroke="'+color+'" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/>')+'</svg>';
   const svg=plantilla.content.firstElementChild;cacheMarcos.set(clave,svg);return svg.cloneNode(true);
 }
-function enmarcar(img,codigo,combo=false){
+function enmarcar(img,codigo,combo=false,pct=null){
   const cont=nodo('div','foto-v3'),[tipo,color]=estiloMarco(codigo);
-  cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello','var(--compra)');cont.append(sello);}return cont;
+  cont.append(marcoSVG(tipo,color),img);if(combo){const sello=nodo('span','sello-combo','combo');sello.style.setProperty('--sello','var(--compra)');cont.append(sello);}
+  /* 2026-11-25: Josué prefirió la etiqueta vino junto al precio (más fácil de cambiar el número); no hay sello de % en la foto. */
+  return cont;
 }
+function ponerSelloDescuento(cont,pct){const s=cont.querySelector('.sello-descuento');if(!s)return;s.textContent=pct?'-'+pct+' %':'';s.hidden=!pct;}
+/* D060: el % sale del descuento del producto; sin él, del de Config. Solo con precio público mayor. */
+function pctDescuento(a){if(!esSalud(a)||!Number.isFinite(a.precio_publico)||!(a.precio_publico>a.precio))return null;return Number.isFinite(a.descuento)?a.descuento:datos.farmasi?.DESCUENTO_SHEEPI??Math.round((1-a.precio/a.precio_publico)*100);}
 /* Variantes con precios distintos (p. ej. tonos rebajados por Farmasi): se avisa el mínimo; el precio mostrado y el de la bolsa son los del tono elegido. */
 function avisoDesde(variantes){const p=variantes.map(a=>a.precio);return Math.min(...p)<Math.max(...p)?'Desde '+dinero(Math.min(...p))+' · el precio cambia según el tono':'';}
 function elegida(variantes){return variantes.find(a=>a.codigo===seleccionadas.get(claveGrupo(variantes[0])))||variantes[0];}
@@ -191,11 +197,10 @@ function precios(a){
   if(Number.isFinite(a.precio_normal)){
     const antes=nodo('del','precio-publico',dinero(a.precio_normal));antes.setAttribute('aria-label','Antes '+dinero(a.precio_normal));
     p.append(antes,nodo('span','descuento promo','Promo'),nodo('strong','',dinero(a.precio)));
-  }else if(esSalud(a)&&Number.isFinite(a.precio_publico)&&a.precio_publico>a.precio){
-    /* D060: la etiqueta sale del descuento del producto; sin él, del de Config. */
-    const pct=Number.isFinite(a.descuento)?a.descuento:datos.farmasi?.DESCUENTO_SHEEPI??Math.round((1-a.precio/a.precio_publico)*100);
+  }else if(pctDescuento(a)){
+    /* D060: etiqueta vino con el % del producto (Josué, 2026-11-25). */
     const antes=nodo('del','precio-publico',dinero(a.precio_publico));antes.setAttribute('aria-label','Precio público '+dinero(a.precio_publico));
-    p.append(antes,nodo('span','descuento','-'+pct+' %'),nodo('strong','',dinero(a.precio)));
+    p.append(antes,nodo('span','descuento','-'+pctDescuento(a)+' %'),nodo('strong','',dinero(a.precio)));
   }else p.append(nodo('strong','',dinero(a.precio)));
   return p;
 }
@@ -212,11 +217,11 @@ function configurarAgregar(b,a){
 }
 function tarjeta(variantes,reciente=false){
   const art=nodo('article',reciente?'tarjeta prod':'tarjeta'), abrir=boton('','foto-boton'), pie=nodo('div','pie-tarjeta'), titulo=nodo('h3'), precioCont=nodo('div'), meta=parrafo('','talla'), selector=nodo('div'), variante=parrafo('','variante-elegida'), desde=parrafo('','precio-desde'), agregarBoton=boton('','agregar'), info=parrafo('','aviso-encargo');
-  art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo));pie.append(titulo,meta,precioCont,desde,selector,variante,info,agregarBoton);art.append(abrir,pie);
+  art.dataset.grupoProducto=claveGrupo(variantes[0]);abrir.append(enmarcar(imagen(elegida(variantes)),variantes[0].codigo,variantes[0].combo,pctDescuento(elegida(variantes))));pie.append(titulo,meta,precioCont,desde,selector,variante,info,agregarBoton);art.append(abrir,pie);
   function actualizar(a){
     seleccionadas.set(claveGrupo(a),a.codigo);const img=abrir.querySelector('img');ponerFoto(img,a);img.alt=a.descripcion||'Producto';
     abrir.dataset.detalle=a.codigo;abrir.setAttribute('aria-label','Ver '+nombreVitrina(a)+(a.variante?' · '+a.variante:''));
-    titulo.textContent=nombreVitrina(a);precioCont.replaceChildren(precios(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
+    titulo.textContent=nombreVitrina(a);precioCont.replaceChildren(precios(a));ponerSelloDescuento(abrir,pctDescuento(a));meta.textContent=[a.marca,a.talla?'Talla '+logica.tallaCorta(a.talla):''].filter(Boolean).join(' · ');meta.hidden=!meta.textContent;
     variante.textContent=a.variante||'';variante.hidden=!a.variante;
     desde.textContent=avisoDesde(variantes);desde.hidden=!desde.textContent;
     info.textContent=esSalud(a)?'Por pedido':logica.esEncargo(a)?'Por encargo · '+(a.tiempo_entrega||'fecha por confirmar'):'';info.hidden=!info.textContent;
@@ -241,9 +246,9 @@ function actualizarBotones(){for(const b of document.querySelectorAll('[data-agr
 function abrirDetalle(codigo){
   const inicial=datos.articulos.find(a=>a.codigo===codigo);if(!inicial)return;
   const variantes=variantesDe(inicial), cont=$('#detalle-contenido'), img=imagen(inicial), ficha=nodo('div','ficha'), titulo=nodo('h2'), selector=nodo('div'), contenido=nodo('div');titulo.id='detalle-titulo';
-  cont.replaceChildren(enmarcar(img,variantes[0].codigo,inicial.combo),ficha);ficha.append(titulo,selector,contenido);
+  cont.replaceChildren(enmarcar(img,variantes[0].codigo,inicial.combo,pctDescuento(inicial)),ficha);ficha.append(titulo,selector,contenido);
   function actualizar(a){
-    seleccionadas.set(claveGrupo(a),a.codigo);ponerFoto(img,a);img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
+    seleccionadas.set(claveGrupo(a),a.codigo);ponerFoto(img,a);img.alt=a.descripcion||'Producto';titulo.textContent=nombreVitrina(a);ponerSelloDescuento(cont,pctDescuento(a));contenido.replaceChildren();if(!esSalud(a)&&a.descripcion&&a.descripcion!==titulo.textContent)contenido.append(parrafo(a.descripcion,'descripcion-producto'));
     if(esSalud(a)&&variantes.length>1)selector.replaceChildren(paleta(variantes,a,x=>{actualizar(x);selector.querySelector('[aria-pressed="true"]')?.focus();}));else selector.replaceChildren();
     if(a.variante)contenido.append(parrafo(a.variante,'variante-elegida'));
     if(avisoDesde(variantes))contenido.append(parrafo(avisoDesde(variantes),'precio-desde'));
