@@ -43,6 +43,7 @@ function normalizar(d){
     for(const k of ['grupo','variante'])if(typeof a[k]==='string'&&a[k].trim())x[k]=a[k].trim();
     if(typeof a.color==='string'&&/^#[0-9a-f]{6}$/i.test(a.color))x.color=a.color;
     if(Number.isFinite(a.precio_publico)&&a.precio_publico>a.precio)x.precio_publico=a.precio_publico;
+    if(Number.isFinite(a.precio_promo)&&a.precio_promo>0&&a.precio_promo<a.precio)x.precio_promo=a.precio_promo;
     if(Number.isFinite(a.recargo_traida)&&a.recargo_traida>=0)x.recargo_traida=a.recargo_traida;
     vistos.add(x.codigo);articulos.push(x);
   }
