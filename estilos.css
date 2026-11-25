@@ -130,3 +130,17 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 .tarjeta .talla,.tarjeta .precio{font-size:12px;letter-spacing:.03em;font-variant-caps:normal}
 .tarjeta .precio{font-size:13px}
 @media(max-width:760px){.tarjeta .talla{font-size:11.5px}.tarjeta .precio{font-size:12.5px}}
+/* 2026-11-25: paginación del catálogo y flechas en barras deslizables. */
+.paginas{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 18px;padding:36px 0 8px}.paginas[hidden]{display:none}
+.paginas ol{list-style:none;display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0}
+.paginas button{min-width:44px;min-height:44px;padding:0 6px;font-size:13px;letter-spacing:.04em;color:var(--vino);background:transparent;border:0;transition:transform .2s}
+.paginas button:hover{text-decoration:underline;text-underline-offset:6px}
+.paginas [aria-current=page]{font-weight:600;text-decoration:underline;text-underline-offset:6px}
+.desliza{position:relative;min-width:0}
+#categorias,#tallas{scrollbar-width:none}#categorias::-webkit-scrollbar,#tallas::-webkit-scrollbar{display:none}
+.con-flechas{position:relative}
+.flecha-desliza{position:absolute;top:0;bottom:0;z-index:2;width:44px;display:flex;align-items:center;font-size:24px;line-height:1;color:var(--vino);border:0;cursor:pointer}
+.flecha-desliza[hidden]{display:none}
+.flecha-desliza.der{right:0;justify-content:flex-end;padding-right:2px;background:linear-gradient(to right,rgba(249,239,230,0),var(--crema) 55%)}
+.flecha-desliza.izq{left:0;justify-content:flex-start;padding-left:2px;background:linear-gradient(to left,rgba(249,239,230,0),var(--crema) 55%)}
+.flecha-desliza:focus-visible{outline:2px solid var(--vino);outline-offset:-2px}

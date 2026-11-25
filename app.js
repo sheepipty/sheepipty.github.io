@@ -4,7 +4,7 @@ const $=s=>document.querySelector(s), dinero=logica.dinero;
 const CLAVE='tienda.bolsa.v2', CLAVE_ANTERIOR='tienda.bolsa.v1', CLAVE_VISTA='tienda.vista.v1', CLAVE_ENTREGA='tienda.farmasi.entrega.v1';
 const SB='Salud y belleza', SIN_FARMASI='Los pedidos de Salud y belleza no están disponibles en este momento.';
 const movimiento=matchMedia('(prefers-reduced-motion: reduce)');
-let datos={articulos:[],combos:{3:12,5:18}}, linea='Ropa', categoria='Todas', talla='Todas', bolsa=[], enRespaldo=false, validando=false, consultando=false, avisosBolsa='';
+let datos={articulos:[],combos:{3:12,5:18}}, linea='Ropa', categoria='Todas', talla='Todas', pagina=1, bolsa=[], enRespaldo=false, validando=false, consultando=false, avisosBolsa='';
 let opcionFarmasi='', zonaFarmasi='', catalogoCargado=false;
 const inicioCarga=Date.now();
 function nodo(tag,clase,texto){const n=document.createElement(tag);if(clase)n.className=clase;if(texto!==undefined)n.textContent=String(texto??'');return n;}
@@ -111,9 +111,9 @@ function listaGrupos(l=linea){
   for(const g of l==='Ropa'?CONFIG.GRUPOS:[...presentes])if(presentes.has(g))lista.push([g,g,arts.filter(a=>grupoCategoria(a)===g).length]);
   const combos=l==='Ropa'?arts.filter(a=>a.combo).length:0;if(combos)lista.push(['Combo','Combo',combos]);return lista;
 }
-function desdeUrl(){let h='';try{h=decodeURIComponent(location.hash.slice(1));}catch(e){}const g=listaGrupos().find(([v])=>slug(v)===h);categoria=g?g[0]:'Todas';}
-function elegirGrupo(valor){categoria=valor;talla='Todas';const url=valor==='Todas'?location.pathname+location.search:'#'+slug(valor);history.pushState(null,'',url);pintarFiltros();pintarCuadricula();}
-function cambiarLinea(valor){linea=valor;categoria='Todas';talla='Todas';history.replaceState(null,'',location.pathname+location.search);pintarFiltros();pintarCuadricula();}
+function desdeUrl(){pagina=leerPagina();let h='';try{h=decodeURIComponent(location.hash.slice(1));}catch(e){}const g=listaGrupos().find(([v])=>slug(v)===h);categoria=g?g[0]:'Todas';}
+function elegirGrupo(valor){categoria=valor;talla='Todas';pagina=1;history.pushState(null,'',urlPagina(1,valor==='Todas'?'':'#'+slug(valor)));pintarFiltros();pintarCuadricula();}
+function cambiarLinea(valor){linea=valor;categoria='Todas';talla='Todas';pagina=1;history.replaceState(null,'',urlPagina(1,''));pintarFiltros();pintarCuadricula();}
 /* Lema de marca (D048): «Haz espacio para lo inesperado»; cada sección lleva su sublema. */
 const SUBLEMAS={Ropa:'Ropa con historia, lista para empezar otra.','Salud y belleza':'Tus favoritos, por pedido.'};
 function pintarFiltros(){
@@ -223,9 +223,10 @@ function tarjeta(variantes,reciente=false){
 function pintarCuadricula(){
   const arts=articulosLinea().filter(a=>enGrupo(a,categoria)&&(talla==='Todas'||logica.tallaCorta(a.talla)===talla)), grupos=new Map();
   for(const a of arts){const k=claveGrupo(a);if(!grupos.has(k))grupos.set(k,[]);grupos.get(k).push(a);}
-  const cont=$('#catalogo');cont.replaceChildren();const frag=document.createDocumentFragment();for(const variantes of grupos.values())frag.append(tarjeta(variantes));
+  const total=grupos.size,paginasTotal=Math.max(1,Math.ceil(total/POR_PAGINA));if(pagina>paginasTotal||pagina<1)pagina=1;const inicio=(pagina-1)*POR_PAGINA;
+  const cont=$('#catalogo');cont.replaceChildren();const frag=document.createDocumentFragment();for(const variantes of [...grupos.values()].slice(inicio,inicio+POR_PAGINA))frag.append(tarjeta(variantes));
   if(!grupos.size)frag.append(parrafo('No hay productos con estos filtros. Prueba otra categoría o talla.','vacio'));cont.append(frag);
-  $('#cantidad').textContent=grupos.size+(grupos.size===1?' producto':' productos');$('#otro-farmasi').hidden=linea!==SB;
+  $('#cantidad').textContent=total+(total===1?' producto':' productos')+(paginasTotal>1?' · '+(inicio+1)+'–'+Math.min(total,inicio+POR_PAGINA):'');pintarPaginas(paginasTotal);$('#otro-farmasi').hidden=linea!==SB;
   $('#aviso').textContent=$('#aviso').textContent.replace(SIN_FARMASI,'').trim();
   if(linea===SB&&!datos.farmasi)$('#aviso').textContent=[$('#aviso').textContent,SIN_FARMASI].filter(Boolean).join(' ');
   pintarVista();
@@ -364,8 +365,8 @@ for(const a of document.querySelectorAll('[data-seccion-portada]'))a.onclick=e=>
 function bajarCatalogo(){$('#seccion-catalogo').scrollIntoView({behavior:movimiento.matches?'auto':'smooth'});}
 for(const id of ['#categorias','#menu-grupos'])$(id).onclick=e=>{const s=e.target.closest('[data-seccion]');if(s){if(s.dataset.seccion!==linea)cambiarLinea(s.dataset.seccion);else elegirGrupo('Todas');$(id+' [data-seccion="'+CSS.escape(linea)+'"]')?.focus();return;}const b=e.target.closest('[data-grupo]');if(!b)return;const valor=b.dataset.grupo;elegirGrupo(valor);if($('#menu').open)$('#menu').close();bajarCatalogo();$('#categorias [aria-current="true"]')?.focus({preventScroll:true});};
 $('.mosaico').onclick=e=>{const s=e.target.closest('[data-linea-mosaico]');if(s){e.preventDefault();cambiarLinea(s.dataset.lineaMosaico);if(s.dataset.grupoMosaico)elegirGrupo(s.dataset.grupoMosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});return;}const a=e.target.closest('[data-mosaico]');if(!a)return;e.preventDefault();linea='Ropa';elegirGrupo(a.dataset.mosaico);bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
-$('#tallas').onclick=e=>{const b=e.target.closest('[data-talla]');if(!b)return;talla=b.dataset.talla;pintarFiltros();pintarCuadricula();$('#tallas [aria-pressed="true"]')?.focus();};
-$('#vista').onclick=e=>{const b=e.target.closest('[data-vista]');if(!b)return;guardarVista(Number(b.dataset.vista));pintarVista();$('#vista [aria-pressed="true"]')?.focus();};
+$('#tallas').onclick=e=>{const b=e.target.closest('[data-talla]');if(!b)return;talla=b.dataset.talla;reiniciarPagina();pintarFiltros();pintarCuadricula();$('#tallas [aria-pressed="true"]')?.focus();};
+$('#vista').onclick=e=>{const b=e.target.closest('[data-vista]');if(!b)return;guardarVista(Number(b.dataset.vista));pintarVista();if(pagina!==1){reiniciarPagina();pintarCuadricula();}$('#vista [aria-pressed="true"]')?.focus();};
 $('#lista-bolsa').onclick=e=>{
   if(validando)return;const q=e.target.closest('[data-cantidad]'), quitar=e.target.closest('[data-quitar]');
   if(q){const a=bolsa.find(x=>x.codigo===q.dataset.codigo);if(!a)return;const n=a.cantidad+Number(q.dataset.cantidad);if(n<1||n>logica.limiteBolsa(a)||Number(q.dataset.cantidad)>0&&unidades()>=30)return;const propuesta=bolsa.map(x=>x===a?{...x,cantidad:n}:x),r=logica.refrescarBolsa(propuesta,datos.articulos,{enRespaldo});bolsa=r.bolsa;avisar(r.avisos);}
@@ -412,3 +413,32 @@ function prepararMosaico(hayBelleza){mosaicoListo=hayBelleza;$('.mosaico-control
 {const m=$('.mosaico');m.addEventListener('pointerenter',()=>{mosaicoPuntero=true;pararMosaico();});m.addEventListener('pointerleave',()=>{mosaicoPuntero=false;arrancarMosaico();});m.addEventListener('focusin',()=>{mosaicoFoco=true;pararMosaico();});m.addEventListener('focusout',e=>{if(!m.contains(e.relatedTarget)){mosaicoFoco=false;arrancarMosaico();}});
  for(const b of document.querySelectorAll('.mosaico-control button'))b.onclick=()=>{caraMosaico(b.dataset.cara);arrancarMosaico();};
  document.addEventListener('visibilitychange',arrancarMosaico);movimiento.addEventListener('change',arrancarMosaico);}
+
+/* Paginación del catálogo (2026-11-25): 25 tarjetas por página (agrupadas por variante), sobre lo filtrado.
+ * La página va en ?pagina=N para que «atrás» funcione; cambiar sección, categoría, talla o vista vuelve a la 1. */
+const POR_PAGINA=25;
+function leerPagina(){const n=Number(new URLSearchParams(location.search).get('pagina'));return Number.isInteger(n)&&n>1?n:1;}
+function urlPagina(n,hash=location.hash){const q=new URLSearchParams(location.search);if(n>1)q.set('pagina',String(n));else q.delete('pagina');const t=q.toString();return location.pathname+(t?'?'+t:'')+hash;}
+function reiniciarPagina(){if(pagina===1&&!new URLSearchParams(location.search).has('pagina'))return;pagina=1;history.replaceState(null,'',urlPagina(1));}
+function pintarPaginas(totalPaginas){
+  const nav=$('#paginas');nav.replaceChildren();nav.hidden=totalPaginas<=1;if(nav.hidden)return;
+  const ir=(n,texto,etiqueta)=>{const b=boton(texto);b.dataset.pagina=n;if(etiqueta)b.setAttribute('aria-label',etiqueta);return b;};
+  if(pagina>1)nav.append(ir(pagina-1,'← Anterior','Página anterior'));
+  const ol=nodo('ol');for(let n=1;n<=totalPaginas;n++){const li=nodo('li'),b=ir(n,String(n),'Página '+n);if(n===pagina)b.setAttribute('aria-current','page');li.append(b);ol.append(li);}nav.append(ol);
+  if(pagina<totalPaginas)nav.append(ir(pagina+1,'Siguiente →','Página siguiente'));
+}
+$('#paginas').onclick=e=>{const b=e.target.closest('[data-pagina]');if(!b)return;const n=Number(b.dataset.pagina);if(n===pagina)return;pagina=n;history.pushState(null,'',urlPagina(n));pintarCuadricula();bajarCatalogo();$('#catalogo').focus({preventScroll:true});};
+
+/* Barras deslizables (categorías y tallas en pantallas angostas): sin barra visible; flechas ‹ › solo
+ * cuando hay contenido oculto de ese lado. El deslizamiento con el dedo sigue funcionando. */
+function prepararFlechas(sc,nombre){
+  const caja=sc.parentElement;caja.classList.add('con-flechas');
+  const izq=boton('‹','flecha-desliza izq'),der=boton('›','flecha-desliza der');
+  izq.setAttribute('aria-label','Ver '+nombre+' anteriores');der.setAttribute('aria-label','Ver más '+nombre);izq.hidden=der.hidden=true;caja.append(izq,der);
+  const actualizar=()=>{const max=sc.scrollWidth-sc.clientWidth;const visible=sc.offsetParent!==null&&!sc.hidden;izq.hidden=!visible||sc.scrollLeft<=2;der.hidden=!visible||sc.scrollLeft>=max-2;};
+  const mover=s=>sc.scrollBy({left:s*Math.max(120,sc.clientWidth*.7),behavior:movimiento.matches?'auto':'smooth'});
+  izq.onclick=()=>mover(-1);der.onclick=()=>mover(1);
+  sc.addEventListener('scroll',actualizar,{passive:true});new ResizeObserver(actualizar).observe(sc);new MutationObserver(()=>requestAnimationFrame(actualizar)).observe(sc,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
+  addEventListener('resize',actualizar);actualizar();
+}
+prepararFlechas($('#categorias'),'categorías');prepararFlechas($('#tallas'),'tallas');
