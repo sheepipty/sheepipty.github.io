@@ -103,7 +103,7 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 
 /* Acento de compra (2026-11-24, aprobado por Josué): el cítrico es solo para comprar. Texto vino sobre cítrico 6,2:1;
    borde vino porque cítrico sobre crema da 1,6:1. Al pasar el cursor se invierte a vino con texto crema. */
-.tile-tops{background:var(--lila)}
+.tile-tops{background:var(--citrico)}
 .principal,.ficha .principal{background:var(--compra);color:var(--vino);border:1.5px solid var(--vino);padding:12px 16px;text-align:center;letter-spacing:.04em;font-weight:600}
 .principal:hover:not(:disabled),.ficha .principal:hover:not(:disabled){background:var(--vino);color:var(--crema)}
 .agregar,.tarjeta .agregar{background:var(--compra);color:var(--vino);border:1.5px solid var(--vino);padding:8px 12px;font-weight:600;text-align:center}
@@ -115,9 +115,18 @@ dialog{padding:24px;border:1px solid var(--linea);background:var(--crema);color:
 .mosaico .celda{display:grid;grid-template-columns:minmax(0,1fr);overflow:hidden;min-width:0}.mosaico .celda>.tile{grid-area:1/1;transition:transform .7s cubic-bezier(.65,0,.35,1),filter .25s}
 .mosaico .celda:nth-child(2)>.tile{transition-delay:.12s,0s}.mosaico .celda:nth-child(3)>.tile{transition-delay:.24s,0s}.mosaico .celda:nth-child(4)>.tile{transition-delay:.36s,0s}
 .mosaico[data-cara=ropa] .cara-belleza,.mosaico[data-cara=belleza] .cara-ropa{transform:translateX(-100%)}
-.tile-b1{background:var(--rosa)}.tile-b2{background:var(--lila)}.tile-b3{background:var(--cielo)}.tile-b4{background:var(--rosa)}
+/* Cara de belleza: azul y cítrico a la izquierda, lila y rosa a la derecha (Josué, 25-nov). */
+.tile-b1{background:var(--cielo)}.tile-b2{background:var(--citrico)}.tile-b3{background:var(--lila)}.tile-b4{background:var(--rosa)}
 .mosaico-control{display:flex;justify-content:center;gap:8px;padding:12px 16px 0}.mosaico-control[hidden]{display:none}
-.mosaico-control button{font:inherit;font-size:12px;letter-spacing:.04em;padding:6px 12px;border:1px solid var(--linea);background:transparent;color:var(--vino);border-radius:999px;cursor:pointer}
-.mosaico-control button[aria-pressed=true]{background:var(--vino);color:var(--crema);border-color:var(--vino)}
+.mosaico-control{gap:20px}.mosaico-control button{font:inherit;font-size:13px;letter-spacing:.04em;min-height:44px;padding:6px 0;border:0;background:transparent;color:var(--vino);border-radius:0;cursor:pointer;transition:transform .2s}
+.mosaico-control button[aria-pressed=true]{font-weight:600;text-decoration:underline;text-underline-offset:6px}.mosaico-control button:hover{text-decoration:underline;text-underline-offset:6px}
 .cabecera-enlaces a[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){.mosaico .celda>.tile{transition:none}}
+/* 2026-11-25: «Cargando» con puntos uno a uno; Recién llegadas solo con la foto; talla y precio más legibles. */
+.carga-puntos i{font-style:normal;opacity:0;animation:carga-punto 1.4s infinite}.carga-puntos i:nth-child(2){animation-delay:.2s}.carga-puntos i:nth-child(3){animation-delay:.4s}
+@keyframes carga-punto{0%,15%{opacity:0}30%,80%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.carga-puntos i{animation:none;opacity:1}}
+.pista>.prod .pie-tarjeta{display:none}
+.tarjeta .talla,.tarjeta .precio{font-size:12px;letter-spacing:.03em;font-variant-caps:normal}
+.tarjeta .precio{font-size:13px}
+@media(max-width:760px){.tarjeta .talla{font-size:11.5px}.tarjeta .precio{font-size:12.5px}}
